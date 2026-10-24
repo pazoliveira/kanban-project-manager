@@ -2,7 +2,7 @@ var files_dup =
 [
     [ "cartaoatividade.cpp", "cartaoatividade_8cpp.html", null ],
     [ "cartaoatividade.h", "cartaoatividade_8h.html", "cartaoatividade_8h" ],
-    [ "email.cpp", "email_8cpp.html", "email_8cpp" ],
+    [ "email.cpp", "email_8cpp.html", null ],
     [ "email.h", "email_8h.html", "email_8h" ],
     [ "estado.cpp", "estado_8cpp.html", null ],
     [ "estado.h", "estado_8h.html", "estado_8h" ],
@@ -23,7 +23,7 @@ var files_dup =
     [ "projeto.h", "projeto_8h.html", "projeto_8h" ],
     [ "quadro.cpp", "quadro_8cpp.html", null ],
     [ "quadro.h", "quadro_8h.html", "quadro_8h" ],
-    [ "senha.cpp", "senha_8cpp.html", "senha_8cpp" ],
+    [ "senha.cpp", "senha_8cpp.html", null ],
     [ "senha.h", "senha_8h.html", "senha_8h" ],
     [ "tamanho.cpp", "tamanho_8cpp.html", null ],
     [ "tamanho.h", "tamanho_8h.html", "tamanho_8h" ],

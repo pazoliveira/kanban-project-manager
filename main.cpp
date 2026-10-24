@@ -27,7 +27,7 @@ cin >> valor;
 
 try {
 
-senha.setValor(valor);
+senha.setSenha(valor);
 cout << "Senha cadastrada com sucesso." << endl;
 
 }
@@ -101,9 +101,9 @@ catch (invalid_argument &e) {
 
  Timestamp t;
 
-    t.setTimestamp("30-02-2026-16:35");
+    t.setDataHora("30-02-2026-16:35");
 
-    cout << "Timestamp: " << t.getTimestamp() << endl;
+    cout << "Timestamp: " << t.getDataHora() << endl;
 
     return 0;
 }

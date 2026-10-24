@@ -10,7 +10,7 @@ void Nome::validarNome(string valor) {
     if (valor.empty() || valor.size() > 15 || valor.front() == ' ' || valor.back() == ' ') {
        throw invalid_argument("Nome inválido. Nome deve ter entre 1 e 15 caracteres e nem o primeiro nem o último caractere podem ser espaços em branco.");
     }
-    for (int i = 0;i < valor(length);i++){
+    for (size_t i = 0; i < valor.length(); i++) {
         char letra= valor[i];
         if (!isalpha(letra) && letra != ' '){
             throw invalid_argument("Nome inválido. Deve ter apenas letras e espaços vazios.");
@@ -21,9 +21,6 @@ void Nome::validarNome(string valor) {
    }
 }
 
-
-
-};
 void Nome::setNome(string valor) {
     validarNome(valor);
     this->nome = valor;

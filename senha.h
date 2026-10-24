@@ -28,7 +28,7 @@ public:
 };
 
 inline string Senha::getSenha() const {
-    return valor;
+    return senha;
 };
 
 #endif // SENHA_H_INCLUDED

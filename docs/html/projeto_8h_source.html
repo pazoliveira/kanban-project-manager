@@ -111,8 +111,8 @@ $(document).ready(function(){initNavTree('projeto_8h_source.html',''); initResiz
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classIdentificador.html">Identificador</a> identificador;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="classNome.html">Nome</a> nome;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classTexto.html">Texto</a> descricao;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Timestamp inicio;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Timestamp termino;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="classTimestamp.html">Timestamp</a> inicio;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="classTimestamp.html">Timestamp</a> termino;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="classProjeto.html#a7de36d1902d1d33ee0e765db0fd05039">Projeto</a>();</div>
@@ -126,12 +126,12 @@ $(document).ready(function(){initNavTree('projeto_8h_source.html',''); initResiz
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a1898aaeee64ac86545f9fc190ffc0141">setDescricao</a>(<a class="code hl_class" href="classTexto.html">Texto</a> descricao);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_class" href="classTexto.html">Texto</a> <a class="code hl_function" href="classProjeto.html#ac4caae2a2704008b8cd22b30f0016e3e">getDescricao</a>();</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a2595fbc8add4d59c031cee7ca8677f3d">setInicio</a>(Timestamp inicio);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    Timestamp <a class="code hl_function" href="classProjeto.html#a92ffbabd5c9b61140c7f9c8c54f9ab25">getInicio</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a2595fbc8add4d59c031cee7ca8677f3d">setInicio</a>(<a class="code hl_class" href="classTimestamp.html">Timestamp</a> inicio);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_class" href="classTimestamp.html">Timestamp</a> <a class="code hl_function" href="classProjeto.html#a92ffbabd5c9b61140c7f9c8c54f9ab25">getInicio</a>();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a16b40a498a15a1aae77a05fe060d8366">setTermino</a>(Timestamp termino);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    Timestamp <a class="code hl_function" href="classProjeto.html#adfd8068837093c2602364f431fe454ef">getTermino</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a16b40a498a15a1aae77a05fe060d8366">setTermino</a>(<a class="code hl_class" href="classTimestamp.html">Timestamp</a> termino);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_class" href="classTimestamp.html">Timestamp</a> <a class="code hl_function" href="classProjeto.html#adfd8068837093c2602364f431fe454ef">getTermino</a>();</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
 </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
@@ -151,6 +151,7 @@ $(document).ready(function(){initNavTree('projeto_8h_source.html',''); initResiz
 <div class="ttc" id="aclassProjeto_html_adfd8068837093c2602364f431fe454ef"><div class="ttname"><a href="classProjeto.html#adfd8068837093c2602364f431fe454ef">Projeto::getTermino</a></div><div class="ttdeci">Timestamp getTermino()</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> projeto.cpp:42</div></div>
 <div class="ttc" id="aclassProjeto_html_af2eb683a21ad0ce0401b0d313cee612b"><div class="ttname"><a href="classProjeto.html#af2eb683a21ad0ce0401b0d313cee612b">Projeto::setNome</a></div><div class="ttdeci">void setNome(Nome nome)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> projeto.cpp:14</div></div>
 <div class="ttc" id="aclassTexto_html"><div class="ttname"><a href="classTexto.html">Texto</a></div><div class="ttdoc">Representa o domínio Texto no sistema Kanban.</div><div class="ttdef"><b>Definition</b> texto.h:11</div></div>
+<div class="ttc" id="aclassTimestamp_html"><div class="ttname"><a href="classTimestamp.html">Timestamp</a></div><div class="ttdoc">Classe de dominio para representacao de Data e Horario.</div><div class="ttdef"><b>Definition</b> timestamp.h:17</div></div>
 <div class="ttc" id="aidentificador_8h_html"><div class="ttname"><a href="identificador_8h.html">identificador.h</a></div></div>
 <div class="ttc" id="anome_8h_html"><div class="ttname"><a href="nome_8h.html">nome.h</a></div></div>
 <div class="ttc" id="atexto_8h_html"><div class="ttname"><a href="texto_8h.html">texto.h</a></div></div>

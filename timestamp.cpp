@@ -1,24 +1,24 @@
 #include "timestamp.h"
-
-#include "datahora.h"
 #include <cctype>
 #include <stdexcept>
 
 using namespace std;
 
-DataHora::DataHora() {
+// Construtor padrão corrigido para Timestamp::Timestamp
+Timestamp::Timestamp() {
     this->valor = "";
 }
 
-DataHora::DataHora(string valor) {
+// Construtor com parâmetro corrigido para Timestamp::Timestamp
+Timestamp::Timestamp(string valor) {
     setDataHora(valor);
 }
 
-bool DataHora::ehBissexto(int ano) {
+bool Timestamp::ehBissexto(int ano) {
     return (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
 }
 
-void DataHora::validar(string valor) {
+void Timestamp::validarTimestamp(string valor) {
     // Procura os separadores '-' e ':'
     size_t pos1 = valor.find('-');
     size_t pos2 = (pos1 != string::npos) ? valor.find('-', pos1 + 1) : string::npos;
@@ -50,8 +50,8 @@ void DataHora::validar(string valor) {
     }
 
     // 2. Validação do MÊS (Siglas permitidas)
-    if (sMes != "JAN" && sMes != "FEV" && sMes != "MAR" && sMes != "ABR" && 
-        sMes != "MAI" && sMes != "JUN" && sMes != "JUL" && sMes != "AGO" && 
+    if (sMes != "JAN" && sMes != "FEV" && sMes != "MAR" && sMes != "ABR" &&
+        sMes != "MAI" && sMes != "JUN" && sMes != "JUL" && sMes != "AGO" &&
         sMes != "SET" && sMes != "OUT" && sMes != "NOV" && sMes != "DEZ") {
         throw invalid_argument("Data invalida. Mes deve ser uma sigla em maiusculo (ex: JAN, FEV).");
     }
@@ -104,43 +104,11 @@ void DataHora::validar(string valor) {
     }
 }
 
-void DataHora::setDataHora(string valor) {
-    validar(valor);
+void Timestamp::setDataHora(string valor) {
+    validarTimestamp(valor);
     this->valor = valor;
 }
 
-string DataHora::getDataHora() const {
+string Timestamp::getDataHora() const {
     return this->valor;
 }
-
-/*
-bool Timestamp::validar(string valor) {
-
-    // Exemplo de formato:
-    // DD-MM-AAAA-HH:MM
-
-    if (valor.length() != 16) {
-        return false;
-    }
-
-    // Verifica os separadores
-    if (valor[2] != '-' ||
-        valor[5] != '-' ||
-        valor[10] != '-' ||
-        valor[13] != ':') {
-        return false;
-    }
-
-    return true;
-}
-
-void Timestamp::setTimestamp(string valor) {
-
-    if (validar(valor)) {
-        timestamp = valor;
-    }
-}
-string Timestamp::getTimestamp() {
-    return timestamp;
-}
-*/

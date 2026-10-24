@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['identificador_0',['Identificador',['../classIdentificador.html',1,'']]]
+  ['limite_0',['Limite',['../classLimite.html',1,'']]]
 ];
