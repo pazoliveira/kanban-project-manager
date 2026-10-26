@@ -1,4 +1,8 @@
 #include "pessoa.h"
+#include "papel.h"
+#include "cartaoatividade.h"
+#include "projeto.h"
+#include <vector>
 
 Pessoa::Pessoa() {
 }
@@ -33,4 +37,24 @@ void Pessoa::setPapel(Papel papel) {
 
 Papel Pessoa::getPapel() {
     return papel;
+}
+
+void Pessoa::adicionarCartao(CartaoAtividade* cartao) {
+    if (cartao != nullptr) {
+        cartoesDesenvolvidos.push_back(cartao);
+    }
+}
+
+void Pessoa::adicionarProjeto(Projeto* projeto) {
+    if (projeto != nullptr) {
+        projetosGerenciados.push_back(projeto);
+    }
+}
+
+const vector<CartaoAtividade*>& Pessoa::getCartoesDesenvolvidos() const {
+    return cartoesDesenvolvidos;
+}
+
+const vector<Projeto*>& Pessoa::getProjetosGerenciados() const {
+    return projetosGerenciados;
 }

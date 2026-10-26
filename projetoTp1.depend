@@ -92,10 +92,12 @@
 1792719016 /home/antenor/estudos/C++/projetoTp1/identificador.h
 	<string>
 
-1790955996 source:/home/antenor/estudos/C++/projetoTp1/cartaoatividade.cpp
+1793031572 source:/home/antenor/estudos/C++/projetoTp1/cartaoatividade.cpp
 	"cartaoatividade.h"
+	"pessoa.h"
+	"quadro.h"
 
-1792720114 /home/antenor/estudos/C++/projetoTp1/cartaoatividade.h
+1793030989 /home/antenor/estudos/C++/projetoTp1/cartaoatividade.h
 	"identificador.h"
 	"nome.h"
 	"texto.h"
@@ -107,31 +109,40 @@
 1792719487 /home/antenor/estudos/C++/projetoTp1/texto.h
 	<string>
 
-1790955601 source:/home/antenor/estudos/C++/projetoTp1/pessoa.cpp
+1793030339 source:/home/antenor/estudos/C++/projetoTp1/pessoa.cpp
 	"pessoa.h"
+	"papel.h"
+	"cartaoatividade.h"
+	"projeto.h"
+	<vector>
 
-1792720193 /home/antenor/estudos/C++/projetoTp1/pessoa.h
+1793030022 /home/antenor/estudos/C++/projetoTp1/pessoa.h
 	"email.h"
 	"nome.h"
 	"senha.h"
 	"papel.h"
+	<vector>
 
 1790955737 source:/home/antenor/estudos/C++/projetoTp1/projeto.cpp
 	"projeto.h"
 
-1792720250 /home/antenor/estudos/C++/projetoTp1/projeto.h
+1793027977 /home/antenor/estudos/C++/projetoTp1/projeto.h
 	"identificador.h"
 	"nome.h"
 	"texto.h"
 	"timestamp.h"
+	<vector>
 
-1790955858 source:/home/antenor/estudos/C++/projetoTp1/quadro.cpp
+1793031344 source:/home/antenor/estudos/C++/projetoTp1/quadro.cpp
 	"quadro.h"
+	"projeto.h"
+	"cartaoatividade.h"
 
-1792720348 /home/antenor/estudos/C++/projetoTp1/quadro.h
+1793028225 /home/antenor/estudos/C++/projetoTp1/quadro.h
 	"identificador.h"
 	"nome.h"
 	"limite.h"
+	<vector>
 
 1792551704 source:/home/antenor/estudos/C++/projetoTp1/texto.cpp
 	"texto.h"

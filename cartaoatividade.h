@@ -9,6 +9,11 @@
 #include "tamanho.h"
 #include "timestamp.h"
 
+
+class Pessoa;
+class Quadro;
+
+
 /**
  * @brief Representa o domínio CartaoAtividade no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
@@ -24,6 +29,11 @@ private:
     Timestamp entrada;
     Timestamp inicio;
     Timestamp termino;
+    // Pessoa responsável pelo desenvolvimento
+    Pessoa* desenvolvedor;
+    // Quadro ao qual o cartão pertence
+    Quadro* quadro;
+
 
 public:
     CartaoAtividade();
@@ -136,6 +146,15 @@ public:
      * @return String contendo o valor.
      */
     Timestamp getTermino();
+
+
+    void setDesenvolvedor(Pessoa* pessoa);
+    Pessoa* getDesenvolvedor();
+
+    void setQuadro(Quadro* quadro);
+    Quadro* getQuadro();
+
+
 };
 
 #endif // CARTAOATIVIDADE_H_INCLUDED

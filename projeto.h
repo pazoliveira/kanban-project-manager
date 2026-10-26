@@ -5,6 +5,12 @@
 #include "nome.h"
 #include "texto.h"
 #include "timestamp.h"
+#include <vector>
+
+using namespace std;
+
+class Pessoa;
+class Quadro;
 
 /**
  * @brief Representa o domínio Projeto no sistema Kanban.
@@ -17,6 +23,10 @@ private:
     Texto descricao;
     Timestamp inicio;
     Timestamp termino;
+    // Pessoa responsável pelo projeto
+    Pessoa* gestor;
+    // Quadros pertencentes ao projeto
+    vector<Quadro*> quadros;
 
 public:
     Projeto();
@@ -81,6 +91,14 @@ public:
      * @return String contendo o valor.
      */
     Timestamp getTermino();
+
+
+    void setGestor(Pessoa* pessoa);
+    Pessoa* getGestor();
+
+    void adicionarQuadro(Quadro* quadro);
+
+
 };
 
 #endif // PROJETO_H_INCLUDED

@@ -1,4 +1,6 @@
 #include "cartaoatividade.h"
+#include "pessoa.h"
+#include "quadro.h"
 
 CartaoAtividade::CartaoAtividade() {
 }
@@ -73,4 +75,20 @@ void CartaoAtividade::setTermino(Timestamp termino) {
 
 Timestamp CartaoAtividade::getTermino() {
     return termino;
+}
+
+void CartaoAtividade::setDesenvolvedor(Pessoa* pessoa) {
+    desenvolvedor = pessoa;
+}
+
+Pessoa* CartaoAtividade::getDesenvolvedor() {
+    return desenvolvedor;
+}
+
+void CartaoAtividade::setQuadro(Quadro* quadro) {
+    this->quadro = quadro;
+}
+
+Quadro* CartaoAtividade::getQuadro() {
+    return quadro;
 }

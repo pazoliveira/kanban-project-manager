@@ -5,6 +5,13 @@
 #include "nome.h"
 #include "senha.h"
 #include "papel.h"
+#include <vector>
+
+
+class CartaoAtividade;
+class Projeto;
+
+using namespace std;
 
 /**
  * @brief Representa o domínio Pessoa no sistema Kanban.
@@ -16,6 +23,10 @@ private:
     Nome nome;
     Senha senha;
     Papel papel;
+
+    vector<CartaoAtividade*> cartoesDesenvolvidos;
+    vector<Projeto*> projetosGerenciados;
+
 
 public:
     Pessoa();
@@ -67,6 +78,14 @@ public:
      * @return String contendo o valor.
      */
     Papel getPapel();
+
+
+    void adicionarCartao(CartaoAtividade* cartao);
+    void adicionarProjeto(Projeto* projeto);
+
+    const vector<CartaoAtividade*>& getCartoesDesenvolvidos() const;
+    const vector<Projeto*>& getProjetosGerenciados() const;
+
 };
 
 #endif // PESSOA_H_INCLUDED
