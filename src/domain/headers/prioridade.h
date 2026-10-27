@@ -7,6 +7,7 @@ using namespace std;
 /**
  * @brief Representa o domínio Prioridade no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+ * Formato: ALTA, MEDIA, BAIXA
  */
 class Prioridade {
 

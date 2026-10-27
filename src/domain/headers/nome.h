@@ -7,6 +7,10 @@ using namespace std;
 /**
  * @brief Representa o domínio Nome no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+ * Formato: Texto com até 15 caracteres.
+ * Caractere pode ser letra maiúscula (A-Z), letra minúscula (a-z) ou espaço em branco; espaço em
+ * branco é seguido por letra; primeiro caractere não é espaço em branco; último caractere não é
+ * espaço em branco.
  */
 class Nome {
 

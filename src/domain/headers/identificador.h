@@ -7,6 +7,9 @@ using namespace std;
 /**
  * @brief Representa o domínio Identificador no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+ * Formato: 6 caracteres
+ * Sendo letras (a-z ou A-Z) os três primeiros caracteres.
+ * Sendo dígitos (0-9) os três últimos caracteres.
  */
 class Identificador {
 private:

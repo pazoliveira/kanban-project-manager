@@ -6,6 +6,8 @@ using namespace std;
 /**
  * @brief Representa o domínio Limite no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+ * Formato: 1 a 25
+ 
  */
 class Limite {
 

@@ -8,6 +8,8 @@ using namespace std;
 /**
  * @brief Representa o domínio Senha no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+ * Formato: 5 caracteres
+ * Caractere pode ser letra (a-z ou A-Z) ou dígito (0-9); existe pelo menos uma letra e um dígito.
  */
 class Senha {
 private:
