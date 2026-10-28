@@ -32,11 +32,7 @@ private:
 
 public:
     ///
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
     /// @brief Construtor padrao da classe Timestamp.
-=======
-    /// @brief Construtor padrão da classe Timestamp.
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
     ///
     Timestamp();
 

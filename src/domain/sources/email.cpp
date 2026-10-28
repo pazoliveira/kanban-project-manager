@@ -71,7 +71,6 @@ void Email::setEmail(string valor) {
     this->email = valor; 
     
 }
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
 
 /*
 bool Email::validar(string valor) {
@@ -215,5 +214,3 @@ void Email::setEmail(string valor) {
 }
 
 */
-=======
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
