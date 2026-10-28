@@ -6,8 +6,11 @@ using namespace std;
 /**
  * @brief Representa o domínio Limite no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
  * Formato: 1 a 25
  
+=======
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
  */
 class Limite {
 
@@ -16,17 +19,31 @@ private:
     void validarLimite(int valor);
 
 public:
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
+=======
+
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
     /**
      * @brief Define um novo valor após a validação.
      * @param valor Dado de entrada a ser validado.
      * @throw std::invalid_argument Se o valor for inválido.
      */
     void setLimite(int valor);
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
     /**
      * @brief Retorna o valor atualmente armazenado.
      * @return String contendo o valor.
      */
     int getLimite() const;
+=======
+
+
+     /**
+     * @brief Retorna o valor atualmente armazenado.
+     * @return String contendo o valor.
+     */
+     int getLimite() const;
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 };
 
 

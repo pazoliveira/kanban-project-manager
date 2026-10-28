@@ -1,10 +1,23 @@
 #ifndef QUADRO_H_INCLUDED
 #define QUADRO_H_INCLUDED
 
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
 
 #include "domain/headers/identificador.h"
 #include "domain/headers/nome.h"
 #include "domain/headers/limite.h"
+=======
+#include "identificador.h"
+#include "nome.h"
+#include "limite.h"
+#include <vector>
+
+using namespace std;
+
+class Projeto;
+class CartaoAtividade;
+
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 
 /**
  * @brief Representa o domínio Quadro no sistema Kanban.
@@ -15,6 +28,10 @@ private:
     Identificador identificador;
     Nome nome;
     Limite limite;
+    // Projeto ao qual o quadro pertence
+    Projeto* projeto;
+    // Cartões contidos no quadro
+    vector<CartaoAtividade*> cartoes;
 
 public:
     Quadro();
@@ -54,6 +71,14 @@ public:
      * @return String contendo o valor.
      */
     Limite getLimite();
+
+
+    void setProjeto(Projeto* projeto);
+    Projeto* getProjeto();
+
+    void adicionarCartao(CartaoAtividade* cartao);
+
+
 };
 
 #endif // QUADRO_H_INCLUDED

@@ -7,10 +7,13 @@ using namespace std;
 /**
  * @brief Representa o domínio Nome no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
  * Formato: Texto com até 15 caracteres.
  * Caractere pode ser letra maiúscula (A-Z), letra minúscula (a-z) ou espaço em branco; espaço em
  * branco é seguido por letra; primeiro caractere não é espaço em branco; último caractere não é
  * espaço em branco.
+=======
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
  */
 class Nome {
 
@@ -25,7 +28,11 @@ public:
      * @throw std::invalid_argument Se o valor for inválido.
      */
     void setNome(string valor);
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
     /**
+=======
+     /**
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
      * @brief Retorna o valor atualmente armazenado.
      * @return String contendo o valor.
      */

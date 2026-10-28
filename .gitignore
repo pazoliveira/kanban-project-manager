@@ -6,3 +6,7 @@ docs/html/
 *.layout
 *.o
 *.exe
+/bin/
+/obj/
+/*.depend
+/*.layout

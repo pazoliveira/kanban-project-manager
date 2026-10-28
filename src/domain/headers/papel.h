@@ -7,7 +7,10 @@ using namespace std;
 /**
  * @brief Representa o domínio Papel no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
  * Formato: GESTOR, DESENVOLVEDOR
+=======
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
  */
 class Papel {
 

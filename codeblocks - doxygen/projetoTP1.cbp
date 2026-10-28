@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="projetoTp1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/projetoTp1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/projetoTp1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="cartaoatividade.cpp" />
+		<Unit filename="cartaoatividade.h" />
+		<Unit filename="email.cpp" />
+		<Unit filename="email.h" />
+		<Unit filename="estado.cpp" />
+		<Unit filename="estado.h" />
+		<Unit filename="identificador.cpp" />
+		<Unit filename="identificador.h" />
+		<Unit filename="limite.cpp" />
+		<Unit filename="limite.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="nome.cpp" />
+		<Unit filename="nome.h" />
+		<Unit filename="papel.cpp" />
+		<Unit filename="papel.h" />
+		<Unit filename="pessoa.cpp" />
+		<Unit filename="pessoa.h" />
+		<Unit filename="prioridade.cpp" />
+		<Unit filename="prioridade.h" />
+		<Unit filename="projeto.cpp" />
+		<Unit filename="projeto.h" />
+		<Unit filename="quadro.cpp" />
+		<Unit filename="quadro.h" />
+		<Unit filename="senha.cpp" />
+		<Unit filename="senha.h" />
+		<Unit filename="tamanho.cpp" />
+		<Unit filename="tamanho.h" />
+		<Unit filename="texto.cpp" />
+		<Unit filename="texto.h" />
+		<Unit filename="timestamp.cpp" />
+		<Unit filename="timestamp.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

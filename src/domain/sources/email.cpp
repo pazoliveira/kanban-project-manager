@@ -20,7 +20,7 @@ void Email::validarEmail(string valor) {
 
     char char_um = local[0];
     char char_fim = local[local.length() - 1];
-    
+
     if (char_um == '.' || char_um == '-' || char_fim == '.' || char_fim == '-') {
         throw invalid_argument("E-mail invalido. Nao pode haver nem no inicio e nem no fim os caracteres '-' e '.'.");
     }
@@ -35,7 +35,7 @@ void Email::validarEmail(string valor) {
             if (i + 1 >= local.length() || !isalnum(local[i + 1])) {
                 throw invalid_argument("E-mail invalido. Apos os caracteres '.' e '-' deve conter uma letra ou numero.");
             }
-        } 
+        }
     }
 
     // Validação do Domínio (agora dentro da função!)
@@ -45,7 +45,7 @@ void Email::validarEmail(string valor) {
         if (fim == string::npos) {
             fim = dominio.length();
         }
-        
+
         string parteDominio = dominio.substr(inicio, fim - inicio);
 
         if (parteDominio.empty()) {
@@ -63,7 +63,7 @@ void Email::validarEmail(string valor) {
         }
 
         inicio = fim + 1;
-    }    
+    }
 }
 
 void Email::setEmail(string valor) {
@@ -71,6 +71,7 @@ void Email::setEmail(string valor) {
     this->email = valor; 
     
 }
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
 
 /*
 bool Email::validar(string valor) {
@@ -214,3 +215,5 @@ void Email::setEmail(string valor) {
 }
 
 */
+=======
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp

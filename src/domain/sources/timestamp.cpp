@@ -1,5 +1,4 @@
 #include "domain/headers/timestamp.h"
-
 #include <cctype>
 #include <stdexcept>
 
@@ -51,8 +50,8 @@ void Timestamp::validarTimestamp(string valor) {
     }
 
     // 2. Validação do MÊS (Siglas permitidas)
-    if (sMes != "JAN" && sMes != "FEV" && sMes != "MAR" && sMes != "ABR" && 
-        sMes != "MAI" && sMes != "JUN" && sMes != "JUL" && sMes != "AGO" && 
+    if (sMes != "JAN" && sMes != "FEV" && sMes != "MAR" && sMes != "ABR" &&
+        sMes != "MAI" && sMes != "JUN" && sMes != "JUL" && sMes != "AGO" &&
         sMes != "SET" && sMes != "OUT" && sMes != "NOV" && sMes != "DEZ") {
         throw invalid_argument("Data invalida. Mes deve ser uma sigla em maiusculo (ex: JAN, FEV).");
     }
@@ -113,35 +112,3 @@ void Timestamp::setDataHora(string valor) {
 string Timestamp::getDataHora() const {
     return this->valor;
 }
-
-/*
-bool Timestamp::validar(string valor) {
-
-    // Exemplo de formato:
-    // DD-MM-AAAA-HH:MM
-
-    if (valor.length() != 16) {
-        return false;
-    }
-
-    // Verifica os separadores
-    if (valor[2] != '-' ||
-        valor[5] != '-' ||
-        valor[10] != '-' ||
-        valor[13] != ':') {
-        return false;
-    }
-
-    return true;
-}
-
-void Timestamp::setTimestamp(string valor) {
-
-    if (validar(valor)) {
-        timestamp = valor;
-    }
-}
-string Timestamp::getTimestamp() {
-    return timestamp;
-}
-*/

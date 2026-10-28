@@ -1,4 +1,7 @@
 #include "entities/headers/quadro.h"
+#include "entities/headers/quadro.h"
+#include "entities/headers/projeto.h"
+#include "entities/headers/cartao_atividade.h"
 
 Quadro::Quadro() {
 }
@@ -26,3 +29,23 @@ void Quadro::setLimite(Limite limite) {
 Limite Quadro::getLimite() {
     return limite;
 }
+
+
+void Quadro::setProjeto(Projeto* projeto) {
+    projeto = projeto;
+}
+
+Projeto* Quadro::getProjeto() {
+    return projeto;
+}
+
+void Quadro::adicionarCartao(CartaoAtividade* cartao) {
+    if (cartao != nullptr) {
+        cartoes.push_back(cartao);
+    }
+}
+
+
+
+
+

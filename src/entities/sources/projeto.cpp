@@ -1,6 +1,9 @@
 #include "entities/headers/projeto.h"
+#include "entities/headers/projeto.h"
+#include "entities/headers/pessoa.h"
+#include "entities/headers/quadro.h"
 
-Projeto::Projeto() {
+Projeto::Projeto() : gestor(nullptr) {
 }
 
 void Projeto::setIdentificador(Identificador identificador) {
@@ -41,4 +44,18 @@ void Projeto::setTermino(Timestamp termino) {
 
 Timestamp Projeto::getTermino() {
     return termino;
+}
+
+void Projeto::setGestor(Pessoa* pessoa) {
+    gestor = pessoa;
+}
+
+Pessoa* Projeto::getGestor() {
+    return gestor;
+}
+
+void Projeto::adicionarQuadro(Quadro* quadro) {
+    if (quadro != nullptr) {
+        quadros.push_back(quadro);
+    }
 }

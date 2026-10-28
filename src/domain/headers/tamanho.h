@@ -7,7 +7,10 @@ using namespace std;
 /**
  * @brief Representa o domínio Tamanho no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
  * Formato: GRANDE, MÉDIO, PEQUENO
+=======
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
  */
 class Tamanho {
 
@@ -33,7 +36,5 @@ public:
 inline string Tamanho::getTamanho() const {
     return tamanho;
 };
-
-
 
 #endif // TAMANHO_H_INCLUDED

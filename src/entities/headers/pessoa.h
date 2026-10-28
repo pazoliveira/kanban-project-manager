@@ -1,11 +1,26 @@
 #ifndef PESSOA_H_INCLUDED
 #define PESSOA_H_INCLUDED
 
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
 #include "domain/headers/email.h"
 #include "domain/headers/nome.h"
 #include "domain/headers/senha.h"
 #include "domain/headers/papel.h"
 
+=======
+#include "email.h"
+#include "nome.h"
+#include "senha.h"
+#include "papel.h"
+#include <vector>
+
+
+class CartaoAtividade;
+class Projeto;
+
+using namespace std;
+
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 /**
  * @brief Representa o domínio Pessoa no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
@@ -16,6 +31,10 @@ private:
     Nome nome;
     Senha senha;
     Papel papel;
+
+    vector<CartaoAtividade*> cartoesDesenvolvidos;
+    vector<Projeto*> projetosGerenciados;
+
 
 public:
     Pessoa();
@@ -67,7 +86,14 @@ public:
      * @return String contendo o valor.
      */
     Papel getPapel();
-};
 
+
+    void adicionarCartao(CartaoAtividade* cartao);
+    void adicionarProjeto(Projeto* projeto);
+
+    const vector<CartaoAtividade*>& getCartoesDesenvolvidos() const;
+    const vector<Projeto*>& getProjetosGerenciados() const;
+
+};
 
 #endif // PESSOA_H_INCLUDED

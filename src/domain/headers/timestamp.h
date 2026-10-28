@@ -6,7 +6,7 @@
 using namespace std;
 
 ///
-/// @brief Classe de dominio para representacao de Data e Horario.
+/// @brief Classe de domínio para representação de Data e Horário.
 ///
 /// Formato esperado: DIA-MES-ANO-HORARIO (ex: 29-FEV-2024-14:30)
 /// - DIA: 1 a 31 (respeitando o mes e ano bissexto)
@@ -32,13 +32,17 @@ private:
 
 public:
     ///
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
     /// @brief Construtor padrao da classe Timestamp.
+=======
+    /// @brief Construtor padrão da classe Timestamp.
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
     ///
     Timestamp();
 
     ///
-    /// @brief Construtor que inicializa com valor e aplica validacao.
-    /// @param valor String com a data e horario.
+    /// @brief Construtor que inicializa com valor e aplica validação.
+    /// @param valor String com a data e horário.
     ///
     Timestamp(string valor);
 
@@ -49,10 +53,11 @@ public:
     void setDataHora(string valor);
 
     ///
-    /// @brief Retorna a data/horario armazenada.
+    /// @brief Retorna a data/horário armazenada.
     /// @return string O valor atual.
     ///
     string getDataHora() const;
 };
+
 
 #endif // DATAHORA_H

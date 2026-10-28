@@ -13,6 +13,7 @@
 
 using namespace std;
 
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
 void testarTimestamp() {
     cout << "\n--- Testando Timestamp ---" << endl;
     Timestamp t;
@@ -33,6 +34,28 @@ void testarTimestamp() {
         cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
     }
 }
+=======
+int main()
+{
+
+string valor;
+Senha senha;
+
+cout << "Cadastramento de Senha." << endl;
+cout << endl;
+cout << "Atenção!" << endl;
+cout << "A senha deve ter tamanho igual a 5 caracteres." << endl;
+cout << "A senha deve conter pelo menos uma letra e um número." << endl;
+
+cout << endl;
+cout << "Digite sua senha: ";
+cin >> valor;
+
+try {
+
+senha.setSenha(valor);
+cout << "Senha cadastrada com sucesso." << endl;
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 
 void testarSenha() {
     cout << "\n--- Testando Senha ---" << endl;
@@ -273,9 +296,15 @@ int main()
 
     Timestamp t;
 
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
     t.setDataHora("30-02-2026-16:35"); // Corrigido aqui
 
     cout << "Timestamp: " << t.getDataHora() << endl; // Corrigido aqui
+=======
+    t.setDataHora("30-02-2026-16:35");
+
+    cout << "Timestamp: " << t.getDataHora() << endl;
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 
     return 0;
 }

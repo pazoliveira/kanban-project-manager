@@ -9,6 +9,14 @@
 #include "domain/headers/tamanho.h"
 #include "domain/headers/timestamp.h"
 
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
+=======
+
+class Pessoa;
+class Quadro;
+
+
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 /**
  * @brief Representa o domínio CartaoAtividade no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
@@ -24,6 +32,11 @@ private:
     Timestamp entrada;
     Timestamp inicio;
     Timestamp termino;
+    // Pessoa responsável pelo desenvolvimento
+    Pessoa* desenvolvedor;
+    // Quadro ao qual o cartão pertence
+    Quadro* quadro;
+
 
 public:
     CartaoAtividade();
@@ -68,6 +81,10 @@ public:
      * @brief Define um novo valor após a validação.
      * @param valor Dado de entrada a ser validado.
      * @throw std::invalid_argument Se o valor for inválido.
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
+=======
+
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
      */
     void setPrioridade(Prioridade prioridade);
     /**
@@ -135,6 +152,15 @@ public:
      * @return String contendo o valor.
      */
     Timestamp getTermino();
+
+
+    void setDesenvolvedor(Pessoa* pessoa);
+    Pessoa* getDesenvolvedor();
+
+    void setQuadro(Quadro* quadro);
+    Quadro* getQuadro();
+
+
 };
 
 #endif // CARTAOATIVIDADE_H_INCLUDED

@@ -33,29 +33,13 @@ void Senha::validarSenha(string valor) {
 void Senha::setSenha(string valor) {
     validarSenha(valor);
     this->senha = valor;
+<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
 }
 
 /*
 void Senha::validarSenha(string valor) {
     if(valor.size() != 5 || temLetra(valor) == false || temNumero(valor) == false)
         throw invalid_argument("Erro de argumento. Tente novamente!");
+=======
+>>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 };
-
-bool Senha::temNumero(string texto) {
-    for (char c : texto) {
-        if (isdigit(c)) {
-            return true;
-        }
-    }
-    return false;
-}
-
-bool Senha::temLetra(string texto) {
-    for (char c : texto) {
-        if (isalpha(c)) {
-            return true;
-        }
-    }
-    return false;
-}
-*/
