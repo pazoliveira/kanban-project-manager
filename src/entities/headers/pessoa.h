@@ -1,29 +1,19 @@
 #ifndef PESSOA_H_INCLUDED
 #define PESSOA_H_INCLUDED
 
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
+#include <vector>
 #include "domain/headers/email.h"
 #include "domain/headers/nome.h"
 #include "domain/headers/senha.h"
 #include "domain/headers/papel.h"
 
-=======
-#include "email.h"
-#include "nome.h"
-#include "senha.h"
-#include "papel.h"
-#include <vector>
-
-
+// Declarações antecipadas
 class CartaoAtividade;
 class Projeto;
 
-using namespace std;
-
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 /**
- * @brief Representa o domínio Pessoa no sistema Kanban.
- * @details Valida e armazena o valor correspondente às regras de negócio.
+ * @brief Representa a entidade Pessoa no sistema Kanban.
+ * @details Valida e armazena os dados cadastrais e relacionamentos de uma pessoa.
  */
 class Pessoa {
 private:
@@ -31,69 +21,85 @@ private:
     Nome nome;
     Senha senha;
     Papel papel;
-
-    vector<CartaoAtividade*> cartoesDesenvolvidos;
-    vector<Projeto*> projetosGerenciados;
-
+    // Cartões desenvolvidos pela pessoa
+    std::vector<CartaoAtividade*> cartoesDesenvolvidos;
+    // Projetos gerenciados pela pessoa
+    std::vector<Projeto*> projetosGerenciados;
 
 public:
     Pessoa();
 
     /**
-     * @brief Define um novo valor após a validação.
-     * @param valor Dado de entrada a ser validado.
-     * @throw std::invalid_argument Se o valor for inválido.
+     * @brief Define o email da pessoa.
+     * @param email Objeto Email a ser definido.
      */
     void setEmail(Email email);
+    
     /**
-     * @brief Retorna o valor atualmente armazenado.
-     * @return String contendo o valor.
+     * @brief Retorna o email da pessoa.
+     * @return Objeto Email armazenado.
      */
     Email getEmail();
 
     /**
-     * @brief Define um novo valor após a validação.
-     * @param valor Dado de entrada a ser validado.
-     * @throw std::invalid_argument Se o valor for inválido.
+     * @brief Define o nome da pessoa.
+     * @param nome Objeto Nome a ser definido.
      */
     void setNome(Nome nome);
+    
     /**
-     * @brief Retorna o valor atualmente armazenado.
-     * @return String contendo o valor.
+     * @brief Retorna o nome da pessoa.
+     * @return Objeto Nome armazenado.
      */
     Nome getNome();
 
     /**
-     * @brief Define um novo valor após a validação.
-     * @param valor Dado de entrada a ser validado.
-     * @throw std::invalid_argument Se o valor for inválido.
+     * @brief Define a senha da pessoa.
+     * @param senha Objeto Senha a ser definido.
      */
     void setSenha(Senha senha);
+    
     /**
-     * @brief Retorna o valor atualmente armazenado.
-     * @return String contendo o valor.
+     * @brief Retorna a senha da pessoa.
+     * @return Objeto Senha armazenado.
      */
     Senha getSenha();
 
     /**
-     * @brief Define um novo valor após a validação.
-     * @param valor Dado de entrada a ser validado.
-     * @throw std::invalid_argument Se o valor for inválido.
+     * @brief Define o papel da pessoa.
+     * @param papel Objeto Papel a ser definido.
      */
     void setPapel(Papel papel);
+    
     /**
-     * @brief Retorna o valor atualmente armazenado.
-     * @return String contendo o valor.
+     * @brief Retorna o papel da pessoa.
+     * @return Objeto Papel armazenado.
      */
     Papel getPapel();
 
-
+    /**
+     * @brief Adiciona um cartão de atividade à lista de cartões desenvolvidos.
+     * @param cartao Ponteiro para o CartaoAtividade.
+     */
     void adicionarCartao(CartaoAtividade* cartao);
+
+    /**
+     * @brief Adiciona um projeto à lista de projetos gerenciados.
+     * @param projeto Ponteiro para o Projeto.
+     */
     void adicionarProjeto(Projeto* projeto);
 
-    const vector<CartaoAtividade*>& getCartoesDesenvolvidos() const;
-    const vector<Projeto*>& getProjetosGerenciados() const;
+    /**
+     * @brief Retorna os cartões desenvolvidos pela pessoa.
+     * @return Referência constante para o vetor de ponteiros de CartaoAtividade.
+     */
+    const std::vector<CartaoAtividade*>& getCartoesDesenvolvidos() const;
 
+    /**
+     * @brief Retorna os projetos gerenciados pela pessoa.
+     * @return Referência constante para o vetor de ponteiros de Projeto.
+     */
+    const std::vector<Projeto*>& getProjetosGerenciados() const;
 };
 
 #endif // PESSOA_H_INCLUDED

@@ -2,6 +2,7 @@
 #include "entities/headers/cartao_atividade.h"
 #include "entities/headers/pessoa.h"
 #include "entities/headers/quadro.h"
+#include <vector>
 
 CartaoAtividade::CartaoAtividade() {
 }

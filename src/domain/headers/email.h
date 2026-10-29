@@ -13,7 +13,6 @@ class Email {
 private:
     string email;
     void validarEmail(string valor);
-    void validarEmail(string valor);
 
 public:
     ///@brief Atribui um valor ao e-mail apos validação.

@@ -1,6 +1,7 @@
 #ifndef CARTAOATIVIDADE_H_INCLUDED
 #define CARTAOATIVIDADE_H_INCLUDED
 
+#include <vector>
 #include "domain/headers/identificador.h"
 #include "domain/headers/nome.h"
 #include "domain/headers/texto.h"
@@ -9,18 +10,15 @@
 #include "domain/headers/tamanho.h"
 #include "domain/headers/timestamp.h"
 
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
-=======
-
+// Declarações antecipadas
 class Pessoa;
 class Quadro;
 
-
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 /**
  * @brief Representa o domínio CartaoAtividade no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
  */
+
 class CartaoAtividade {
 private:
     Identificador identificador;
@@ -81,10 +79,6 @@ public:
      * @brief Define um novo valor após a validação.
      * @param valor Dado de entrada a ser validado.
      * @throw std::invalid_argument Se o valor for inválido.
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
-=======
-
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
      */
     void setPrioridade(Prioridade prioridade);
     /**

@@ -7,14 +7,11 @@ using namespace std;
 /**
  * @brief Representa o domínio Texto no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
  * Formato: Texto com até 30 caracteres.
  * Caractere pode ser letra (a-z ou A-Z), dígito (0-9), espaço em branco ou sinal de pontuação
  * (vírgula, ponto-e-vírgula, ponto, dois pontos, ponto de interrogação, ponto de exclamação); sinal de
  * pontuação não é seguido por sinal de pontuação; primeiro caractere é letra maiúscula; último
  * caractere é ponto.
-=======
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
  */
 class Texto {
 

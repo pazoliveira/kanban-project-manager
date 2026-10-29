@@ -5,6 +5,10 @@
 #include "entities/headers/projeto.h"
 #include <vector>
 
+class Projeto;
+class CartaoAtividade;
+class Quadro;
+
 Pessoa::Pessoa() {
 }
 
@@ -52,10 +56,10 @@ void Pessoa::adicionarProjeto(Projeto* projeto) {
     }
 }
 
-const vector<CartaoAtividade*>& Pessoa::getCartoesDesenvolvidos() const {
+const std::vector<CartaoAtividade*>& Pessoa::getCartoesDesenvolvidos() const {
     return cartoesDesenvolvidos;
 }
 
-const vector<Projeto*>& Pessoa::getProjetosGerenciados() const {
+const std::vector<Projeto*>& Pessoa::getProjetosGerenciados() const {
     return projetosGerenciados;
 }

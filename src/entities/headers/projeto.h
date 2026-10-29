@@ -1,29 +1,22 @@
 #ifndef PROJETO_H_INCLUDED
 #define PROJETO_H_INCLUDED
 
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
+#include <vector>
 #include "domain/headers/identificador.h"
 #include "domain/headers/nome.h"
 #include "domain/headers/texto.h"
 #include "domain/headers/timestamp.h"
 
-=======
-#include "identificador.h"
-#include "nome.h"
-#include "texto.h"
-#include "timestamp.h"
-#include <vector>
-
-using namespace std;
-
+// Declarações antecipadas
 class Pessoa;
 class Quadro;
 
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
 /**
  * @brief Representa o domínio Projeto no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
  */
+
+
 class Projeto {
 private:
     Identificador identificador;
@@ -87,10 +80,6 @@ public:
      */
     Timestamp getInicio();
 
-<<<<<<< C:/Users/Oliveira/AppData/Local/Temp/ours.tmp
-=======
-
->>>>>>> C:/Users/Oliveira/AppData/Local/Temp/theirs.tmp
     /**
      * @brief Define um novo valor após a validação.
      * @param valor Dado de entrada a ser validado.
