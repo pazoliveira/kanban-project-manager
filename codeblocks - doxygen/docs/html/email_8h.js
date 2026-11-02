@@ -1,4 +1,4 @@
 var email_8h =
 [
-    [ "Email", "class_email.html", "class_email" ]
+    [ "Email", "classEmail.html", "classEmail" ]
 ];

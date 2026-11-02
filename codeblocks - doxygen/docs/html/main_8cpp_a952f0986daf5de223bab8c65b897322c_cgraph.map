@@ -1,0 +1,7 @@
+<map id="testarEstado" name="testarEstado">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,109,56"/>
+<area shape="rect" id="Node000002" href="$classEstado.html#aedbb6c1d75f1dbe5d5869d147d14fc20" title="Retorna o valor atualmente armazenado." alt="" coords="157,5,296,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,33,143,28,144,33,110,38"/>
+<area shape="rect" id="Node000003" href="$classEstado.html#a1ab4d230f65b7b230082b3266e08f7fb" title="Define um novo valor após a validação." alt="" coords="157,55,296,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,48,144,53,143,58,109,53"/>
+</map>

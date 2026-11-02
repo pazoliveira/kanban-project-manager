@@ -1,4 +1,4 @@
 var papel_8h =
 [
-    [ "Papel", "class_papel.html", "class_papel" ]
+    [ "Papel", "classPapel.html", "classPapel" ]
 ];

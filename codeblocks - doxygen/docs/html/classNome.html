@@ -100,6 +100,11 @@ $(document).ready(function(){initNavTree('classNome.html',''); initResizable(); 
  <a href="classNome.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="nome_8h_source.html">nome.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Nome:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classNome__coll__graph.svg" width="110" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -112,7 +117,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representa o domínio <a class="el" href="classNome.html" title="Representa o domínio Nome no sistema Kanban.">Nome</a> no sistema Kanban. </p>
-<p>Valida e armazena o valor correspondente às regras de negócio. </p>
+<p>Valida e armazena o valor correspondente às regras de negócio. Formato: <a class="el" href="classTexto.html" title="Representa o domínio Texto no sistema Kanban.">Texto</a> com até 15 caracteres. Caractere pode ser letra maiúscula (A-Z), letra minúscula (a-z) ou espaço em branco; espaço em branco é seguido por letra; primeiro caractere não é espaço em branco; último caractere não é espaço em branco. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1c08f5b9827a1e97a2631196ff99fdef" name="a1c08f5b9827a1e97a2631196ff99fdef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c08f5b9827a1e97a2631196ff99fdef">&#9670;&#160;</a></span>getNome()</h2>
@@ -139,10 +144,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>                                  {</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">return</span> nome;</div>
-<div class="line"><span class="lineno">   33</span>};</div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                  {</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> nome;</div>
+<div class="line"><span class="lineno">   37</span>};</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classNome_a1c08f5b9827a1e97a2631196ff99fdef_icgraph.svg" width="390" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="a27f23d9a8481cf10fe24b1c639af7e14" name="a27f23d9a8481cf10fe24b1c639af7e14"></a>
@@ -178,13 +188,18 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   25</span>    validarNome(valor);</div>
 <div class="line"><span class="lineno">   26</span>    this-&gt;nome = valor;</div>
 <div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>};</div>
-</div><!-- fragment -->
+<div class="line"><span class="lineno">   28</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classNome_a27f23d9a8481cf10fe24b1c639af7e14_icgraph.svg" width="388" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="nome_8h_source.html">nome.h</a></li>
-<li><a class="el" href="nome_8cpp.html">nome.cpp</a></li>
+<li>src/domain/headers/<a class="el" href="nome_8h_source.html">nome.h</a></li>
+<li>src/domain/sources/<a class="el" href="nome_8cpp.html">nome.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

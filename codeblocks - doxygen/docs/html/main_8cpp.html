@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projeto Tecnicas Programação 1: main.cpp File Reference</title>
+<title>Projeto Tecnicas Programação 1: src/main.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,21 +95,40 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;<a class="el" href="senha_8h_source.html">senha.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="prioridade_8h_source.html">prioridade.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="estado_8h_source.html">estado.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="limite_8h_source.html">limite.h</a>&quot;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &quot;<a class="el" href="nome_8h_source.html">nome.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="timestamp_8h_source.html">timestamp.h</a>&quot;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="timestamp_8h_source.html">domain/headers/timestamp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="senha_8h_source.html">domain/headers/senha.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="email_8h_source.html">domain/headers/email.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nome_8h_source.html">domain/headers/nome.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="texto_8h_source.html">domain/headers/texto.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="prioridade_8h_source.html">domain/headers/prioridade.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="estado_8h_source.html">domain/headers/estado.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="limite_8h_source.html">domain/headers/limite.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp__incl.svg" width="1959" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae3f103e36ab52b13bb79af7ae8d66722" id="r_ae3f103e36ab52b13bb79af7ae8d66722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae3f103e36ab52b13bb79af7ae8d66722">testarTimestamp</a> ()</td></tr>
+<tr class="separator:ae3f103e36ab52b13bb79af7ae8d66722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230256766e78efa0ee2382f622aaa961" id="r_a230256766e78efa0ee2382f622aaa961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a230256766e78efa0ee2382f622aaa961">testarSenha</a> ()</td></tr>
+<tr class="separator:a230256766e78efa0ee2382f622aaa961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afff5fb383294b607e5614c9c69add4" id="r_a0afff5fb383294b607e5614c9c69add4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0afff5fb383294b607e5614c9c69add4">testarEmail</a> ()</td></tr>
+<tr class="separator:a0afff5fb383294b607e5614c9c69add4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d12b60ecbe4c3bbe295e2f684f28b7" id="r_a89d12b60ecbe4c3bbe295e2f684f28b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a89d12b60ecbe4c3bbe295e2f684f28b7">testarNome</a> ()</td></tr>
+<tr class="separator:a89d12b60ecbe4c3bbe295e2f684f28b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c0b6eda3bb021829e3b910267ef5b4" id="r_a46c0b6eda3bb021829e3b910267ef5b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a46c0b6eda3bb021829e3b910267ef5b4">testarTexto</a> ()</td></tr>
+<tr class="separator:a46c0b6eda3bb021829e3b910267ef5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add60783d9a79dc581632631a61fdd8b1" id="r_add60783d9a79dc581632631a61fdd8b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#add60783d9a79dc581632631a61fdd8b1">testarPrioridade</a> ()</td></tr>
+<tr class="separator:add60783d9a79dc581632631a61fdd8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952f0986daf5de223bab8c65b897322c" id="r_a952f0986daf5de223bab8c65b897322c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a952f0986daf5de223bab8c65b897322c">testarEstado</a> ()</td></tr>
+<tr class="separator:a952f0986daf5de223bab8c65b897322c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafab052593e32a5f545610fecc678b2" id="r_afafab052593e32a5f545610fecc678b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afafab052593e32a5f545610fecc678b2">testarLimite</a> ()</td></tr>
+<tr class="separator:afafab052593e32a5f545610fecc678b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -128,121 +147,426 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   13</span>{</div>
-<div class="line"><span class="lineno">   14</span> </div>
-<div class="line"><span class="lineno">   15</span><span class="keywordtype">string</span> valor;</div>
-<div class="line"><span class="lineno">   16</span><a class="code hl_class" href="classSenha.html">Senha</a> senha;</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>cout &lt;&lt; <span class="stringliteral">&quot;Cadastramento de Senha.&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   19</span>cout &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   20</span>cout &lt;&lt; <span class="stringliteral">&quot;Atenção!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   21</span>cout &lt;&lt; <span class="stringliteral">&quot;A senha deve ter tamanho igual a 5 caracteres.&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   22</span>cout &lt;&lt; <span class="stringliteral">&quot;A senha deve conter pelo menos uma letra e um número.&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>cout &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   25</span>cout &lt;&lt; <span class="stringliteral">&quot;Digite sua senha: &quot;</span>;</div>
-<div class="line"><span class="lineno">   26</span>cin &gt;&gt; valor;</div>
-<div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span><span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>senha.<a class="code hl_function" href="classSenha.html#a51c12016de21760031b9d5f8c93dd0b8">setSenha</a>(valor);</div>
-<div class="line"><span class="lineno">   31</span>cout &lt;&lt; <span class="stringliteral">&quot;Senha cadastrada com sucesso.&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>}</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span><span class="keywordflow">catch</span> (invalid_argument &amp;e) {</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>cout &lt;&lt; <span class="stringliteral">&quot;Exceção: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>};</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span><a class="code hl_class" href="classPrioridade.html">Prioridade</a> prioridade;</div>
-<div class="line"><span class="lineno">   42</span><span class="keywordtype">string</span> s;</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>cout &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   46</span>cout &lt;&lt; <span class="stringliteral">&quot;Prioridade [ALTA, MEDIA ou BAIXA]: &quot;</span>;</div>
-<div class="line"><span class="lineno">   47</span>cin &gt;&gt; s;</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>prioridade.<a class="code hl_function" href="classPrioridade.html#a366a5607efc3009eb0d8a16036241659">setPrioridade</a>(s);</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>cout &lt;&lt; prioridade.<a class="code hl_function" href="classPrioridade.html#ade0ac92c3d4cbda5906602546f6c3500">getPrioridade</a>() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span><a class="code hl_class" href="classEstado.html">Estado</a> estado;</div>
-<div class="line"><span class="lineno">   56</span><span class="keywordtype">string</span> s2;</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>cout &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   60</span>cout &lt;&lt; <span class="stringliteral">&quot;Estado [A FAZER, FAZENDO ou FEITO]: &quot;</span>;</div>
-<div class="line"><span class="lineno">   61</span>std::cin.ignore(std::numeric_limits&lt;std::streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>); <span class="comment">// limpa o buffer removendo o \n que fica no final</span></div>
-<div class="line"><span class="lineno">   62</span>getline(cin, s2);</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>estado.<a class="code hl_function" href="classEstado.html#a1ab4d230f65b7b230082b3266e08f7fb">setEstado</a>(s2);</div>
+<div class="fragment"><div class="line"><span class="lineno">  170</span>           {</div>
+<div class="line"><span class="lineno">  171</span>    cout &lt;&lt; <span class="stringliteral">&quot;========================================&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  172</span>    cout &lt;&lt; <span class="stringliteral">&quot; INICIANDO BATERIA DE TESTES DE DOMINIO &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  173</span>    cout &lt;&lt; <span class="stringliteral">&quot;========================================&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    <a class="code hl_function" href="main_8cpp.html#ae3f103e36ab52b13bb79af7ae8d66722">testarTimestamp</a>();</div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_function" href="main_8cpp.html#a230256766e78efa0ee2382f622aaa961">testarSenha</a>();</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_function" href="main_8cpp.html#a0afff5fb383294b607e5614c9c69add4">testarEmail</a>();</div>
+<div class="line"><span class="lineno">  178</span>    <a class="code hl_function" href="main_8cpp.html#a89d12b60ecbe4c3bbe295e2f684f28b7">testarNome</a>();</div>
+<div class="line"><span class="lineno">  179</span>    <a class="code hl_function" href="main_8cpp.html#a46c0b6eda3bb021829e3b910267ef5b4">testarTexto</a>();</div>
+<div class="line"><span class="lineno">  180</span>    <a class="code hl_function" href="main_8cpp.html#add60783d9a79dc581632631a61fdd8b1">testarPrioridade</a>();</div>
+<div class="line"><span class="lineno">  181</span>    <a class="code hl_function" href="main_8cpp.html#a952f0986daf5de223bab8c65b897322c">testarEstado</a>();</div>
+<div class="line"><span class="lineno">  182</span>    <a class="code hl_function" href="main_8cpp.html#afafab052593e32a5f545610fecc678b2">testarLimite</a>();</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n========================================&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  185</span>    cout &lt;&lt; <span class="stringliteral">&quot;          FIM DOS TESTES                &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  186</span>    cout &lt;&lt; <span class="stringliteral">&quot;========================================&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  189</span>}</div>
+<div class="ttc" id="amain_8cpp_html_a0afff5fb383294b607e5614c9c69add4"><div class="ttname"><a href="main_8cpp.html#a0afff5fb383294b607e5614c9c69add4">testarEmail</a></div><div class="ttdeci">void testarEmail()</div><div class="ttdef"><b>Definition</b> main.cpp:56</div></div>
+<div class="ttc" id="amain_8cpp_html_a230256766e78efa0ee2382f622aaa961"><div class="ttname"><a href="main_8cpp.html#a230256766e78efa0ee2382f622aaa961">testarSenha</a></div><div class="ttdeci">void testarSenha()</div><div class="ttdef"><b>Definition</b> main.cpp:37</div></div>
+<div class="ttc" id="amain_8cpp_html_a46c0b6eda3bb021829e3b910267ef5b4"><div class="ttname"><a href="main_8cpp.html#a46c0b6eda3bb021829e3b910267ef5b4">testarTexto</a></div><div class="ttdeci">void testarTexto()</div><div class="ttdef"><b>Definition</b> main.cpp:94</div></div>
+<div class="ttc" id="amain_8cpp_html_a89d12b60ecbe4c3bbe295e2f684f28b7"><div class="ttname"><a href="main_8cpp.html#a89d12b60ecbe4c3bbe295e2f684f28b7">testarNome</a></div><div class="ttdeci">void testarNome()</div><div class="ttdef"><b>Definition</b> main.cpp:75</div></div>
+<div class="ttc" id="amain_8cpp_html_a952f0986daf5de223bab8c65b897322c"><div class="ttname"><a href="main_8cpp.html#a952f0986daf5de223bab8c65b897322c">testarEstado</a></div><div class="ttdeci">void testarEstado()</div><div class="ttdef"><b>Definition</b> main.cpp:132</div></div>
+<div class="ttc" id="amain_8cpp_html_add60783d9a79dc581632631a61fdd8b1"><div class="ttname"><a href="main_8cpp.html#add60783d9a79dc581632631a61fdd8b1">testarPrioridade</a></div><div class="ttdeci">void testarPrioridade()</div><div class="ttdef"><b>Definition</b> main.cpp:113</div></div>
+<div class="ttc" id="amain_8cpp_html_ae3f103e36ab52b13bb79af7ae8d66722"><div class="ttname"><a href="main_8cpp.html#ae3f103e36ab52b13bb79af7ae8d66722">testarTimestamp</a></div><div class="ttdeci">void testarTimestamp()</div><div class="ttdef"><b>Definition</b> main.cpp:16</div></div>
+<div class="ttc" id="amain_8cpp_html_afafab052593e32a5f545610fecc678b2"><div class="ttname"><a href="main_8cpp.html#afafab052593e32a5f545610fecc678b2">testarLimite</a></div><div class="ttdeci">void testarLimite()</div><div class="ttdef"><b>Definition</b> main.cpp:151</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="483" height="776"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0afff5fb383294b607e5614c9c69add4" name="a0afff5fb383294b607e5614c9c69add4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afff5fb383294b607e5614c9c69add4">&#9670;&#160;</a></span>testarEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarEmail </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                   {</div>
+<div class="line"><span class="lineno">   57</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Email ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_class" href="classEmail.html">Email</a> e;</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   61</span>        e.<a class="code hl_function" href="classEmail.html#a98c0cf2c717e5be1fdd20e4814072562">setEmail</a>(<span class="stringliteral">&quot;usuario@dominio.com&quot;</span>);</div>
+<div class="line"><span class="lineno">   62</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Email valido: &quot;</span> &lt;&lt; e.<a class="code hl_function" href="classEmail.html#aa9a0e1a66b4efde65cf017bdd1c6c625">getEmail</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   63</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;ex) {</div>
+<div class="line"><span class="lineno">   64</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; ex.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
 <div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>cout &lt;&lt; estado.<a class="code hl_function" href="classEstado.html#aedbb6c1d75f1dbe5d5869d147d14fc20">getEstado</a>() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span><a class="code hl_class" href="classLimite.html">Limite</a> limite;</div>
-<div class="line"><span class="lineno">   72</span><span class="keywordtype">int</span> s3;</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>cout &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   76</span>cout &lt;&lt; <span class="stringliteral">&quot;Limite [digite um valor entre 1 e 25]: &quot;</span>;</div>
-<div class="line"><span class="lineno">   77</span>cin &gt;&gt; s3;</div>
-<div class="line"><span class="lineno">   78</span> </div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>limite.<a class="code hl_function" href="classLimite.html#a3e6880dfddcb4b70462da70635b74694">setLimite</a>(s3);</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>cout &lt;&lt; limite.<a class="code hl_function" href="classLimite.html#ac7bea5b158cd6cede3bb164b81b764b5">getLimite</a>() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span><a class="code hl_class" href="classNome.html">Nome</a> nome;</div>
-<div class="line"><span class="lineno">   86</span><span class="keywordtype">string</span> s4;</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>cout &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   89</span>cout &lt;&lt; <span class="stringliteral">&quot;Digite nome: &quot;</span>;</div>
-<div class="line"><span class="lineno">   90</span>cin.ignore(numeric_limits&lt;streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
-<div class="line"><span class="lineno">   91</span>getline(cin, s4);</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span><span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   94</span>    nome.<a class="code hl_function" href="classNome.html#a27f23d9a8481cf10fe24b1c639af7e14">setNome</a>(s4);</div>
-<div class="line"><span class="lineno">   95</span>    cout &lt;&lt; nome.<a class="code hl_function" href="classNome.html#a1c08f5b9827a1e97a2631196ff99fdef">getNome</a>() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   96</span>}</div>
-<div class="line"><span class="lineno">   97</span><span class="keywordflow">catch</span> (invalid_argument &amp;e) {</div>
-<div class="line"><span class="lineno">   98</span>    cout &lt;&lt; <span class="stringliteral">&quot;Exceção: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">   99</span>}</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a> t;</div>
-<div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>    t.<a class="code hl_function" href="classTimestamp.html#a2514d14d5d3e9274dab397ce6e4070a3">setDataHora</a>(<span class="stringliteral">&quot;30-02-2026-16:35&quot;</span>);</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    cout &lt;&lt; <span class="stringliteral">&quot;Timestamp: &quot;</span> &lt;&lt; t.<a class="code hl_function" href="classTimestamp.html#a71fe1848f4e96fdfe0914d32b1cb5fea">getDataHora</a>() &lt;&lt; endl;</div>
-<div class="line"><span class="lineno">  107</span> </div>
-<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  109</span>}</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   68</span>        e.<a class="code hl_function" href="classEmail.html#a98c0cf2c717e5be1fdd20e4814072562">setEmail</a>(<span class="stringliteral">&quot;usuario@@dominio.com&quot;</span>); <span class="comment">// Duplo arroba</span></div>
+<div class="line"><span class="lineno">   69</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado o email com duplo arroba.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   70</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;ex) {</div>
+<div class="line"><span class="lineno">   71</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; ex.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+<div class="ttc" id="aclassEmail_html"><div class="ttname"><a href="classEmail.html">Email</a></div><div class="ttdoc">Classe de domínio que representa um e-mail Formato: parte-local@domínio Parte local pode conter letra...</div><div class="ttdef"><b>Definition</b> email.h:11</div></div>
+<div class="ttc" id="aclassEmail_html_a98c0cf2c717e5be1fdd20e4814072562"><div class="ttname"><a href="classEmail.html#a98c0cf2c717e5be1fdd20e4814072562">Email::setEmail</a></div><div class="ttdeci">void setEmail(string valor)</div><div class="ttdoc">Atribui um valor ao e-mail apos validação.</div><div class="ttdef"><b>Definition</b> email.cpp:69</div></div>
+<div class="ttc" id="aclassEmail_html_aa9a0e1a66b4efde65cf017bdd1c6c625"><div class="ttname"><a href="classEmail.html#aa9a0e1a66b4efde65cf017bdd1c6c625">Email::getEmail</a></div><div class="ttdeci">string getEmail()</div><div class="ttdoc">Retorna o valor do e-mail.</div><div class="ttdef"><b>Definition</b> email.h:28</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a0afff5fb383294b607e5614c9c69add4_cgraph.svg" width="282" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a0afff5fb383294b607e5614c9c69add4_icgraph.svg" width="211" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a952f0986daf5de223bab8c65b897322c" name="a952f0986daf5de223bab8c65b897322c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952f0986daf5de223bab8c65b897322c">&#9670;&#160;</a></span>testarEstado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarEstado </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  132</span>                    {</div>
+<div class="line"><span class="lineno">  133</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Estado ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  134</span>    <a class="code hl_class" href="classEstado.html">Estado</a> est;</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  137</span>        est.<a class="code hl_function" href="classEstado.html#a1ab4d230f65b7b230082b3266e08f7fb">setEstado</a>(<span class="stringliteral">&quot;FAZENDO&quot;</span>);</div>
+<div class="line"><span class="lineno">  138</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Estado valido: &quot;</span> &lt;&lt; est.<a class="code hl_function" href="classEstado.html#aedbb6c1d75f1dbe5d5869d147d14fc20">getEstado</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  139</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><span class="lineno">  140</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  141</span>    }</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  144</span>        est.<a class="code hl_function" href="classEstado.html#a1ab4d230f65b7b230082b3266e08f7fb">setEstado</a>(<span class="stringliteral">&quot;PENDENTE&quot;</span>); <span class="comment">// Valor não permitido</span></div>
+<div class="line"><span class="lineno">  145</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado estado invalido.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  146</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
+<div class="line"><span class="lineno">  147</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+<div class="line"><span class="lineno">  149</span>}</div>
 <div class="ttc" id="aclassEstado_html"><div class="ttname"><a href="classEstado.html">Estado</a></div><div class="ttdoc">Representa o domínio Estado no sistema Kanban.</div><div class="ttdef"><b>Definition</b> estado.h:12</div></div>
-<div class="ttc" id="aclassEstado_html_a1ab4d230f65b7b230082b3266e08f7fb"><div class="ttname"><a href="classEstado.html#a1ab4d230f65b7b230082b3266e08f7fb">Estado::setEstado</a></div><div class="ttdeci">void setEstado(string valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> estado.cpp:15</div></div>
-<div class="ttc" id="aclassEstado_html_aedbb6c1d75f1dbe5d5869d147d14fc20"><div class="ttname"><a href="classEstado.html#aedbb6c1d75f1dbe5d5869d147d14fc20">Estado::getEstado</a></div><div class="ttdeci">string getEstado() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> estado.h:36</div></div>
-<div class="ttc" id="aclassLimite_html"><div class="ttname"><a href="classLimite.html">Limite</a></div><div class="ttdoc">Representa o domínio Limite no sistema Kanban.</div><div class="ttdef"><b>Definition</b> limite.h:10</div></div>
+<div class="ttc" id="aclassEstado_html_a1ab4d230f65b7b230082b3266e08f7fb"><div class="ttname"><a href="classEstado.html#a1ab4d230f65b7b230082b3266e08f7fb">Estado::setEstado</a></div><div class="ttdeci">void setEstado(string valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> estado.cpp:20</div></div>
+<div class="ttc" id="aclassEstado_html_aedbb6c1d75f1dbe5d5869d147d14fc20"><div class="ttname"><a href="classEstado.html#aedbb6c1d75f1dbe5d5869d147d14fc20">Estado::getEstado</a></div><div class="ttdeci">string getEstado() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> estado.h:33</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a952f0986daf5de223bab8c65b897322c_cgraph.svg" width="302" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a952f0986daf5de223bab8c65b897322c_icgraph.svg" width="218" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="afafab052593e32a5f545610fecc678b2" name="afafab052593e32a5f545610fecc678b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafab052593e32a5f545610fecc678b2">&#9670;&#160;</a></span>testarLimite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarLimite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  151</span>                    {</div>
+<div class="line"><span class="lineno">  152</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Limite ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  153</span>    <a class="code hl_class" href="classLimite.html">Limite</a> lim;</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  156</span>        lim.<a class="code hl_function" href="classLimite.html#a3e6880dfddcb4b70462da70635b74694">setLimite</a>(15);</div>
+<div class="line"><span class="lineno">  157</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Limite valido: &quot;</span> &lt;&lt; lim.<a class="code hl_function" href="classLimite.html#ac7bea5b158cd6cede3bb164b81b764b5">getLimite</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  158</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><span class="lineno">  159</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  163</span>        lim.<a class="code hl_function" href="classLimite.html#a3e6880dfddcb4b70462da70635b74694">setLimite</a>(50); <span class="comment">// Fora do intervalo (1 a 25)</span></div>
+<div class="line"><span class="lineno">  164</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado limite fora do intervalo.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  165</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
+<div class="line"><span class="lineno">  166</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+<div class="line"><span class="lineno">  168</span>}</div>
+<div class="ttc" id="aclassLimite_html"><div class="ttname"><a href="classLimite.html">Limite</a></div><div class="ttdoc">Representa o domínio Limite no sistema Kanban.</div><div class="ttdef"><b>Definition</b> limite.h:12</div></div>
 <div class="ttc" id="aclassLimite_html_a3e6880dfddcb4b70462da70635b74694"><div class="ttname"><a href="classLimite.html#a3e6880dfddcb4b70462da70635b74694">Limite::setLimite</a></div><div class="ttdeci">void setLimite(int valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> limite.cpp:4</div></div>
-<div class="ttc" id="aclassLimite_html_ac7bea5b158cd6cede3bb164b81b764b5"><div class="ttname"><a href="classLimite.html#ac7bea5b158cd6cede3bb164b81b764b5">Limite::getLimite</a></div><div class="ttdeci">int getLimite() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> limite.h:34</div></div>
-<div class="ttc" id="aclassNome_html"><div class="ttname"><a href="classNome.html">Nome</a></div><div class="ttdoc">Representa o domínio Nome no sistema Kanban.</div><div class="ttdef"><b>Definition</b> nome.h:11</div></div>
-<div class="ttc" id="aclassNome_html_a1c08f5b9827a1e97a2631196ff99fdef"><div class="ttname"><a href="classNome.html#a1c08f5b9827a1e97a2631196ff99fdef">Nome::getNome</a></div><div class="ttdeci">string getNome() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> nome.h:31</div></div>
+<div class="ttc" id="aclassLimite_html_ac7bea5b158cd6cede3bb164b81b764b5"><div class="ttname"><a href="classLimite.html#ac7bea5b158cd6cede3bb164b81b764b5">Limite::getLimite</a></div><div class="ttdeci">int getLimite() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> limite.h:33</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_afafab052593e32a5f545610fecc678b2_cgraph.svg" width="294" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_afafab052593e32a5f545610fecc678b2_icgraph.svg" width="215" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a89d12b60ecbe4c3bbe295e2f684f28b7" name="a89d12b60ecbe4c3bbe295e2f684f28b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d12b60ecbe4c3bbe295e2f684f28b7">&#9670;&#160;</a></span>testarNome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarNome </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                  {</div>
+<div class="line"><span class="lineno">   76</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Nome ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_class" href="classNome.html">Nome</a> n;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   80</span>        n.<a class="code hl_function" href="classNome.html#a27f23d9a8481cf10fe24b1c639af7e14">setNome</a>(<span class="stringliteral">&quot;Maria Silva&quot;</span>);</div>
+<div class="line"><span class="lineno">   81</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Nome valido: &quot;</span> &lt;&lt; n.<a class="code hl_function" href="classNome.html#a1c08f5b9827a1e97a2631196ff99fdef">getNome</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   82</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><span class="lineno">   83</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   87</span>        n.<a class="code hl_function" href="classNome.html#a27f23d9a8481cf10fe24b1c639af7e14">setNome</a>(<span class="stringliteral">&quot; Maria &quot;</span>); <span class="comment">// Espaços nas pontas</span></div>
+<div class="line"><span class="lineno">   88</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado espacos nas pontas.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   89</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
+<div class="line"><span class="lineno">   90</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="line"><span class="lineno">   92</span>}</div>
+<div class="ttc" id="aclassNome_html"><div class="ttname"><a href="classNome.html">Nome</a></div><div class="ttdoc">Representa o domínio Nome no sistema Kanban.</div><div class="ttdef"><b>Definition</b> nome.h:15</div></div>
+<div class="ttc" id="aclassNome_html_a1c08f5b9827a1e97a2631196ff99fdef"><div class="ttname"><a href="classNome.html#a1c08f5b9827a1e97a2631196ff99fdef">Nome::getNome</a></div><div class="ttdeci">string getNome() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> nome.h:35</div></div>
 <div class="ttc" id="aclassNome_html_a27f23d9a8481cf10fe24b1c639af7e14"><div class="ttname"><a href="classNome.html#a27f23d9a8481cf10fe24b1c639af7e14">Nome::setNome</a></div><div class="ttdeci">void setNome(string valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> nome.cpp:24</div></div>
-<div class="ttc" id="aclassPrioridade_html"><div class="ttname"><a href="classPrioridade.html">Prioridade</a></div><div class="ttdoc">Representa o domínio Prioridade no sistema Kanban.</div><div class="ttdef"><b>Definition</b> prioridade.h:11</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a89d12b60ecbe4c3bbe295e2f684f28b7_cgraph.svg" width="287" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a89d12b60ecbe4c3bbe295e2f684f28b7_icgraph.svg" width="212" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="add60783d9a79dc581632631a61fdd8b1" name="add60783d9a79dc581632631a61fdd8b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add60783d9a79dc581632631a61fdd8b1">&#9670;&#160;</a></span>testarPrioridade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarPrioridade </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  113</span>                        {</div>
+<div class="line"><span class="lineno">  114</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Prioridade ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_class" href="classPrioridade.html">Prioridade</a> p;</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  118</span>        p.<a class="code hl_function" href="classPrioridade.html#a366a5607efc3009eb0d8a16036241659">setPrioridade</a>(<span class="stringliteral">&quot;ALTA&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Prioridade valida: &quot;</span> &lt;&lt; p.<a class="code hl_function" href="classPrioridade.html#ade0ac92c3d4cbda5906602546f6c3500">getPrioridade</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  120</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><span class="lineno">  121</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  125</span>        p.<a class="code hl_function" href="classPrioridade.html#a366a5607efc3009eb0d8a16036241659">setPrioridade</a>(<span class="stringliteral">&quot;URGENTE&quot;</span>); <span class="comment">// Valor não permitido</span></div>
+<div class="line"><span class="lineno">  126</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado prioridade invalida.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  127</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
+<div class="line"><span class="lineno">  128</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="line"><span class="lineno">  130</span>}</div>
+<div class="ttc" id="aclassPrioridade_html"><div class="ttname"><a href="classPrioridade.html">Prioridade</a></div><div class="ttdoc">Representa o domínio Prioridade no sistema Kanban.</div><div class="ttdef"><b>Definition</b> prioridade.h:12</div></div>
 <div class="ttc" id="aclassPrioridade_html_a366a5607efc3009eb0d8a16036241659"><div class="ttname"><a href="classPrioridade.html#a366a5607efc3009eb0d8a16036241659">Prioridade::setPrioridade</a></div><div class="ttdeci">void setPrioridade(string valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> prioridade.cpp:12</div></div>
-<div class="ttc" id="aclassPrioridade_html_ade0ac92c3d4cbda5906602546f6c3500"><div class="ttname"><a href="classPrioridade.html#ade0ac92c3d4cbda5906602546f6c3500">Prioridade::getPrioridade</a></div><div class="ttdeci">string getPrioridade() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> prioridade.h:32</div></div>
-<div class="ttc" id="aclassSenha_html"><div class="ttname"><a href="classSenha.html">Senha</a></div><div class="ttdoc">Representa o domínio Senha no sistema Kanban.</div><div class="ttdef"><b>Definition</b> senha.h:11</div></div>
-<div class="ttc" id="aclassSenha_html_a51c12016de21760031b9d5f8c93dd0b8"><div class="ttname"><a href="classSenha.html#a51c12016de21760031b9d5f8c93dd0b8">Senha::setSenha</a></div><div class="ttdeci">void setSenha(string valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> senha.cpp:34</div></div>
-<div class="ttc" id="aclassTimestamp_html"><div class="ttname"><a href="classTimestamp.html">Timestamp</a></div><div class="ttdoc">Classe de dominio para representacao de Data e Horario.</div><div class="ttdef"><b>Definition</b> timestamp.h:17</div></div>
+<div class="ttc" id="aclassPrioridade_html_ade0ac92c3d4cbda5906602546f6c3500"><div class="ttname"><a href="classPrioridade.html#ade0ac92c3d4cbda5906602546f6c3500">Prioridade::getPrioridade</a></div><div class="ttdeci">string getPrioridade() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> prioridade.h:33</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_add60783d9a79dc581632631a61fdd8b1_cgraph.svg" width="368" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_add60783d9a79dc581632631a61fdd8b1_icgraph.svg" width="240" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a230256766e78efa0ee2382f622aaa961" name="a230256766e78efa0ee2382f622aaa961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230256766e78efa0ee2382f622aaa961">&#9670;&#160;</a></span>testarSenha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarSenha </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                   {</div>
+<div class="line"><span class="lineno">   38</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Senha ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_class" href="classSenha.html">Senha</a> s;</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   42</span>        s.<a class="code hl_function" href="classSenha.html#a51c12016de21760031b9d5f8c93dd0b8">setSenha</a>(<span class="stringliteral">&quot;Ab123&quot;</span>);</div>
+<div class="line"><span class="lineno">   43</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Senha valida: &quot;</span> &lt;&lt; s.<a class="code hl_function" href="classSenha.html#a1cc904431d0a8287d0b22dee3e9d34ae">getSenha</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   44</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><span class="lineno">   45</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   49</span>        s.<a class="code hl_function" href="classSenha.html#a51c12016de21760031b9d5f8c93dd0b8">setSenha</a>(<span class="stringliteral">&quot;12345&quot;</span>); <span class="comment">// Sem letras</span></div>
+<div class="line"><span class="lineno">   50</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado a senha sem letras.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   51</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
+<div class="line"><span class="lineno">   52</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+<div class="ttc" id="aclassSenha_html"><div class="ttname"><a href="classSenha.html">Senha</a></div><div class="ttdoc">Representa o domínio Senha no sistema Kanban.</div><div class="ttdef"><b>Definition</b> senha.h:15</div></div>
+<div class="ttc" id="aclassSenha_html_a1cc904431d0a8287d0b22dee3e9d34ae"><div class="ttname"><a href="classSenha.html#a1cc904431d0a8287d0b22dee3e9d34ae">Senha::getSenha</a></div><div class="ttdeci">string getSenha() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> senha.h:34</div></div>
+<div class="ttc" id="aclassSenha_html_a51c12016de21760031b9d5f8c93dd0b8"><div class="ttname"><a href="classSenha.html#a51c12016de21760031b9d5f8c93dd0b8">Senha::setSenha</a></div><div class="ttdeci">void setSenha(string valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> senha.cpp:33</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a230256766e78efa0ee2382f622aaa961_cgraph.svg" width="290" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a230256766e78efa0ee2382f622aaa961_icgraph.svg" width="214" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a46c0b6eda3bb021829e3b910267ef5b4" name="a46c0b6eda3bb021829e3b910267ef5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c0b6eda3bb021829e3b910267ef5b4">&#9670;&#160;</a></span>testarTexto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarTexto </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                   {</div>
+<div class="line"><span class="lineno">   95</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Texto ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_class" href="classTexto.html">Texto</a> txt;</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   99</span>        txt.<a class="code hl_function" href="classTexto.html#a3da83dd5c633ed876d6bb4409aafb1dc">setTexto</a>(<span class="stringliteral">&quot;Este e um texto valido.&quot;</span>);</div>
+<div class="line"><span class="lineno">  100</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Texto valido: &quot;</span> &lt;&lt; txt.<a class="code hl_function" href="classTexto.html#a69463b543f36eaf86076ef48c896987f">getTexto</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  101</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><span class="lineno">  102</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  106</span>        txt.<a class="code hl_function" href="classTexto.html#a3da83dd5c633ed876d6bb4409aafb1dc">setTexto</a>(<span class="stringliteral">&quot;texto sem maiuscula ou ponto&quot;</span>); </div>
+<div class="line"><span class="lineno">  107</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado texto sem maiuscula/ponto.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  108</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
+<div class="line"><span class="lineno">  109</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
+<div class="line"><span class="lineno">  111</span>}</div>
+<div class="ttc" id="aclassTexto_html"><div class="ttname"><a href="classTexto.html">Texto</a></div><div class="ttdoc">Representa o domínio Texto no sistema Kanban.</div><div class="ttdef"><b>Definition</b> texto.h:16</div></div>
+<div class="ttc" id="aclassTexto_html_a3da83dd5c633ed876d6bb4409aafb1dc"><div class="ttname"><a href="classTexto.html#a3da83dd5c633ed876d6bb4409aafb1dc">Texto::setTexto</a></div><div class="ttdeci">void setTexto(string valor)</div><div class="ttdoc">Define um novo valor após a validação.</div><div class="ttdef"><b>Definition</b> texto.cpp:31</div></div>
+<div class="ttc" id="aclassTexto_html_a69463b543f36eaf86076ef48c896987f"><div class="ttname"><a href="classTexto.html#a69463b543f36eaf86076ef48c896987f">Texto::getTexto</a></div><div class="ttdeci">string getTexto() const</div><div class="ttdoc">Retorna o valor atualmente armazenado.</div><div class="ttdef"><b>Definition</b> texto.h:37</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a46c0b6eda3bb021829e3b910267ef5b4_cgraph.svg" width="275" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a46c0b6eda3bb021829e3b910267ef5b4_icgraph.svg" width="208" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae3f103e36ab52b13bb79af7ae8d66722" name="ae3f103e36ab52b13bb79af7ae8d66722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f103e36ab52b13bb79af7ae8d66722">&#9670;&#160;</a></span>testarTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testarTimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   16</span>                       {</div>
+<div class="line"><span class="lineno">   17</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Timestamp ---&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_class" href="classTimestamp.html">Timestamp</a> t;</div>
+<div class="line"><span class="lineno">   19</span>    </div>
+<div class="line"><span class="lineno">   20</span>    <span class="comment">// Teste válido</span></div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   22</span>        t.<a class="code hl_function" href="classTimestamp.html#a2514d14d5d3e9274dab397ce6e4070a3">setDataHora</a>(<span class="stringliteral">&quot;29-FEV-2024-14:30&quot;</span>);</div>
+<div class="line"><span class="lineno">   23</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO] Timestamp valido: &quot;</span> &lt;&lt; t.<a class="code hl_function" href="classTimestamp.html#a71fe1848f4e96fdfe0914d32b1cb5fea">getDataHora</a>() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   24</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><span class="lineno">   25</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA INESPERADA] &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    <span class="comment">// Teste inválido (data inexistente)</span></div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   30</span>        t.<a class="code hl_function" href="classTimestamp.html#a2514d14d5d3e9274dab397ce6e4070a3">setDataHora</a>(<span class="stringliteral">&quot;30-02-2026-16:35&quot;</span>);</div>
+<div class="line"><span class="lineno">   31</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado o timestamp invalido.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   32</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
+<div class="line"><span class="lineno">   33</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   34</span>    }</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclassTimestamp_html"><div class="ttname"><a href="classTimestamp.html">Timestamp</a></div><div class="ttdoc">Classe de domínio para representação de Data e Horário.</div><div class="ttdef"><b>Definition</b> timestamp.h:17</div></div>
 <div class="ttc" id="aclassTimestamp_html_a2514d14d5d3e9274dab397ce6e4070a3"><div class="ttname"><a href="classTimestamp.html#a2514d14d5d3e9274dab397ce6e4070a3">Timestamp::setDataHora</a></div><div class="ttdeci">void setDataHora(string valor)</div><div class="ttdoc">Define um novo valor para a data/horario apos validar.</div><div class="ttdef"><b>Definition</b> timestamp.cpp:107</div></div>
-<div class="ttc" id="aclassTimestamp_html_a71fe1848f4e96fdfe0914d32b1cb5fea"><div class="ttname"><a href="classTimestamp.html#a71fe1848f4e96fdfe0914d32b1cb5fea">Timestamp::getDataHora</a></div><div class="ttdeci">string getDataHora() const</div><div class="ttdoc">Retorna a data/horario armazenada.</div><div class="ttdef"><b>Definition</b> timestamp.cpp:112</div></div>
-</div><!-- fragment -->
+<div class="ttc" id="aclassTimestamp_html_a71fe1848f4e96fdfe0914d32b1cb5fea"><div class="ttname"><a href="classTimestamp.html#a71fe1848f4e96fdfe0914d32b1cb5fea">Timestamp::getDataHora</a></div><div class="ttdeci">string getDataHora() const</div><div class="ttdoc">Retorna a data/horário armazenada.</div><div class="ttdef"><b>Definition</b> timestamp.cpp:112</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_ae3f103e36ab52b13bb79af7ae8d66722_cgraph.svg" width="380" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_ae3f103e36ab52b13bb79af7ae8d66722_icgraph.svg" width="248" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -250,7 +574,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

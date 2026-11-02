@@ -1,0 +1,7 @@
+<map id="testarPrioridade" name="testarPrioridade">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,132,56"/>
+<area shape="rect" id="Node000002" href="$classPrioridade.html#ade0ac92c3d4cbda5906602546f6c3500" title="Retorna o valor atualmente armazenado." alt="" coords="180,5,363,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,33,166,28,167,34,133,38"/>
+<area shape="rect" id="Node000003" href="$classPrioridade.html#a366a5607efc3009eb0d8a16036241659" title="Define um novo valor após a validação." alt="" coords="180,55,363,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,48,167,52,166,58,132,53"/>
+</map>

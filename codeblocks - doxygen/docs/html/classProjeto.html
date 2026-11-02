@@ -100,6 +100,11 @@ $(document).ready(function(){initNavTree('classProjeto.html',''); initResizable(
  <a href="classProjeto.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="projeto_8h_source.html">projeto.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Projeto:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classProjeto__coll__graph.svg" width="156" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -135,6 +140,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adfd8068837093c2602364f431fe454ef" id="r_adfd8068837093c2602364f431fe454ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTimestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProjeto.html#adfd8068837093c2602364f431fe454ef">getTermino</a> ()</td></tr>
 <tr class="memdesc:adfd8068837093c2602364f431fe454ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor atualmente armazenado.  <br /></td></tr>
 <tr class="separator:adfd8068837093c2602364f431fe454ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565a7209aa60654140e50fd33bbe8c09" id="r_a565a7209aa60654140e50fd33bbe8c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProjeto.html#a565a7209aa60654140e50fd33bbe8c09">setGestor</a> (<a class="el" href="classPessoa.html">Pessoa</a> *pessoa)</td></tr>
+<tr class="separator:a565a7209aa60654140e50fd33bbe8c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d9ed253da4dd20be10288193a4dc3d" id="r_ab5d9ed253da4dd20be10288193a4dc3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPessoa.html">Pessoa</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProjeto.html#ab5d9ed253da4dd20be10288193a4dc3d">getGestor</a> ()</td></tr>
+<tr class="separator:ab5d9ed253da4dd20be10288193a4dc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a542f92bde4a87c0b86cb89a0ff8acd" id="r_a9a542f92bde4a87c0b86cb89a0ff8acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProjeto.html#a9a542f92bde4a87c0b86cb89a0ff8acd">adicionarQuadro</a> (<a class="el" href="classQuadro.html">Quadro</a> *quadro)</td></tr>
+<tr class="separator:a9a542f92bde4a87c0b86cb89a0ff8acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representa o domínio <a class="el" href="classProjeto.html" title="Representa o domínio Projeto no sistema Kanban.">Projeto</a> no sistema Kanban. </p>
@@ -154,12 +165,35 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">    3</span>                 {</div>
-<div class="line"><span class="lineno">    4</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">    6</span>                 : gestor(<span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">    7</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9a542f92bde4a87c0b86cb89a0ff8acd" name="a9a542f92bde4a87c0b86cb89a0ff8acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a542f92bde4a87c0b86cb89a0ff8acd">&#9670;&#160;</a></span>adicionarQuadro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Projeto::adicionarQuadro </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuadro.html">Quadro</a> *&#160;</td>
+          <td class="paramname"><em>quadro</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                            {</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (quadro != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   59</span>        quadros.push_back(quadro);</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ac4caae2a2704008b8cd22b30f0016e3e" name="ac4caae2a2704008b8cd22b30f0016e3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4caae2a2704008b8cd22b30f0016e3e">&#9670;&#160;</a></span>getDescricao()</h2>
 
@@ -177,9 +211,29 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                            {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> descricao;</div>
-<div class="line"><span class="lineno">   28</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                            {</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">return</span> descricao;</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5d9ed253da4dd20be10288193a4dc3d" name="ab5d9ed253da4dd20be10288193a4dc3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d9ed253da4dd20be10288193a4dc3d">&#9670;&#160;</a></span>getGestor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPessoa.html">Pessoa</a> * Projeto::getGestor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                           {</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> gestor;</div>
+<div class="line"><span class="lineno">   55</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -200,9 +254,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                                        {</div>
-<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">return</span> identificador;</div>
-<div class="line"><span class="lineno">   12</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>                                        {</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">return</span> identificador;</div>
+<div class="line"><span class="lineno">   15</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -223,9 +277,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                             {</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> inicio;</div>
-<div class="line"><span class="lineno">   36</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                             {</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> inicio;</div>
+<div class="line"><span class="lineno">   39</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -246,9 +300,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                      {</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> nome;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                      {</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> nome;</div>
+<div class="line"><span class="lineno">   23</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,9 +323,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                              {</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> termino;</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                              {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">return</span> termino;</div>
+<div class="line"><span class="lineno">   47</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -304,9 +358,30 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>                                          {</div>
-<div class="line"><span class="lineno">   23</span>    this-&gt;descricao = descricao;</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                          {</div>
+<div class="line"><span class="lineno">   26</span>    this-&gt;descricao = descricao;</div>
+<div class="line"><span class="lineno">   27</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a565a7209aa60654140e50fd33bbe8c09" name="a565a7209aa60654140e50fd33bbe8c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a565a7209aa60654140e50fd33bbe8c09">&#9670;&#160;</a></span>setGestor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Projeto::setGestor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPessoa.html">Pessoa</a> *&#160;</td>
+          <td class="paramname"><em>pessoa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                      {</div>
+<div class="line"><span class="lineno">   50</span>    gestor = pessoa;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,9 +414,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">    6</span>                                                          {</div>
-<div class="line"><span class="lineno">    7</span>    this-&gt;identificador = identificador;</div>
-<div class="line"><span class="lineno">    8</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>                                                          {</div>
+<div class="line"><span class="lineno">   10</span>    this-&gt;identificador = identificador;</div>
+<div class="line"><span class="lineno">   11</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -374,9 +449,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                        {</div>
-<div class="line"><span class="lineno">   31</span>    this-&gt;inicio = inicio;</div>
-<div class="line"><span class="lineno">   32</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                        {</div>
+<div class="line"><span class="lineno">   34</span>    this-&gt;inicio = inicio;</div>
+<div class="line"><span class="lineno">   35</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -409,9 +484,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>                               {</div>
-<div class="line"><span class="lineno">   15</span>    this-&gt;nome = nome;</div>
-<div class="line"><span class="lineno">   16</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                               {</div>
+<div class="line"><span class="lineno">   18</span>    this-&gt;nome = nome;</div>
+<div class="line"><span class="lineno">   19</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -444,15 +519,15 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                          {</div>
-<div class="line"><span class="lineno">   39</span>    this-&gt;termino = termino;</div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                          {</div>
+<div class="line"><span class="lineno">   42</span>    this-&gt;termino = termino;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="projeto_8h_source.html">projeto.h</a></li>
-<li><a class="el" href="projeto_8cpp.html">projeto.cpp</a></li>
+<li>src/entities/headers/<a class="el" href="projeto_8h_source.html">projeto.h</a></li>
+<li>src/entities/sources/<a class="el" href="projeto_8cpp.html">projeto.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

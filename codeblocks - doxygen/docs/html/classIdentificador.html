@@ -100,6 +100,11 @@ $(document).ready(function(){initNavTree('classIdentificador.html',''); initResi
  <a href="classIdentificador.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="identificador_8h_source.html">identificador.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Identificador:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classIdentificador__coll__graph.svg" width="152" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -112,7 +117,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representa o domínio <a class="el" href="classIdentificador.html" title="Representa o domínio Identificador no sistema Kanban.">Identificador</a> no sistema Kanban. </p>
-<p>Valida e armazena o valor correspondente às regras de negócio. </p>
+<p>Valida e armazena o valor correspondente às regras de negócio. Formato: 6 caracteres Sendo letras (a-z ou A-Z) os três primeiros caracteres. Sendo dígitos (0-9) os três últimos caracteres. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a98ea17bef93c0301fb28da2a6b7228b5" name="a98ea17bef93c0301fb28da2a6b7228b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98ea17bef93c0301fb28da2a6b7228b5">&#9670;&#160;</a></span>getIdentificador()</h2>
@@ -139,9 +144,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                                                    {</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> identificador;</div>
-<div class="line"><span class="lineno">   34</span>};</div>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                    {</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> identificador;</div>
+<div class="line"><span class="lineno">   36</span>};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -182,8 +187,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="identificador_8h_source.html">identificador.h</a></li>
-<li><a class="el" href="identificador_8cpp.html">identificador.cpp</a></li>
+<li>src/domain/headers/<a class="el" href="identificador_8h_source.html">identificador.h</a></li>
+<li>src/domain/sources/<a class="el" href="identificador_8cpp.html">identificador.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -100,6 +100,11 @@ $(document).ready(function(){initNavTree('classSenha.html',''); initResizable();
  <a href="classSenha.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="senha_8h_source.html">senha.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Senha:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSenha__coll__graph.svg" width="111" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -112,7 +117,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representa o domínio <a class="el" href="classSenha.html" title="Representa o domínio Senha no sistema Kanban.">Senha</a> no sistema Kanban. </p>
-<p>Valida e armazena o valor correspondente às regras de negócio. </p>
+<p>Valida e armazena o valor correspondente às regras de negócio. Formato: 5 caracteres Caractere pode ser letra (a-z ou A-Z) ou dígito (0-9); existe pelo menos uma letra e um dígito. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1cc904431d0a8287d0b22dee3e9d34ae" name="a1cc904431d0a8287d0b22dee3e9d34ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cc904431d0a8287d0b22dee3e9d34ae">&#9670;&#160;</a></span>getSenha()</h2>
@@ -139,10 +144,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                    {</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> senha;</div>
-<div class="line"><span class="lineno">   32</span>};</div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                    {</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> senha; </div>
+<div class="line"><span class="lineno">   36</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSenha_a1cc904431d0a8287d0b22dee3e9d34ae_icgraph.svg" width="392" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="a51c12016de21760031b9d5f8c93dd0b8" name="a51c12016de21760031b9d5f8c93dd0b8"></a>
@@ -174,16 +184,21 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                 {</div>
-<div class="line"><span class="lineno">   35</span>    validarSenha(valor);</div>
-<div class="line"><span class="lineno">   36</span>    this-&gt;senha = valor;</div>
-<div class="line"><span class="lineno">   37</span>};</div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                 {</div>
+<div class="line"><span class="lineno">   34</span>    validarSenha(valor);</div>
+<div class="line"><span class="lineno">   35</span>    this-&gt;senha = valor;</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSenha_a51c12016de21760031b9d5f8c93dd0b8_icgraph.svg" width="392" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="senha_8h_source.html">senha.h</a></li>
-<li><a class="el" href="senha_8cpp.html">senha.cpp</a></li>
+<li>src/domain/headers/<a class="el" href="senha_8h_source.html">senha.h</a></li>
+<li>src/domain/sources/<a class="el" href="senha_8cpp.html">senha.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,4 @@
-#include "domain/headers/email.h"
+#include "email.h"
 #include <cctype>
 #include <stdexcept>
 
@@ -68,8 +68,8 @@ void Email::validarEmail(string valor) {
 
 void Email::setEmail(string valor) {
     validarEmail(valor);
-    this->email = valor; 
-    
+    this->email = valor;
+
 }
 
 /*

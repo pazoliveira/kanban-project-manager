@@ -99,7 +99,12 @@ $(document).ready(function(){initNavTree('classCartaoAtividade.html',''); initRe
 <p>Representa o domínio <a class="el" href="classCartaoAtividade.html" title="Representa o domínio CartaoAtividade no sistema Kanban.">CartaoAtividade</a> no sistema Kanban.  
  <a href="classCartaoAtividade.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="cartaoatividade_8h_source.html">cartaoatividade.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="cartao__atividade_8h_source.html">cartao_atividade.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for CartaoAtividade:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCartaoAtividade__coll__graph.svg" width="155" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -159,6 +164,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2cf3f6b9f5de58efa7feff8d683cad1e" id="r_a2cf3f6b9f5de58efa7feff8d683cad1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTimestamp.html">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCartaoAtividade.html#a2cf3f6b9f5de58efa7feff8d683cad1e">getTermino</a> ()</td></tr>
 <tr class="memdesc:a2cf3f6b9f5de58efa7feff8d683cad1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor atualmente armazenado.  <br /></td></tr>
 <tr class="separator:a2cf3f6b9f5de58efa7feff8d683cad1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79bbc4d91178119f24b7a7c9284a21a6" id="r_a79bbc4d91178119f24b7a7c9284a21a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCartaoAtividade.html#a79bbc4d91178119f24b7a7c9284a21a6">setDesenvolvedor</a> (<a class="el" href="classPessoa.html">Pessoa</a> *pessoa)</td></tr>
+<tr class="separator:a79bbc4d91178119f24b7a7c9284a21a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f6d61659e2e8d7867eb9ff88bfa64b" id="r_a95f6d61659e2e8d7867eb9ff88bfa64b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPessoa.html">Pessoa</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCartaoAtividade.html#a95f6d61659e2e8d7867eb9ff88bfa64b">getDesenvolvedor</a> ()</td></tr>
+<tr class="separator:a95f6d61659e2e8d7867eb9ff88bfa64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac682f1da6151b9608e9b4dc6261135d6" id="r_ac682f1da6151b9608e9b4dc6261135d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCartaoAtividade.html#ac682f1da6151b9608e9b4dc6261135d6">setQuadro</a> (<a class="el" href="classQuadro.html">Quadro</a> *quadro)</td></tr>
+<tr class="separator:ac682f1da6151b9608e9b4dc6261135d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76209d28251366e3c80f668d61a55b2c" id="r_a76209d28251366e3c80f668d61a55b2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuadro.html">Quadro</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCartaoAtividade.html#a76209d28251366e3c80f668d61a55b2c">getQuadro</a> ()</td></tr>
+<tr class="separator:a76209d28251366e3c80f668d61a55b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representa o domínio <a class="el" href="classCartaoAtividade.html" title="Representa o domínio CartaoAtividade no sistema Kanban.">CartaoAtividade</a> no sistema Kanban. </p>
@@ -178,8 +191,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">    3</span>                                 {</div>
-<div class="line"><span class="lineno">    4</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                                 {</div>
+<div class="line"><span class="lineno">    8</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -201,9 +214,29 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                                    {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> descricao;</div>
-<div class="line"><span class="lineno">   28</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                                    {</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> descricao;</div>
+<div class="line"><span class="lineno">   32</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a95f6d61659e2e8d7867eb9ff88bfa64b" name="a95f6d61659e2e8d7867eb9ff88bfa64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f6d61659e2e8d7867eb9ff88bfa64b">&#9670;&#160;</a></span>getDesenvolvedor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPessoa.html">Pessoa</a> * CartaoAtividade::getDesenvolvedor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                          {</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">return</span> desenvolvedor;</div>
+<div class="line"><span class="lineno">   88</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -224,9 +257,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>                                      {</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> entrada;</div>
-<div class="line"><span class="lineno">   60</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                      {</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> entrada;</div>
+<div class="line"><span class="lineno">   64</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -247,9 +280,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                  {</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> estado;</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                  {</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> estado;</div>
+<div class="line"><span class="lineno">   48</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,9 +303,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                                                {</div>
-<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">return</span> identificador;</div>
-<div class="line"><span class="lineno">   12</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                                                {</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">return</span> identificador;</div>
+<div class="line"><span class="lineno">   16</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -293,9 +326,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>                                     {</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> inicio;</div>
-<div class="line"><span class="lineno">   68</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                                     {</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> inicio;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -316,9 +349,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                              {</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> nome;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>                              {</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> nome;</div>
+<div class="line"><span class="lineno">   24</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,9 +372,29 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                          {</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> prioridade;</div>
-<div class="line"><span class="lineno">   36</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                          {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> prioridade;</div>
+<div class="line"><span class="lineno">   40</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a76209d28251366e3c80f668d61a55b2c" name="a76209d28251366e3c80f668d61a55b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76209d28251366e3c80f668d61a55b2c">&#9670;&#160;</a></span>getQuadro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQuadro.html">Quadro</a> * CartaoAtividade::getQuadro </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                                   {</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">return</span> quadro;</div>
+<div class="line"><span class="lineno">   96</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -362,9 +415,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>                                    {</div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> tamanho;</div>
-<div class="line"><span class="lineno">   52</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>                                    {</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> tamanho;</div>
+<div class="line"><span class="lineno">   56</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -385,9 +438,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>                                      {</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> termino;</div>
-<div class="line"><span class="lineno">   76</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                                      {</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> termino;</div>
+<div class="line"><span class="lineno">   80</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,9 +473,30 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>                                                  {</div>
-<div class="line"><span class="lineno">   23</span>    this-&gt;descricao = descricao;</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                                  {</div>
+<div class="line"><span class="lineno">   27</span>    this-&gt;descricao = descricao;</div>
+<div class="line"><span class="lineno">   28</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a79bbc4d91178119f24b7a7c9284a21a6" name="a79bbc4d91178119f24b7a7c9284a21a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79bbc4d91178119f24b7a7c9284a21a6">&#9670;&#160;</a></span>setDesenvolvedor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CartaoAtividade::setDesenvolvedor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPessoa.html">Pessoa</a> *&#160;</td>
+          <td class="paramname"><em>pessoa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                                                     {</div>
+<div class="line"><span class="lineno">   83</span>    desenvolvedor = pessoa;</div>
+<div class="line"><span class="lineno">   84</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -455,9 +529,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                  {</div>
-<div class="line"><span class="lineno">   55</span>    this-&gt;entrada = entrada;</div>
-<div class="line"><span class="lineno">   56</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                  {</div>
+<div class="line"><span class="lineno">   59</span>    this-&gt;entrada = entrada;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -490,9 +564,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                             {</div>
-<div class="line"><span class="lineno">   39</span>    this-&gt;estado = estado;</div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                             {</div>
+<div class="line"><span class="lineno">   43</span>    this-&gt;estado = estado;</div>
+<div class="line"><span class="lineno">   44</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -525,9 +599,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">    6</span>                                                                  {</div>
-<div class="line"><span class="lineno">    7</span>    this-&gt;identificador = identificador;</div>
-<div class="line"><span class="lineno">    8</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>                                                                  {</div>
+<div class="line"><span class="lineno">   11</span>    this-&gt;identificador = identificador;</div>
+<div class="line"><span class="lineno">   12</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -560,9 +634,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                                                {</div>
-<div class="line"><span class="lineno">   63</span>    this-&gt;inicio = inicio;</div>
-<div class="line"><span class="lineno">   64</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                                                {</div>
+<div class="line"><span class="lineno">   67</span>    this-&gt;inicio = inicio;</div>
+<div class="line"><span class="lineno">   68</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -595,9 +669,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>                                       {</div>
-<div class="line"><span class="lineno">   15</span>    this-&gt;nome = nome;</div>
-<div class="line"><span class="lineno">   16</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                       {</div>
+<div class="line"><span class="lineno">   19</span>    this-&gt;nome = nome;</div>
+<div class="line"><span class="lineno">   20</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -630,9 +704,30 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                         {</div>
-<div class="line"><span class="lineno">   31</span>    this-&gt;prioridade = prioridade;</div>
-<div class="line"><span class="lineno">   32</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                         {</div>
+<div class="line"><span class="lineno">   35</span>    this-&gt;prioridade = prioridade;</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac682f1da6151b9608e9b4dc6261135d6" name="ac682f1da6151b9608e9b4dc6261135d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac682f1da6151b9608e9b4dc6261135d6">&#9670;&#160;</a></span>setQuadro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CartaoAtividade::setQuadro </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQuadro.html">Quadro</a> *&#160;</td>
+          <td class="paramname"><em>quadro</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   90</span>                                              {</div>
+<div class="line"><span class="lineno">   91</span>    this-&gt;quadro = quadro;</div>
+<div class="line"><span class="lineno">   92</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -665,9 +760,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                {</div>
-<div class="line"><span class="lineno">   47</span>    this-&gt;tamanho = tamanho;</div>
-<div class="line"><span class="lineno">   48</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                                                {</div>
+<div class="line"><span class="lineno">   51</span>    this-&gt;tamanho = tamanho;</div>
+<div class="line"><span class="lineno">   52</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -700,15 +795,15 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                                                  {</div>
-<div class="line"><span class="lineno">   71</span>    this-&gt;termino = termino;</div>
-<div class="line"><span class="lineno">   72</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                                  {</div>
+<div class="line"><span class="lineno">   75</span>    this-&gt;termino = termino;</div>
+<div class="line"><span class="lineno">   76</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="cartaoatividade_8h_source.html">cartaoatividade.h</a></li>
-<li><a class="el" href="cartaoatividade_8cpp.html">cartaoatividade.cpp</a></li>
+<li>src/entities/headers/<a class="el" href="cartao__atividade_8h_source.html">cartao_atividade.h</a></li>
+<li>src/entities/sources/<a class="el" href="cartao__atividade_8cpp.html">cartao_atividade.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

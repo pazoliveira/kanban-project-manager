@@ -1,4 +1,4 @@
 var estado_8h =
 [
-    [ "Estado", "class_estado.html", "class_estado" ]
+    [ "Estado", "classEstado.html", "classEstado" ]
 ];

@@ -1,4 +1,4 @@
-#include "domain/headers/estado.h"
+#include "src/domain/headers/estado.h"
 #include <string>
 #include <algorithm>
 #include <cctype>
@@ -7,7 +7,7 @@
 using namespace std;
 
 void Estado::validarEstado(string valor) {
-    
+
     for (size_t i = 0; i < valor.length(); i++) {
         valor[i] = toupper(static_cast<unsigned char>(valor[i]));
     }

@@ -100,6 +100,11 @@ $(document).ready(function(){initNavTree('classEstado.html',''); initResizable()
  <a href="classEstado.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="estado_8h_source.html">estado.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Estado:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classEstado__coll__graph.svg" width="115" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -112,7 +117,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representa o domínio <a class="el" href="classEstado.html" title="Representa o domínio Estado no sistema Kanban.">Estado</a> no sistema Kanban. </p>
-<p>Valida e armazena o valor correspondente às regras de negócio. </p>
+<p>Valida e armazena o valor correspondente às regras de negócio. Formato: A FAZER, FAZENDO, FEITO </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aedbb6c1d75f1dbe5d5869d147d14fc20" name="aedbb6c1d75f1dbe5d5869d147d14fc20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedbb6c1d75f1dbe5d5869d147d14fc20">&#9670;&#160;</a></span>getEstado()</h2>
@@ -139,10 +144,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Retorna o valor atualmente armazenado. </p>
 <dl class="section return"><dt>Returns</dt><dd>String contendo o valor. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                                      {</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> estado;</div>
-<div class="line"><span class="lineno">   38</span>};</div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                      {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> estado;</div>
+<div class="line"><span class="lineno">   35</span>};</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classEstado_aedbb6c1d75f1dbe5d5869d147d14fc20_icgraph.svg" width="404" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="a1ab4d230f65b7b230082b3266e08f7fb" name="a1ab4d230f65b7b230082b3266e08f7fb"></a>
@@ -174,28 +184,26 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>                                      {</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">if</span> (validarEstado(valor)) {</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">if</span> (valor == <span class="stringliteral">&quot;A Fazer&quot;</span> || valor == <span class="stringliteral">&quot;a fazer&quot;</span> || valor == <span class="stringliteral">&quot;A fazer&quot;</span> || valor == <span class="stringliteral">&quot;AFazer&quot;</span> || valor == <span class="stringliteral">&quot;afazer&quot;</span> || valor == <span class="stringliteral">&quot;Afazer&quot;</span>) {</div>
-<div class="line"><span class="lineno">   19</span>        valor = <span class="stringliteral">&quot;A FAZER&quot;</span>;</div>
-<div class="line"><span class="lineno">   20</span>    }</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (valor == <span class="stringliteral">&quot;Fazendo&quot;</span> || valor == <span class="stringliteral">&quot;fazendo&quot;</span>){</div>
-<div class="line"><span class="lineno">   22</span>                valor = <span class="stringliteral">&quot;FAZENDO&quot;</span>;</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (valor == <span class="stringliteral">&quot;Feito&quot;</span> || valor == <span class="stringliteral">&quot;feito&quot;</span>) {</div>
-<div class="line"><span class="lineno">   25</span>                valor = <span class="stringliteral">&quot;FEITO&quot;</span>;</div>
-<div class="line"><span class="lineno">   26</span>    }</div>
-<div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>    estado = valor;</div>
-<div class="line"><span class="lineno">   29</span>    }</div>
-<div class="line"><span class="lineno">   30</span>};</div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><span class="lineno">   20</span>                                  {</div>
+<div class="line"><span class="lineno">   21</span>    validarEstado(valor);</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; valor.length(); i++) {</div>
+<div class="line"><span class="lineno">   24</span>        valor[i] = toupper(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(valor[i]));</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    this-&gt;estado = valor;</div>
+<div class="line"><span class="lineno">   28</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classEstado_a1ab4d230f65b7b230082b3266e08f7fb_icgraph.svg" width="404" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="estado_8h_source.html">estado.h</a></li>
-<li><a class="el" href="estado_8cpp.html">estado.cpp</a></li>
+<li>src/domain/headers/<a class="el" href="estado_8h_source.html">estado.h</a></li>
+<li>src/domain/sources/<a class="el" href="estado_8cpp.html">estado.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

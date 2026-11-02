@@ -1,0 +1,9 @@
+<map id="Timestamp::setDataHora" name="Timestamp::setDataHora">
+<area shape="rect" id="Node000001" title="Define um novo valor para a data/horario apos validar." alt="" coords="335,31,521,56"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ae3f103e36ab52b13bb79af7ae8d66722" title=" " alt="" coords="130,5,265,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,34,265,28,265,23,321,29"/>
+<area shape="rect" id="Node000004" href="$classTimestamp.html#af127e06daea564436a444080a641f491" title="Construtor que inicializa com valor e aplica validação." alt="" coords="108,55,287,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,57,287,61,287,55,321,52"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,21,60,21,60,15,116,15"/>
+</map>
