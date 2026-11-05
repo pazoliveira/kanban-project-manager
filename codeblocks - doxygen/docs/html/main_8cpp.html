@@ -497,7 +497,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  103</span>    }</div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  106</span>        txt.<a class="code hl_function" href="classTexto.html#a3da83dd5c633ed876d6bb4409aafb1dc">setTexto</a>(<span class="stringliteral">&quot;texto sem maiuscula ou ponto&quot;</span>); </div>
+<div class="line"><span class="lineno">  106</span>        txt.<a class="code hl_function" href="classTexto.html#a3da83dd5c633ed876d6bb4409aafb1dc">setTexto</a>(<span class="stringliteral">&quot;texto sem maiuscula ou ponto&quot;</span>);</div>
 <div class="line"><span class="lineno">  107</span>        cout &lt;&lt; <span class="stringliteral">&quot;[FALHA] Deveria ter rejeitado texto sem maiuscula/ponto.&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><span class="lineno">  108</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument &amp;e) {</div>
 <div class="line"><span class="lineno">  109</span>        cout &lt;&lt; <span class="stringliteral">&quot;[SUCESSO AO REJEITAR] Excecao capturada corretamente: &quot;</span> &lt;&lt; e.what() &lt;&lt; endl;</div>
@@ -536,7 +536,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>                       {</div>
 <div class="line"><span class="lineno">   17</span>    cout &lt;&lt; <span class="stringliteral">&quot;\n--- Testando Timestamp ---&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><span class="lineno">   18</span>    <a class="code hl_class" href="classTimestamp.html">Timestamp</a> t;</div>
-<div class="line"><span class="lineno">   19</span>    </div>
+<div class="line"><span class="lineno">   19</span> </div>
 <div class="line"><span class="lineno">   20</span>    <span class="comment">// Teste válido</span></div>
 <div class="line"><span class="lineno">   21</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">   22</span>        t.<a class="code hl_function" href="classTimestamp.html#a2514d14d5d3e9274dab397ce6e4070a3">setDataHora</a>(<span class="stringliteral">&quot;29-FEV-2024-14:30&quot;</span>);</div>
