@@ -95,50 +95,55 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Estrutura do projeto</h1>
-<div class="fragment"><div class="line">kanban-project-manager/</div>
-<div class="line">├── src/</div>
-<div class="line">│   ├── domain/</div>
-<div class="line">│   │   ├── headers/</div>
-<div class="line">│   │   │   ├── email.h</div>
-<div class="line">│   │   │   ├── estado.h</div>
-<div class="line">│   │   │   ├── identificador.h</div>
-<div class="line">│   │   │   ├── limite.h</div>
-<div class="line">│   │   │   ├── nome.h</div>
-<div class="line">│   │   │   ├── papel.h</div>
-<div class="line">│   │   │   ├── prioridade.h</div>
-<div class="line">│   │   │   ├── senha.h</div>
-<div class="line">│   │   │   ├── tamanho.h</div>
-<div class="line">│   │   │   ├── texto.h</div>
-<div class="line">│   │   │   └── timestamp.h</div>
-<div class="line">│   │   └── sources/</div>
-<div class="line">│   │       ├── email.cpp</div>
-<div class="line">│   │       ├── estado.cpp</div>
-<div class="line">│   │       ├── identificador.cpp</div>
-<div class="line">│   │       ├── limite.cpp</div>
-<div class="line">│   │       ├── nome.cpp</div>
-<div class="line">│   │       ├── papel.cpp</div>
-<div class="line">│   │       ├── prioridade.cpp</div>
-<div class="line">│   │       ├── senha.cpp</div>
-<div class="line">│   │       ├── tamanho.cpp</div>
-<div class="line">│   │       ├── texto.cpp</div>
-<div class="line">│   │       └── timestamp.cpp</div>
-<div class="line">│   ├── entities/</div>
-<div class="line">│   │   ├── headers/</div>
-<div class="line">│   │   │   ├── cartao_atividade.h</div>
-<div class="line">│   │   │   ├── pessoa.h</div>
-<div class="line">│   │   │   ├── projeto.h</div>
-<div class="line">│   │   │   └── quadro.h</div>
-<div class="line">│   │   └── sources/</div>
-<div class="line">│   │       ├── cartao_atividade.cpp</div>
-<div class="line">│   │       ├── pessoa.cpp</div>
-<div class="line">│   │       ├── projeto.cpp</div>
-<div class="line">│   │       └── quadro.cpp</div>
-<div class="line">│   └── main.cpp</div>
-<div class="line">├── docs/</div>
+<div class="fragment"><div class="line">kanban/</div>
+<div class="line">├── README.md</div>
 <div class="line">├── Doxyfile</div>
-<div class="line">├── CMakeLists.txt</div>
 <div class="line">├── .gitignore</div>
-<div class="line">└── README.md</div>
+<div class="line">├── codeblocks - doxygen/</div>
+<div class="line">│   ├── projetotp1.cbp</div>
+<div class="line">│   ├── bin/</div>
+<div class="line">│   └── obj/</div>
+<div class="line">├── docs/</div>
+<div class="line">│   └── html/</div>
+<div class="line">│       └── index.html</div>
+<div class="line">└── src/</div>
+<div class="line">    ├── main.cpp</div>
+<div class="line">    ├── domain/</div>
+<div class="line">    │   ├── headers/</div>
+<div class="line">    │   │   ├── email.h</div>
+<div class="line">    │   │   ├── estado.h</div>
+<div class="line">    │   │   ├── identificador.h</div>
+<div class="line">    │   │   ├── limite.h</div>
+<div class="line">    │   │   ├── nome.h</div>
+<div class="line">    │   │   ├── papel.h</div>
+<div class="line">    │   │   ├── prioridade.h</div>
+<div class="line">    │   │   ├── senha.h</div>
+<div class="line">    │   │   ├── tamanho.h</div>
+<div class="line">    │   │   ├── texto.h</div>
+<div class="line">    │   │   └── timestamp.h</div>
+<div class="line">    │   └── sources/</div>
+<div class="line">    │       ├── email.cpp</div>
+<div class="line">    │       ├── estado.cpp</div>
+<div class="line">    │       ├── identificador.cpp</div>
+<div class="line">    │       ├── limite.cpp</div>
+<div class="line">    │       ├── nome.cpp</div>
+<div class="line">    │       ├── papel.cpp</div>
+<div class="line">    │       ├── prioridade.cpp</div>
+<div class="line">    │       ├── senha.cpp</div>
+<div class="line">    │       ├── tamanho.cpp</div>
+<div class="line">    │       ├── texto.cpp</div>
+<div class="line">    │       └── timestamp.cpp</div>
+<div class="line">    └── entities/</div>
+<div class="line">        ├── headers/</div>
+<div class="line">        │   ├── cartao_atividade.h</div>
+<div class="line">        │   ├── pessoa.h</div>
+<div class="line">        │   ├── projeto.h</div>
+<div class="line">        │   └── quadro.h</div>
+<div class="line">        └── sources/</div>
+<div class="line">            ├── cartao_atividade.cpp</div>
+<div class="line">            ├── pessoa.cpp</div>
+<div class="line">            ├── projeto.cpp</div>
+<div class="line">            └── quadro.cpp</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
 Organização por camada</h2>
 <table class="markdownTable">
@@ -149,7 +154,7 @@ Organização por camada</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Entidades   </td><td class="markdownTableBodyNone"><code>src/entities/</code>   </td><td class="markdownTableBodyNone">Classes do negócio (pessoa, projeto, quadro, cartão de atividade)   </td></tr>
 </table>
-<p>Cada camada tem uma pasta <code>headers/</code> (arquivos <code>.h</code>) e uma pasta <code>sources/</code> (arquivos <code>.cpp</code>). </p>
+<p>Cada classe tem uma pasta <code>headers/</code> (arquivos <code>.h</code>) e uma pasta <code>sources/</code> (arquivos <code>.cpp</code>). </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

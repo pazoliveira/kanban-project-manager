@@ -1,7 +1,8 @@
-#include "entities/headers/quadro.h"
-#include "entities/headers/quadro.h"
-#include "entities/headers/projeto.h"
-#include "entities/headers/cartao_atividade.h"
+#include "quadro.h"
+#include "quadro.h"
+#include "projeto.h"
+#include "cartao_atividade.h"
+#include "identificador.h"
 
 Quadro::Quadro() {
 }
@@ -31,20 +32,13 @@ Limite Quadro::getLimite() {
 }
 
 
-void Quadro::setProjeto(Projeto* projeto) {
-    projeto = projeto;
+void Quadro::setIdentificadorProjeto(Identificador identificador) {
+    this->identificadorProjeto = identificador;
 }
 
-Projeto* Quadro::getProjeto() {
-    return projeto;
+Identificador Quadro::getIdentificadorProjeto() const {
+    return identificadorProjeto;
 }
-
-void Quadro::adicionarCartao(CartaoAtividade* cartao) {
-    if (cartao != nullptr) {
-        cartoes.push_back(cartao);
-    }
-}
-
 
 
 

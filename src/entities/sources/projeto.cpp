@@ -1,10 +1,8 @@
-#include "entities/headers/projeto.h"
-#include "entities/headers/projeto.h"
-#include "entities/headers/pessoa.h"
-#include "entities/headers/quadro.h"
-
-Projeto::Projeto() : gestor(nullptr) {
-}
+#include "projeto.h"
+#include "projeto.h"
+#include "pessoa.h"
+#include "quadro.h"
+#include "email.h"
 
 void Projeto::setIdentificador(Identificador identificador) {
     this->identificador = identificador;
@@ -46,16 +44,10 @@ Timestamp Projeto::getTermino() {
     return termino;
 }
 
-void Projeto::setGestor(Pessoa* pessoa) {
-    gestor = pessoa;
+void Projeto::setEmailGestor(Email email) {
+    this->emailGestor = email;
 }
 
-Pessoa* Projeto::getGestor() {
-    return gestor;
-}
-
-void Projeto::adicionarQuadro(Quadro* quadro) {
-    if (quadro != nullptr) {
-        quadros.push_back(quadro);
-    }
+Email Projeto::getEmailGestor() const {
+    return emailGestor;
 }

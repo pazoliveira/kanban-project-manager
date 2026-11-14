@@ -1,8 +1,8 @@
-#include "entities/headers/cartao_atividade.h"
-#include "entities/headers/cartao_atividade.h"
-#include "entities/headers/pessoa.h"
-#include "entities/headers/quadro.h"
-#include <vector>
+#include "cartao_atividade.h"
+#include "cartao_atividade.h"
+#include "pessoa.h"
+#include "quadro.h"
+
 
 CartaoAtividade::CartaoAtividade() {
 }
@@ -79,18 +79,21 @@ Timestamp CartaoAtividade::getTermino() {
     return termino;
 }
 
-void CartaoAtividade::setDesenvolvedor(Pessoa* pessoa) {
-    desenvolvedor = pessoa;
+void CartaoAtividade::setEmailDesenvolvedor(Email email){
+    this->emailDesenvolvedor = email;
 }
 
-Pessoa* CartaoAtividade::getDesenvolvedor() {
-    return desenvolvedor;
+Email CartaoAtividade::getEmailDesenvolvedor() const {
+    return emailDesenvolvedor;
 }
 
-void CartaoAtividade::setQuadro(Quadro* quadro) {
-    this->quadro = quadro;
+void CartaoAtividade::setIdentificadorQuadro(Identificador identificadorQuadro) {
+    this->identificadorQuadro = identificadorQuadro;
 }
 
-Quadro* CartaoAtividade::getQuadro() {
-    return quadro;
+
+Identificador CartaoAtividade::getIdentificadorQuadro() const{
+    return identificadorQuadro;
 }
+
+

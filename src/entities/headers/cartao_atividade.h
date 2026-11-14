@@ -1,18 +1,15 @@
 #ifndef CARTAOATIVIDADE_H_INCLUDED
 #define CARTAOATIVIDADE_H_INCLUDED
 
-#include <vector>
-#include "domain/headers/identificador.h"
-#include "domain/headers/nome.h"
-#include "domain/headers/texto.h"
-#include "domain/headers/prioridade.h"
-#include "domain/headers/estado.h"
-#include "domain/headers/tamanho.h"
-#include "domain/headers/timestamp.h"
+#include "identificador.h"
+#include "nome.h"
+#include "texto.h"
+#include "prioridade.h"
+#include "estado.h"
+#include "tamanho.h"
+#include "timestamp.h"
+#include "email.h"
 
-// Declarações antecipadas
-class Pessoa;
-class Quadro;
 
 /**
  * @brief Representa o domínio CartaoAtividade no sistema Kanban.
@@ -30,10 +27,8 @@ private:
     Timestamp entrada;
     Timestamp inicio;
     Timestamp termino;
-    // Pessoa responsável pelo desenvolvimento
-    Pessoa* desenvolvedor;
-    // Quadro ao qual o cartão pertence
-    Quadro* quadro;
+    Email emailDesenvolvedor;
+    Identificador identificadorQuadro;
 
 
 public:
@@ -147,13 +142,28 @@ public:
      */
     Timestamp getTermino();
 
+     /**
+     * @brief Define o email (FK) da Pessoa desenvolvedora.
+     * @param email Email que referencia Pessoa.email.
+     */
+    void setEmailDesenvolvedor(Email email);
 
-    void setDesenvolvedor(Pessoa* pessoa);
-    Pessoa* getDesenvolvedor();
+    /**
+     * @brief Retorna o email (FK) da Pessoa desenvolvedora.
+     */
+    Email getEmailDesenvolvedor() const;
 
-    void setQuadro(Quadro* quadro);
-    Quadro* getQuadro();
+     /**
+     * @brief Define o identificador (FK) do Quadro.
+     * @param identificadorQuadro Identificador que referencia Quadro.identificador.
+     */
+    void setIdentificadorQuadro(Identificador identificadorQuadro);
 
+    /**
+     * @brief Retorna o identificador (FK) do Quadro.
+     * @return Objeto Identificador armazenado.
+     */
+    Identificador getIdentificadorQuadro() const;
 
 };
 

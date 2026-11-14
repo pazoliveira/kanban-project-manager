@@ -1,9 +1,8 @@
+#include "pessoa.h"
+#include "papel.h"
+#include "cartao_atividade.h"
+#include "projeto.h"
 
-#include "entities/headers/pessoa.h"
-#include "domain/headers/papel.h"
-#include "entities/headers/cartao_atividade.h"
-#include "entities/headers/projeto.h"
-#include <vector>
 
 class Projeto;
 class CartaoAtividade;
@@ -44,22 +43,4 @@ Papel Pessoa::getPapel() {
     return papel;
 }
 
-void Pessoa::adicionarCartao(CartaoAtividade* cartao) {
-    if (cartao != nullptr) {
-        cartoesDesenvolvidos.push_back(cartao);
-    }
-}
 
-void Pessoa::adicionarProjeto(Projeto* projeto) {
-    if (projeto != nullptr) {
-        projetosGerenciados.push_back(projeto);
-    }
-}
-
-const std::vector<CartaoAtividade*>& Pessoa::getCartoesDesenvolvidos() const {
-    return cartoesDesenvolvidos;
-}
-
-const std::vector<Projeto*>& Pessoa::getProjetosGerenciados() const {
-    return projetosGerenciados;
-}

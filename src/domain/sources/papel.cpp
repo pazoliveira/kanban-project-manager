@@ -1,4 +1,4 @@
-#include "domain/headers/papel.h"
+#include "papel.h"
 #include <stdexcept>
 
 using namespace std;

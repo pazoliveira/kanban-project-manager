@@ -1,5 +1,5 @@
-#include "domain/headers/texto.h"
-#include <cctype> 
+#include "texto.h"
+#include <cctype>
 #include <stdexcept>
 
 using namespace std;

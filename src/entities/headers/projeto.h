@@ -1,15 +1,11 @@
 #ifndef PROJETO_H_INCLUDED
 #define PROJETO_H_INCLUDED
 
-#include <vector>
-#include "domain/headers/identificador.h"
-#include "domain/headers/nome.h"
-#include "domain/headers/texto.h"
-#include "domain/headers/timestamp.h"
-
-// Declarações antecipadas
-class Pessoa;
-class Quadro;
+#include "email.h"
+#include "identificador.h"
+#include "nome.h"
+#include "texto.h"
+#include "timestamp.h"
 
 /**
  * @brief Representa o domínio Projeto no sistema Kanban.
@@ -24,10 +20,8 @@ private:
     Texto descricao;
     Timestamp inicio;
     Timestamp termino;
-    // Pessoa responsável pelo projeto
-    Pessoa* gestor;
-    // Quadros pertencentes ao projeto
-    vector<Quadro*> quadros;
+    Email emailGestor;
+
 
 public:
     Projeto();
@@ -92,12 +86,18 @@ public:
      */
     Timestamp getTermino();
 
+    /**
+     * @brief Define valor referente a endereço de email do gestor do projeto.
+     * @param email. valor referente ao endereço de email do gestor responsavel pelo projeto.
+     */
 
-    void setGestor(Pessoa* pessoa);
-    Pessoa* getGestor();
+    void setEmailGestor(Email email);
 
-    void adicionarQuadro(Quadro* quadro);
-
+     /**
+     * @brief Retorna o valor atualmente armazenado.
+     * @return Objeto Email contendo o valor armazenado.
+     */
+    Email getEmailGestor() const;
 
 };
 

@@ -1,4 +1,4 @@
-#include "domain/headers/prioridade.h"
+#include "prioridade.h"
 #include <stdexcept>
 
 using namespace std;

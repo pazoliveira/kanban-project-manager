@@ -1,4 +1,4 @@
-#include "domain/headers/limite.h"
+#include "limite.h"
 #include <stdexcept>
 
 void Limite::setLimite(int valor) {

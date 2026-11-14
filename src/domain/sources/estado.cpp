@@ -1,4 +1,4 @@
-#include "src/domain/headers/estado.h"
+#include "estado.h"
 #include <string>
 #include <algorithm>
 #include <cctype>

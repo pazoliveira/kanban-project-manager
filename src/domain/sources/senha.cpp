@@ -1,4 +1,4 @@
-#include "domain/headers/senha.h"
+#include "senha.h"
 #include <string>
 #include <iostream>
 #include <cctype>

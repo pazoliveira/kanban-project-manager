@@ -2,50 +2,55 @@
 ## Estrutura do projeto
 
 ```
-kanban-project-manager/
-├── src/
-│   ├── domain/
-│   │   ├── headers/
-│   │   │   ├── email.h
-│   │   │   ├── estado.h
-│   │   │   ├── identificador.h
-│   │   │   ├── limite.h
-│   │   │   ├── nome.h
-│   │   │   ├── papel.h
-│   │   │   ├── prioridade.h
-│   │   │   ├── senha.h
-│   │   │   ├── tamanho.h
-│   │   │   ├── texto.h
-│   │   │   └── timestamp.h
-│   │   └── sources/
-│   │       ├── email.cpp
-│   │       ├── estado.cpp
-│   │       ├── identificador.cpp
-│   │       ├── limite.cpp
-│   │       ├── nome.cpp
-│   │       ├── papel.cpp
-│   │       ├── prioridade.cpp
-│   │       ├── senha.cpp
-│   │       ├── tamanho.cpp
-│   │       ├── texto.cpp
-│   │       └── timestamp.cpp
-│   ├── entities/
-│   │   ├── headers/
-│   │   │   ├── cartao_atividade.h
-│   │   │   ├── pessoa.h
-│   │   │   ├── projeto.h
-│   │   │   └── quadro.h
-│   │   └── sources/
-│   │       ├── cartao_atividade.cpp
-│   │       ├── pessoa.cpp
-│   │       ├── projeto.cpp
-│   │       └── quadro.cpp
-│   └── main.cpp
-├── docs/
+kanban/
+├── README.md
 ├── Doxyfile
-├── CMakeLists.txt
 ├── .gitignore
-└── README.md
+├── codeblocks - doxygen/
+│   ├── projetotp1.cbp
+│   ├── bin/
+│   └── obj/
+├── docs/
+│   └── html/
+│       └── index.html
+└── src/
+    ├── main.cpp
+    ├── domain/
+    │   ├── headers/
+    │   │   ├── email.h
+    │   │   ├── estado.h
+    │   │   ├── identificador.h
+    │   │   ├── limite.h
+    │   │   ├── nome.h
+    │   │   ├── papel.h
+    │   │   ├── prioridade.h
+    │   │   ├── senha.h
+    │   │   ├── tamanho.h
+    │   │   ├── texto.h
+    │   │   └── timestamp.h
+    │   └── sources/
+    │       ├── email.cpp
+    │       ├── estado.cpp
+    │       ├── identificador.cpp
+    │       ├── limite.cpp
+    │       ├── nome.cpp
+    │       ├── papel.cpp
+    │       ├── prioridade.cpp
+    │       ├── senha.cpp
+    │       ├── tamanho.cpp
+    │       ├── texto.cpp
+    │       └── timestamp.cpp
+    └── entities/
+        ├── headers/
+        │   ├── cartao_atividade.h
+        │   ├── pessoa.h
+        │   ├── projeto.h
+        │   └── quadro.h
+        └── sources/
+            ├── cartao_atividade.cpp
+            ├── pessoa.cpp
+            ├── projeto.cpp
+            └── quadro.cpp
 ```
 
 ### Organização por camada
@@ -55,4 +60,4 @@ kanban-project-manager/
 | Domínio | `src/domain/` | Tipos básicos com validação (nome, e-mail, senha, texto, identificador, estado, prioridade, papel, tamanho, limite, timestamp) |
 | Entidades | `src/entities/` | Classes do negócio (pessoa, projeto, quadro, cartão de atividade) |
 
-Cada camada tem uma pasta `headers/` (arquivos `.h`) e uma pasta `sources/` (arquivos `.cpp`).
+Cada classe tem uma pasta `headers/` (arquivos `.h`) e uma pasta `sources/` (arquivos `.cpp`).

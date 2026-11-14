@@ -1,30 +1,24 @@
 #ifndef QUADRO_H_INCLUDED
 #define QUADRO_H_INCLUDED
 
-#include <vector>
-#include "domain/headers/identificador.h"
-#include "domain/headers/nome.h"
-#include "domain/headers/limite.h"
 
-// Declarações antecipadas
-class Projeto;
-class CartaoAtividade;
+#include "identificador.h"
+#include "nome.h"
+#include "limite.h"
+
 
 /**
  * @brief Representa o domínio Quadro no sistema Kanban.
  * @details Valida e armazena o valor correspondente às regras de negócio.
  */
 
-
 class Quadro {
 private:
     Identificador identificador;
     Nome nome;
     Limite limite;
-    // Projeto ao qual o quadro pertence
-    Projeto* projeto;
-    // Cartões contidos no quadro
-    std::vector<CartaoAtividade*> cartoes;
+    Identificador identificadorProjeto;
+
 
 public:
     Quadro();
@@ -66,11 +60,19 @@ public:
     Limite getLimite();
 
 
-    void setProjeto(Projeto* projeto);
-    Projeto* getProjeto();
+    /**
+     * @brief Define um novo valor após a validação.
+     * @param valor Dado de entrada a ser validado.
+     * @throw std::invalid_argument Se o valor for inválido.
+     */
+     void setIdentificadorProjeto(Identificador identificadorProjeto);
 
-    void adicionarCartao(CartaoAtividade* cartao);
 
+     /**
+     * @brief Retorna o valor atualmente armazenado.
+     * @return Obejto tipo Identificador contendo o valor.
+     */
+    Identificador getIdentificadorProjeto() const;
 
 };
 
