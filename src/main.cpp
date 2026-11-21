@@ -10,180 +10,100 @@
 #include "domain/headers/prioridade.h"
 #include "domain/headers/estado.h"
 #include "domain/headers/limite.h"
+#include "interfaces.h"
+
+#include "cntrIUAutenticacao.h"
+#include "cntrIUPessoa.h"
+
+#include "stubs.h"
 
 using namespace std;
 
-void testarTimestamp() {
-    cout << "\n--- Testando Timestamp ---" << endl;
-    Timestamp t;
-
-    // Teste válido
-    try {
-        t.setDataHora("29-FEV-2024-14:30");
-        cout << "[SUCESSO] Timestamp valido: " << t.getDataHora() << endl;
-    } catch (const exception &e) {
-        cout << "[FALHA INESPERADA] " << e.what() << endl;
-    }
-
-    // Teste inválido (data inexistente)
-    try {
-        t.setDataHora("30-02-2026-16:35");
-        cout << "[FALHA] Deveria ter rejeitado o timestamp invalido." << endl;
-    } catch (const invalid_argument &e) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
-    }
-}
-
-void testarSenha() {
-    cout << "\n--- Testando Senha ---" << endl;
-    Senha s;
-
-    try {
-        s.setSenha("Ab123");
-        cout << "[SUCESSO] Senha valida: " << s.getSenha() << endl;
-    } catch (const exception &e) {
-        cout << "[FALHA INESPERADA] " << e.what() << endl;
-    }
-
-    try {
-        s.setSenha("12345"); // Sem letras
-        cout << "[FALHA] Deveria ter rejeitado a senha sem letras." << endl;
-    } catch (const invalid_argument &e) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
-    }
-}
-
-void testarEmail() {
-    cout << "\n--- Testando Email ---" << endl;
-    Email e;
-
-    try {
-        e.setEmail("usuario@dominio.com");
-        cout << "[SUCESSO] Email valido: " << e.getEmail() << endl;
-    } catch (const exception &ex) {
-        cout << "[FALHA INESPERADA] " << ex.what() << endl;
-    }
-
-    try {
-        e.setEmail("usuario@@dominio.com"); // Duplo arroba
-        cout << "[FALHA] Deveria ter rejeitado o email com duplo arroba." << endl;
-    } catch (const invalid_argument &ex) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << ex.what() << endl;
-    }
-}
-
-void testarNome() {
-    cout << "\n--- Testando Nome ---" << endl;
-    Nome n;
-
-    try {
-        n.setNome("Maria Silva");
-        cout << "[SUCESSO] Nome valido: " << n.getNome() << endl;
-    } catch (const exception &e) {
-        cout << "[FALHA INESPERADA] " << e.what() << endl;
-    }
-
-    try {
-        n.setNome(" Maria "); // Espaços nas pontas
-        cout << "[FALHA] Deveria ter rejeitado espacos nas pontas." << endl;
-    } catch (const invalid_argument &e) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
-    }
-}
-
-void testarTexto() {
-    cout << "\n--- Testando Texto ---" << endl;
-    Texto txt;
-
-    try {
-        txt.setTexto("Este e um texto valido.");
-        cout << "[SUCESSO] Texto valido: " << txt.getTexto() << endl;
-    } catch (const exception &e) {
-        cout << "[FALHA INESPERADA] " << e.what() << endl;
-    }
-
-    try {
-        txt.setTexto("texto sem maiuscula ou ponto");
-        cout << "[FALHA] Deveria ter rejeitado texto sem maiuscula/ponto." << endl;
-    } catch (const invalid_argument &e) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
-    }
-}
-
-void testarPrioridade() {
-    cout << "\n--- Testando Prioridade ---" << endl;
-    Prioridade p;
-
-    try {
-        p.setPrioridade("ALTA");
-        cout << "[SUCESSO] Prioridade valida: " << p.getPrioridade() << endl;
-    } catch (const exception &e) {
-        cout << "[FALHA INESPERADA] " << e.what() << endl;
-    }
-
-    try {
-        p.setPrioridade("URGENTE"); // Valor não permitido
-        cout << "[FALHA] Deveria ter rejeitado prioridade invalida." << endl;
-    } catch (const invalid_argument &e) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
-    }
-}
-
-void testarEstado() {
-    cout << "\n--- Testando Estado ---" << endl;
-    Estado est;
-
-    try {
-        est.setEstado("FAZENDO");
-        cout << "[SUCESSO] Estado valido: " << est.getEstado() << endl;
-    } catch (const exception &e) {
-        cout << "[FALHA INESPERADA] " << e.what() << endl;
-    }
-
-    try {
-        est.setEstado("PENDENTE"); // Valor não permitido
-        cout << "[FALHA] Deveria ter rejeitado estado invalido." << endl;
-    } catch (const invalid_argument &e) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
-    }
-}
-
-void testarLimite() {
-    cout << "\n--- Testando Limite ---" << endl;
-    Limite lim;
-
-    try {
-        lim.setLimite(15);
-        cout << "[SUCESSO] Limite valido: " << lim.getLimite() << endl;
-    } catch (const exception &e) {
-        cout << "[FALHA INESPERADA] " << e.what() << endl;
-    }
-
-    try {
-        lim.setLimite(50); // Fora do intervalo (1 a 25)
-        cout << "[FALHA] Deveria ter rejeitado limite fora do intervalo." << endl;
-    } catch (const invalid_argument &e) {
-        cout << "[SUCESSO AO REJEITAR] Excecao capturada corretamente: " << e.what() << endl;
-    }
-}
 
 int main() {
-    cout << "========================================" << endl;
-    cout << " INICIANDO BATERIA DE TESTES DE DOMINIO " << endl;
-    cout << "========================================" << endl;
 
-    testarTimestamp();
-    testarSenha();
-    testarEmail();
-    testarNome();
-    testarTexto();
-    testarPrioridade();
-    testarEstado();
-    testarLimite();
 
-    cout << "\n========================================" << endl;
-    cout << "          FIM DOS TESTES                " << endl;
-    cout << "========================================" << endl;
+    // ---------------------------------------------------------------------
+    // Instanciar controladoras de apresentação e stub de serviço.
+
+    InterfaceApresentacaoAutenticacao *cntrIUAutenticacao = new CntrIUAutenticacao();
+    InterfaceApresentacaoPessoa     *cntrIUPessoa     = new CntrIUPessoa();
+    StubCntrSPessoa *stubSPessoa       = new StubCntrSPessoa();
+
+    // Ligar controladoras ao serviço (mesmo stub nas duas).
+    cntrIUAutenticacao->setCntrSAutenticacao(stubSPessoa);
+    cntrIUPessoa->setCntrSPessoa(stubSPessoa);
+
+    Email email;
+    bool autenticado = false;
+    bool sair = false;
+
+
+          cout << "\n"
+          << "============================================================\n"
+          << "                  SISTEMA KANBAN                            \n"
+          << "============================================================\n"
+          << "\n"
+          << "  Universidade de Brasilia (UnB)\n"
+          << "  Curso      : Licenciatura em Computacao\n"
+          << "  Disciplina : CIC0197 - Tecnicas de Programacao 1\n"
+          << "  Professor  : Fernando\n"
+          << "  Semestre   : 2026.2\n"
+          << "\n"
+          << "------------------------------------------------------------\n"
+          << "  Desenvolvido por:\n"
+          << "    - Antenor Bento Silva Neto  (Mat. 252033425)\n"
+          << "    - Diego Paz                 (Mat. 252022123)\n"
+          << "============================================================\n"
+          << endl;
+
+
+    while (!autenticado && !sair) {
+        std::cout << "\n=== Menu inicial ===\n"
+                  << "1 - Autenticar\n"
+                  << "2 - Cadastrar usuario\n"
+                  << "0 - Sair\n"
+                  << "Opcao: ";
+
+        int opcao;
+        if (!(cin >> opcao)) {         // entrada não numérica
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "Opcao invalida.\n";
+            continue;
+        }
+
+        try {
+            switch (opcao) {
+                case 1:
+                    autenticado = cntrIUAutenticacao->autenticar(&email);
+                    if (autenticado) {
+                        cout << "\nSucesso na autenticacao.\n"
+                                  << "Email = " << email.getEmail() << "\n";
+                    }
+                    break;
+                case 2:
+                    cntrIUPessoa->cadastrar();   // volta ao menu em seguida
+                    break;
+                case 0:
+                    sair = true;
+                    break;
+                default:
+                    cout << "Opcao invalida.\n";
+            }
+        }
+        catch (const runtime_error &exp) {
+            cout << "Erro de sistema.\n";
+            break;
+        }
+    }
+
+    // ---------------------------------------------------------------------
+    // Destruir controladoras e stub.
+
+    delete cntrIUAutenticacao;
+    delete cntrIUPessoa;
+    delete stubSPessoa;
 
     return 0;
 }

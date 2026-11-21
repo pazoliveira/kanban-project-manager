@@ -13,20 +13,3 @@ void Papel::setPapel(string valor) {
     validarPapel(valor);
     this->papel = valor;
 }
-/*
-bool Papel::validarPapel(string valor) {
-
-    if (valor == "Gestor" || valor == "Desenvolvedor") {
-           return true;
-        }
-    else {
-        return false;
-        };
-}
-
-void Papel::setPapel(string valor) {
-    if (validarPapel(valor)) {
-        papel = valor;
-    }
-};
-*/

@@ -31,8 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="../src/domain" />
-			<Add directory="../src/entities" />
+			<Add directory="../src/domain/headers" />
+			<Add directory="../src/entities/headers" />
+			<Add directory="../codeblocks - doxygen" />
 		</Compiler>
 		<Unit filename="../src/domain/headers/email.h" />
 		<Unit filename="../src/domain/headers/estado.h" />
