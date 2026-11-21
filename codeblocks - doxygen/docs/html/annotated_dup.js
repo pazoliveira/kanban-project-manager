@@ -1,9 +1,18 @@
 var annotated_dup =
 [
     [ "CartaoAtividade", "classCartaoAtividade.html", "classCartaoAtividade" ],
+    [ "CntrIUAutenticacao", "classCntrIUAutenticacao.html", "classCntrIUAutenticacao" ],
+    [ "CntrIUPessoa", "classCntrIUPessoa.html", "classCntrIUPessoa" ],
+    [ "CntrIUProjeto", "classCntrIUProjeto.html", "classCntrIUProjeto" ],
     [ "Email", "classEmail.html", "classEmail" ],
     [ "Estado", "classEstado.html", "classEstado" ],
     [ "Identificador", "classIdentificador.html", "classIdentificador" ],
+    [ "InterfaceApresentacaoAutenticacao", "classInterfaceApresentacaoAutenticacao.html", "classInterfaceApresentacaoAutenticacao" ],
+    [ "InterfaceApresentacaoPessoa", "classInterfaceApresentacaoPessoa.html", "classInterfaceApresentacaoPessoa" ],
+    [ "InterfaceApresentacaoProjeto", "classInterfaceApresentacaoProjeto.html", "classInterfaceApresentacaoProjeto" ],
+    [ "InterfaceServicoAutenticacao", "classInterfaceServicoAutenticacao.html", "classInterfaceServicoAutenticacao" ],
+    [ "InterfaceServicoPessoa", "classInterfaceServicoPessoa.html", "classInterfaceServicoPessoa" ],
+    [ "InterfaceServicoProjeto", "classInterfaceServicoProjeto.html", "classInterfaceServicoProjeto" ],
     [ "Limite", "classLimite.html", "classLimite" ],
     [ "Nome", "classNome.html", "classNome" ],
     [ "Papel", "classPapel.html", "classPapel" ],
@@ -12,6 +21,8 @@ var annotated_dup =
     [ "Projeto", "classProjeto.html", "classProjeto" ],
     [ "Quadro", "classQuadro.html", "classQuadro" ],
     [ "Senha", "classSenha.html", "classSenha" ],
+    [ "StubCntrSPessoa", "classStubCntrSPessoa.html", "classStubCntrSPessoa" ],
+    [ "StubCntrSProjeto", "classStubCntrSProjeto.html", "classStubCntrSProjeto" ],
     [ "Tamanho", "classTamanho.html", "classTamanho" ],
     [ "Texto", "classTexto.html", "classTexto" ],
     [ "Timestamp", "classTimestamp.html", "classTimestamp" ]

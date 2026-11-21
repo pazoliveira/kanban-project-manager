@@ -10,6 +10,8 @@
 class CntrIUPessoa : public InterfaceApresentacaoPessoa {
 private:
     InterfaceServicoPessoa *cntrSPessoa = nullptr;
+    bool atualizar ();
+    bool ler();
 public:
     bool cadastrar();
     bool executar (Email);

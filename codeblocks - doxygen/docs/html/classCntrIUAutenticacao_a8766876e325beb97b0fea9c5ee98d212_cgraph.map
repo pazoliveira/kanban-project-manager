@@ -1,0 +1,9 @@
+<map id="CntrIUAutenticacao::autenticar" name="CntrIUAutenticacao::autenticar">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,153,103"/>
+<area shape="rect" id="Node000002" href="$classInterfaceServicoAutenticacao.html#aa601c9500abaa8050c774473bd019ed4" title=" " alt="" coords="201,5,415,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,62,214,46,215,51,154,67"/>
+<area shape="rect" id="Node000003" href="$classEmail.html#a98c0cf2c717e5be1fdd20e4814072562" title="Atribui um valor ao e&#45;mail apos validação." alt="" coords="246,70,370,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,80,232,80,232,85,153,85"/>
+<area shape="rect" id="Node000004" href="$classSenha.html#a51c12016de21760031b9d5f8c93dd0b8" title="Define um novo valor após a validação." alt="" coords="243,119,373,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,96,236,114,235,119,153,101"/>
+</map>

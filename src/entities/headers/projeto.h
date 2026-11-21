@@ -24,7 +24,7 @@ private:
 
 
 public:
-    Projeto();
+    Projeto() = default;
 
     /**
      * @brief Define um novo valor após a validação.

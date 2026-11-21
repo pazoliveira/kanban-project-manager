@@ -14,6 +14,7 @@
 
 #include "cntrIUAutenticacao.h"
 #include "cntrIUPessoa.h"
+#include "cntrIUProjeto.h"
 
 #include "stubs.h"
 
@@ -26,15 +27,20 @@ int main() {
     // ---------------------------------------------------------------------
     // Instanciar controladoras de apresentação e stub de serviço.
 
-    InterfaceApresentacaoAutenticacao *cntrIUAutenticacao = new CntrIUAutenticacao();
-    InterfaceApresentacaoPessoa     *cntrIUPessoa     = new CntrIUPessoa();
-    StubCntrSPessoa *stubSPessoa       = new StubCntrSPessoa();
+    InterfaceApresentacaoAutenticacao   *cntrIUAutenticacao = new CntrIUAutenticacao();
+    InterfaceApresentacaoPessoa         *cntrIUPessoa       = new CntrIUPessoa();
+    InterfaceApresentacaoProjeto        *cntrIUProjeto      = new CntrIUProjeto();
+
+    StubCntrSPessoa                     *stubSPessoa        = new StubCntrSPessoa();
+    StubCntrSProjeto                    *stubSProjeto       = new StubCntrSProjeto();
 
     // Ligar controladoras ao serviço (mesmo stub nas duas).
     cntrIUAutenticacao->setCntrSAutenticacao(stubSPessoa);
     cntrIUPessoa->setCntrSPessoa(stubSPessoa);
+    cntrIUProjeto->setCntrSProjeto(stubSProjeto);
 
     Email email;
+    Papel papel;
     bool autenticado = false;
     bool sair = false;
 
@@ -47,13 +53,13 @@ int main() {
           << "  Universidade de Brasilia (UnB)\n"
           << "  Curso      : Licenciatura em Computacao\n"
           << "  Disciplina : CIC0197 - Tecnicas de Programacao 1\n"
-          << "  Professor  : Fernando\n"
+          << "  Professor  : Fernando A. de Araujo Chacon de Albuquerque\n"
           << "  Semestre   : 2026.2\n"
           << "\n"
           << "------------------------------------------------------------\n"
           << "  Desenvolvido por:\n"
-          << "    - Antenor Bento Silva Neto  (Mat. 252033425)\n"
-          << "    - Diego Paz                 (Mat. 252022123)\n"
+          << "    - Antenor Bento da Silva Neto  (Mat. 252033425)\n"
+          << "    - Diego Paz Oliveira Morais    (Mat. 252011070)\n"
           << "============================================================\n"
           << endl;
 
@@ -78,8 +84,7 @@ int main() {
                 case 1:
                     autenticado = cntrIUAutenticacao->autenticar(&email);
                     if (autenticado) {
-                        cout << "\nSucesso na autenticacao.\n"
-                                  << "Email = " << email.getEmail() << "\n";
+                        cout << "\nSucesso na autenticacao.\n" << endl;
                     }
                     break;
                 case 2:
@@ -97,6 +102,52 @@ int main() {
             break;
         }
     }
+// ---------------------------------------------------------------------
+// Menu principal (só se autenticou).
+
+    if (autenticado) {
+        cout << "\nBem-vindo, " << email.getEmail() << "!\n";
+
+        bool voltar = false;
+        while (!voltar) {
+            cout << "\n=== Menu principal ===\n"
+                 << "1 - Projetos\n"
+                 << "2 - Pessoas\n"
+                 << "0 - Sair\n"
+                 << "Opcao: ";
+
+            int opcao;
+            if (!(cin >> opcao)) {
+                cin.clear();
+                cin.ignore(10000, '\n');
+                cout << "Opcao invalida.\n";
+                continue;
+            }
+
+            try {
+                switch (opcao) {
+                    case 1:
+                        // TODO: permitir apenas se o papel for GESTOR.
+                        cntrIUProjeto->executar(email);
+                        break;
+                    case 2:
+                        cntrIUPessoa->executar(email);
+                        break;
+                    case 0:
+                        voltar = true;
+                        break;
+                    default:
+                        cout << "Opcao invalida.\n";
+                }
+            }
+            catch (const runtime_error &exp) {
+                cout << "Erro de sistema.\n";
+                voltar = true;
+            }
+        }
+    }
+
+
 
     // ---------------------------------------------------------------------
     // Destruir controladoras e stub.
@@ -104,6 +155,8 @@ int main() {
     delete cntrIUAutenticacao;
     delete cntrIUPessoa;
     delete stubSPessoa;
+    delete cntrIUProjeto;
+    delete stubSProjeto;
 
     return 0;
 }

@@ -1,0 +1,7 @@
+<map id="StubCntrSProjeto::ler" name="StubCntrSProjeto::ler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,163,56"/>
+<area shape="rect" id="Node000002" href="$classProjeto.html#a8364932ede673529a8c215d7e4e5ac04" title="Retorna o valor atualmente armazenado." alt="" coords="228,5,407,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,32,214,27,214,32,163,37"/>
+<area shape="rect" id="Node000003" href="$classIdentificador.html#a98ea17bef93c0301fb28da2a6b7228b5" title="Retorna o valor atualmente armazenado." alt="" coords="211,55,424,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,49,197,52,197,58,163,54"/>
+</map>

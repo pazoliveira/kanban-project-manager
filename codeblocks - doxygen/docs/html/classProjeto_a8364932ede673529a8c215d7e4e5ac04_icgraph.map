@@ -1,0 +1,9 @@
+<map id="Projeto::getIdentificador" name="Projeto::getIdentificador">
+<area shape="rect" id="Node000001" title="Retorna o valor atualmente armazenado." alt="" coords="251,55,429,80"/>
+<area shape="rect" id="Node000002" href="$classStubCntrSProjeto.html#a41dd4b782988c9aa512eb95780617138" title=" " alt="" coords="5,5,203,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,54,165,33,166,28,266,49"/>
+<area shape="rect" id="Node000003" href="$classStubCntrSProjeto.html#a9446b83be515a21be7043214f12272ad" title=" " alt="" coords="19,55,189,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,70,189,70,189,65,237,65"/>
+<area shape="rect" id="Node000004" href="$classStubCntrSProjeto.html#a510b555de326419e9ce62ed5f0b827ec" title=" " alt="" coords="25,104,183,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,85,166,107,165,101,265,80"/>
+</map>

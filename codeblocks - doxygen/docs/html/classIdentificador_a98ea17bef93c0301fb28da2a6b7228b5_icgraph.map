@@ -1,0 +1,11 @@
+<map id="Identificador::getIdentificador" name="Identificador::getIdentificador">
+<area shape="rect" id="Node000001" title="Retorna o valor atualmente armazenado." alt="" coords="251,80,464,105"/>
+<area shape="rect" id="Node000002" href="$classStubCntrSProjeto.html#a41dd4b782988c9aa512eb95780617138" title=" " alt="" coords="5,5,203,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,78,202,45,159,33,161,28,203,39,308,73"/>
+<area shape="rect" id="Node000003" href="$classStubCntrSProjeto.html#a9446b83be515a21be7043214f12272ad" title=" " alt="" coords="19,55,189,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,83,188,78,189,73,237,78"/>
+<area shape="rect" id="Node000004" href="$classStubCntrSProjeto.html#a31342fae8bd0cfb77d2cef6a018ae5f4" title=" " alt="" coords="12,104,196,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,107,196,111,196,105,237,101"/>
+<area shape="rect" id="Node000005" href="$classStubCntrSProjeto.html#a510b555de326419e9ce62ed5f0b827ec" title=" " alt="" coords="25,153,183,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="305,112,203,143,157,156,155,151,202,138,303,107"/>
+</map>

@@ -68,3 +68,77 @@ bool StubCntrSPessoa::cadastrar(Pessoa &pessoa) {
     pessoas[chave] = pessoa;
     return true;
 }
+
+bool StubCntrSPessoa::ler(Pessoa *pessoa) {
+    auto it = pessoas.find(pessoa->getEmail().getEmail());
+    if (it == pessoas.end())
+        return false;               // não encontrada
+
+    *pessoa = it->second;           // preenche todos os campos
+    return true;
+}
+
+bool StubCntrSPessoa::atualizar(Pessoa pessoa) {
+    auto it = pessoas.find(pessoa.getEmail().getEmail());
+    if (it == pessoas.end())
+        return false;               // não existe para atualizar
+
+    it->second = pessoa;
+    return true;
+}
+
+
+// -------------------------------------------------------------------------
+// Projeto
+
+const std::string StubCntrSProjeto::TRIGGER_ERRO_SISTEMA = "ERR999";
+
+bool StubCntrSProjeto::criar(Projeto projeto) {
+    const std::string chave = projeto.getIdentificador().getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    if (projetos.count(chave) > 0)
+        return false;                       // PK duplicada
+
+    projetos[chave] = projeto;
+    return true;
+}
+
+bool StubCntrSProjeto::ler(Projeto *projeto) {
+    const std::string chave = projeto->getIdentificador().getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    auto it = projetos.find(chave);
+    if (it == projetos.end())
+        return false;                       // não encontrado
+
+    *projeto = it->second;                  // preenche todos os campos
+    return true;
+}
+
+bool StubCntrSProjeto::atualizar(Projeto projeto) {
+    const std::string chave = projeto.getIdentificador().getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    auto it = projetos.find(chave);
+    if (it == projetos.end())
+        return false;                       // não existe para atualizar
+
+    it->second = projeto;
+    return true;
+}
+
+bool StubCntrSProjeto::excluir(Identificador identificador) {
+    const std::string chave = identificador.getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    return projetos.erase(chave) > 0;       // true se removeu algo
+}

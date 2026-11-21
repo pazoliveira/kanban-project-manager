@@ -1,0 +1,7 @@
+<map id="StubCntrSPessoa::ler" name="StubCntrSPessoa::ler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,163,56"/>
+<area shape="rect" id="Node000002" href="$classEmail.html#aa9a0e1a66b4efde65cf017bdd1c6c625" title="Retorna o valor do e&#45;mail." alt="" coords="215,5,341,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,30,201,25,202,31,164,36"/>
+<area shape="rect" id="Node000003" href="$classPessoa.html#a4a9367778bc8be30a4ae0380aab51552" title="Retorna o email da pessoa." alt="" coords="211,55,345,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,50,197,55,197,60,163,56"/>
+</map>

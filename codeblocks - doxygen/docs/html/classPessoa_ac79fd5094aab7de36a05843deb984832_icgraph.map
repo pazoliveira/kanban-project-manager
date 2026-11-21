@@ -1,0 +1,9 @@
+<map id="Pessoa::setPapel" name="Pessoa::setPapel">
+<area shape="rect" id="Node000001" title="Define o papel da pessoa." alt="" coords="471,35,601,60"/>
+<area shape="rect" id="Node000002" href="$classCntrIUPessoa.html#ae4bb988629d1c11a143173218fa516d5" title=" " alt="" coords="235,5,414,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="456,39,414,33,415,28,457,34"/>
+<area shape="rect" id="Node000004" href="$classStubCntrSPessoa.html#ad75d26c9c8e65ea7907921cbb75c881a" title=" " alt="" coords="227,55,423,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="457,60,423,65,422,60,457,55"/>
+<area shape="rect" id="Node000003" href="$classCntrIUPessoa.html#af35279cc54627be9cb2e7ededfc97873" title=" " alt="" coords="5,5,179,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,21,179,21,179,15,221,15"/>
+</map>
