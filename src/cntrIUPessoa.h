@@ -13,6 +13,7 @@ private:
     bool atualizar ();
     bool ler();
     bool listar();
+    bool excluir();
 public:
     bool cadastrar();
     bool executar (Email);

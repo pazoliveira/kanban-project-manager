@@ -32,8 +32,8 @@ public:
     bool ler(Pessoa *pessoa) override;
     bool atualizar(Pessoa pessoa) override;
     bool listar(vector<Pessoa> *lista) override;
+    bool excluir(Email email) override;
 };
-
 
 /**
  * @brief Stub do serviço de Projeto, com armazenamento em memória.
@@ -53,7 +53,4 @@ public:
     bool listar(vector<Projeto> *lista) override;
     bool excluir(Identificador identificador) override;
 };
-
-
-
 #endif // STUBS_H_INCLUDED

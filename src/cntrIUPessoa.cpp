@@ -7,6 +7,36 @@
 
 using namespace std;
 
+bool CntrIUPessoa::executar(Email email) {
+
+    int opcao;
+    Pessoa pessoa;
+
+     do {
+        cout << "\n=== Time de Desenvolvimento ===\n"
+             << "1 - Cadastrar\n"
+             << "2 - Consultar\n"
+             << "3 - Atualizar\n"
+             << "4 - Listar\n"
+             << "5 - Excluir\n"
+             << "0 - Voltar\n"
+             << "Opcao: ";
+        cin >> opcao;
+
+        switch (opcao) {
+            case 1: cadastrar(); break;
+            case 2: ler(); break;
+            case 3: atualizar(); break;
+            case 4: listar(); break;
+            case 5: excluir(); break;
+            case 0: break;
+            default: cout << "Opcao invalida.\n";
+        }
+    } while (opcao != 0);
+
+    return true;
+}
+
 bool CntrIUPessoa::cadastrar() {
     string entrada;
 
@@ -73,37 +103,6 @@ bool CntrIUPessoa::cadastrar() {
     }
 }
 
-bool CntrIUPessoa::executar(Email email) {
-
-    int opcao;
-    Pessoa pessoa;
-
-     do {
-        cout << "\n=== Time Desenvolvimento ===\n"
-             << "1 - Cadastrar\n"
-             << "2 - Consultar\n"
-             << "3 - Atualizar\n"
-             << "4 - Listar\n"
-             << "5 - Excluir\n"
-             << "0 - Voltar\n"
-             << "Opcao: ";
-        cin >> opcao;
-
-        switch (opcao) {
-            case 1: cadastrar(); break;
-            case 2: ler(); break;
-            case 3: atualizar(); break;
-            case 4: listar(); break;
-            //case 5: excluir(); break;
-            case 0: break;
-            default: cout << "Opcao invalida.\n";
-        }
-    } while (opcao != 0);
-
-    return true;
-}
-
-
 bool CntrIUPessoa::ler() {
 
     string entrada;
@@ -114,7 +113,7 @@ bool CntrIUPessoa::ler() {
 
     try {
         // Lê e valida o identificador (a PK do projeto).
-        cout << "Email (PK) ";
+        cout << "Email: ";
         getline(cin >> ws, entrada);
         email.setEmail(entrada);
         pessoa.setEmail(email);
@@ -138,7 +137,6 @@ bool CntrIUPessoa::ler() {
 
 
     return true;
-
 }
 
 bool CntrIUPessoa::atualizar() {
@@ -212,11 +210,10 @@ bool CntrIUPessoa::atualizar() {
     return true;
 }
 
-
 bool CntrIUPessoa::listar() {
     vector<Pessoa> lista;
 
-    cout << "\n=== Listar pessoas ===\n";
+    cout << "\n=== Pessoas cadastradas ===\n" << endl;
 
 
     if (!cntrSPessoa->listar(&lista)) {
@@ -237,9 +234,45 @@ bool CntrIUPessoa::listar() {
     }
 
     return true;
-
 }
 
+bool CntrIUPessoa::excluir() {
 
+cout << "\n=== Excluir pessoa(s) ===\n";
 
+    string entrada;
+    Email email;
+    Pessoa pessoa;
 
+    try {
+        // Lê e valida o identificador (a PK do projeto).
+        cout << "Email: ";
+        getline(cin >> ws, entrada);
+        email.setEmail(entrada);
+        pessoa.setEmail(email);
+    }
+    catch (const invalid_argument &excecao) {
+        cout << "Dado invalido: " << excecao.what() << "\n";
+        return false;
+    }
+
+    if (!cntrSPessoa->ler(&pessoa)) {
+        cout << "Pessoa não encontrada.\n";
+        return false;
+    }
+
+    if (!cntrSPessoa->excluir(email)) {
+        cout << "Falha ao excluir pessoa.\n";
+        return false;
+    }
+
+    // Apresentação dos dados.
+    cout << "\n--- Dados da pessoa excluída ---\n"
+         << "Email:         " << pessoa.getEmail().getEmail() << "\n"
+         << "Nome:          " << pessoa.getNome().getNome() << "\n"
+         << "Papel:         " << pessoa.getPapel().getPapel() << "\n"
+         << "---------------------------\n";
+
+    return true;
+
+}

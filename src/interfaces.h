@@ -57,6 +57,7 @@ public:
     virtual bool ler(Pessoa*) = 0;
     virtual bool atualizar (Pessoa) = 0;
     virtual bool listar(vector<Pessoa>*) = 0;
+    virtual bool excluir(Email) = 0;
     virtual ~InterfaceServicoPessoa() {}
 };
 

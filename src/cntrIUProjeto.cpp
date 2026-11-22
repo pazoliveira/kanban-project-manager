@@ -24,7 +24,7 @@ void CntrIUProjeto::executar(Email email) {
             case 2: ler(&projeto); break;
             case 3: atualizar(projeto); break;
             case 4: listar(); break;
-            //case 5: excluir(); break;
+            case 5: excluir(); break;
             case 0: break;
             default: cout << "Opcao invalida.\n";
         }
@@ -215,7 +215,6 @@ bool CntrIUProjeto::atualizar(Projeto) {
     return true;
 }
 
-
 bool CntrIUProjeto::listar() {
     vector<Projeto> lista;
 
@@ -246,3 +245,46 @@ bool CntrIUProjeto::listar() {
 
 }
 
+bool CntrIUProjeto::excluir(){
+
+    cout << "\n=== Excluir projeto(s) ===\n";
+
+    string entrada;
+    Identificador identificador;
+    Projeto projeto;
+
+    try {
+        // Lê e valida o identificador (a PK do projeto).
+        cout << "Identificador: ";
+        getline(cin >> ws, entrada);
+        identificador.setIdentificador(entrada);
+        projeto.setIdentificador(identificador);
+    }
+    catch (const invalid_argument &excecao) {
+        cout << "Dado invalido: " << excecao.what() << "\n";
+        return false;
+    }
+
+
+    if (!cntrSProjeto->ler(&projeto)) {
+        cout << "Projeto nao encontrado.\n";
+        return false;
+    }
+
+    if (!cntrSProjeto->excluir(identificador)) {
+        cout << "Falha ao excluir projeto.\n";
+        return false;
+    }
+
+    // Apresentação dos dados.
+    cout << "\n--- Dados do projeto excluído ---\n"
+         << "Identificador: " << projeto.getIdentificador().getIdentificador() << "\n"
+         << "Nome:          " << projeto.getNome().getNome() << "\n"
+         << "Descricao:     " << projeto.getDescricao().getTexto() << "\n"
+         << "Inicio:        " << projeto.getInicio().getDataHora() << "\n"
+         << "Termino:       " << projeto.getTermino().getDataHora() << "\n"
+         << "Gestor:        " << projeto.getEmailGestor().getEmail() << "\n";
+
+    return true;
+
+}

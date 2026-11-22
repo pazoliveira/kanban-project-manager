@@ -11,7 +11,7 @@ private:
     bool criar(Email &gestor);
     bool ler(Projeto*);
     bool atualizar(Projeto);
-    bool excluir (Identificador);
+    bool excluir ();
     bool listar ();
 
 public:

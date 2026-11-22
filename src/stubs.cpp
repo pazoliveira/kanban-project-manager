@@ -21,7 +21,7 @@ StubCntrSPessoa::StubCntrSPessoa() {
 
     email.setEmail("gestor@kanban.com");
     nome.setNome("Gestor Teste");
-    senha.setSenha("Abc12");
+    senha.setSenha("abc12");
     papel.setPapel("GESTOR");
 
     gestor.setEmail(email);
@@ -87,7 +87,6 @@ bool StubCntrSPessoa::atualizar(Pessoa pessoa) {
     return true;
 }
 
-
 bool StubCntrSPessoa::listar(vector<Pessoa> *lista) {
     lista->clear();
     for (auto& pessoa : pessoas) {
@@ -95,6 +94,16 @@ bool StubCntrSPessoa::listar(vector<Pessoa> *lista) {
        }
 
     return true;
+}
+
+bool StubCntrSPessoa::excluir(Email email){
+
+ const std::string chave = email.getEmail();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    return pessoas.erase(chave) > 0;       // true se removeu algo
 }
 
 // -------------------------------------------------------------------------
@@ -143,7 +152,6 @@ bool StubCntrSProjeto::atualizar(Projeto projeto) {
     return true;
 }
 
-
 bool StubCntrSProjeto::listar(vector<Projeto> *lista) {
     lista->clear();
     for (auto& projeto : projetos) {
@@ -152,7 +160,6 @@ bool StubCntrSProjeto::listar(vector<Projeto> *lista) {
 
     return true;
 }
-
 
 bool StubCntrSProjeto::excluir(Identificador identificador) {
     const std::string chave = identificador.getIdentificador();
