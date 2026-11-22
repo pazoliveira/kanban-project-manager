@@ -12,6 +12,7 @@ private:
     InterfaceServicoPessoa *cntrSPessoa = nullptr;
     bool atualizar ();
     bool ler();
+    bool listar();
 public:
     bool cadastrar();
     bool executar (Email);

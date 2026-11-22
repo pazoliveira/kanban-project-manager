@@ -268,17 +268,17 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classInterfaceApresentacaoPessoa.html#a003fe1f2bbf5a7ea6e90d52d871ecb26">InterfaceApresentacaoPessoa</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>                                       {</div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">// TODO: menu de operações sobre a pessoa autenticada</span></div>
-<div class="line"><span class="lineno">   78</span>    <span class="comment">// (visualizar, editar, excluir conta).</span></div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordtype">int</span> opcao;</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_class" href="classPessoa.html">Pessoa</a> pessoa;</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>     <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">   83</span>        cout &lt;&lt; <span class="stringliteral">&quot;\n=== Time Desenvolvimento ===\n&quot;</span></div>
-<div class="line"><span class="lineno">   84</span>             &lt;&lt; <span class="stringliteral">&quot;1 - Cadastrar\n&quot;</span></div>
-<div class="line"><span class="lineno">   85</span>             &lt;&lt; <span class="stringliteral">&quot;2 - Consultar\n&quot;</span></div>
-<div class="line"><span class="lineno">   86</span>             &lt;&lt; <span class="stringliteral">&quot;3 - Atualizar\n&quot;</span></div>
-<div class="line"><span class="lineno">   87</span>             &lt;&lt; <span class="stringliteral">&quot;4 - Excluir\n&quot;</span></div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordtype">int</span> opcao;</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_class" href="classPessoa.html">Pessoa</a> pessoa;</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>     <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">   82</span>        cout &lt;&lt; <span class="stringliteral">&quot;\n=== Time Desenvolvimento ===\n&quot;</span></div>
+<div class="line"><span class="lineno">   83</span>             &lt;&lt; <span class="stringliteral">&quot;1 - Cadastrar\n&quot;</span></div>
+<div class="line"><span class="lineno">   84</span>             &lt;&lt; <span class="stringliteral">&quot;2 - Consultar\n&quot;</span></div>
+<div class="line"><span class="lineno">   85</span>             &lt;&lt; <span class="stringliteral">&quot;3 - Atualizar\n&quot;</span></div>
+<div class="line"><span class="lineno">   86</span>             &lt;&lt; <span class="stringliteral">&quot;4 - Listar\n&quot;</span></div>
+<div class="line"><span class="lineno">   87</span>             &lt;&lt; <span class="stringliteral">&quot;5 - Excluir\n&quot;</span></div>
 <div class="line"><span class="lineno">   88</span>             &lt;&lt; <span class="stringliteral">&quot;0 - Voltar\n&quot;</span></div>
 <div class="line"><span class="lineno">   89</span>             &lt;&lt; <span class="stringliteral">&quot;Opcao: &quot;</span>;</div>
 <div class="line"><span class="lineno">   90</span>        cin &gt;&gt; opcao;</div>
@@ -287,14 +287,15 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   93</span>            <span class="keywordflow">case</span> 1: <a class="code hl_function" href="classCntrIUPessoa.html#ae4bb988629d1c11a143173218fa516d5">cadastrar</a>(); <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">   94</span>            <span class="keywordflow">case</span> 2: ler(); <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">   95</span>            <span class="keywordflow">case</span> 3: atualizar(); <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   96</span>            <span class="comment">//case 4: excluir(); break;</span></div>
-<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">case</span> 0: <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">default</span>: cout &lt;&lt; <span class="stringliteral">&quot;Opcao invalida.\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   99</span>        }</div>
-<div class="line"><span class="lineno">  100</span>    } <span class="keywordflow">while</span> (opcao != 0);</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">case</span> 4: listar(); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   97</span>            <span class="comment">//case 5: excluir(); break;</span></div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">case</span> 0: <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">default</span>: cout &lt;&lt; <span class="stringliteral">&quot;Opcao invalida.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span>        }</div>
+<div class="line"><span class="lineno">  101</span>    } <span class="keywordflow">while</span> (opcao != 0);</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  104</span>}</div>
 <div class="ttc" id="aclassCntrIUPessoa_html_ae4bb988629d1c11a143173218fa516d5"><div class="ttname"><a href="classCntrIUPessoa.html#ae4bb988629d1c11a143173218fa516d5">CntrIUPessoa::cadastrar</a></div><div class="ttdeci">bool cadastrar()</div><div class="ttdef"><b>Definition</b> cntrIUPessoa.cpp:10</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -329,9 +330,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classInterfaceApresentacaoPessoa.html#a5fbce5f07dd4012f019737649e4fa15d">InterfaceApresentacaoPessoa</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                                            {</div>
-<div class="line"><span class="lineno">   22</span>    this-&gt;cntrSPessoa = cntrSPessoa;</div>
-<div class="line"><span class="lineno">   23</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>                                                                            {</div>
+<div class="line"><span class="lineno">   23</span>    this-&gt;cntrSPessoa = cntrSPessoa;</div>
+<div class="line"><span class="lineno">   24</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

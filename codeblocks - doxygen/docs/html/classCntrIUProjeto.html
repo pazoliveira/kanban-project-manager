@@ -152,21 +152,23 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   13</span>             &lt;&lt; <span class="stringliteral">&quot;1 - Criar\n&quot;</span></div>
 <div class="line"><span class="lineno">   14</span>             &lt;&lt; <span class="stringliteral">&quot;2 - Consultar\n&quot;</span></div>
 <div class="line"><span class="lineno">   15</span>             &lt;&lt; <span class="stringliteral">&quot;3 - Atualizar\n&quot;</span></div>
-<div class="line"><span class="lineno">   16</span>             &lt;&lt; <span class="stringliteral">&quot;4 - Excluir\n&quot;</span></div>
-<div class="line"><span class="lineno">   17</span>             &lt;&lt; <span class="stringliteral">&quot;0 - Voltar\n&quot;</span></div>
-<div class="line"><span class="lineno">   18</span>             &lt;&lt; <span class="stringliteral">&quot;Opcao: &quot;</span>;</div>
-<div class="line"><span class="lineno">   19</span>        cin &gt;&gt; opcao;</div>
-<div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>        <span class="keywordflow">switch</span> (opcao) {</div>
-<div class="line"><span class="lineno">   22</span>            <span class="keywordflow">case</span> 1: criar(email); <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   23</span>            <span class="keywordflow">case</span> 2: ler(&amp;projeto); <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   24</span>            <span class="keywordflow">case</span> 3: atualizar(projeto); <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   25</span>            <span class="comment">//case 4: excluir(); break;</span></div>
-<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">case</span> 0: <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   27</span>            <span class="keywordflow">default</span>: cout &lt;&lt; <span class="stringliteral">&quot;Opcao invalida.\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   28</span>        }</div>
-<div class="line"><span class="lineno">   29</span>    } <span class="keywordflow">while</span> (opcao != 0);</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<div class="line"><span class="lineno">   16</span>             &lt;&lt; <span class="stringliteral">&quot;4 - Listar\n&quot;</span></div>
+<div class="line"><span class="lineno">   17</span>             &lt;&lt; <span class="stringliteral">&quot;5 - Excluir\n&quot;</span></div>
+<div class="line"><span class="lineno">   18</span>             &lt;&lt; <span class="stringliteral">&quot;0 - Voltar\n&quot;</span></div>
+<div class="line"><span class="lineno">   19</span>             &lt;&lt; <span class="stringliteral">&quot;Opcao: &quot;</span>;</div>
+<div class="line"><span class="lineno">   20</span>        cin &gt;&gt; opcao;</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">switch</span> (opcao) {</div>
+<div class="line"><span class="lineno">   23</span>            <span class="keywordflow">case</span> 1: criar(email); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   24</span>            <span class="keywordflow">case</span> 2: ler(&amp;projeto); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   25</span>            <span class="keywordflow">case</span> 3: atualizar(projeto); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">case</span> 4: listar(); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   27</span>            <span class="comment">//case 5: excluir(); break;</span></div>
+<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">case</span> 0: <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   29</span>            <span class="keywordflow">default</span>: cout &lt;&lt; <span class="stringliteral">&quot;Opcao invalida.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   30</span>        }</div>
+<div class="line"><span class="lineno">   31</span>    } <span class="keywordflow">while</span> (opcao != 0);</div>
+<div class="line"><span class="lineno">   32</span>}</div>
 <div class="ttc" id="aclassProjeto_html"><div class="ttname"><a href="classProjeto.html">Projeto</a></div><div class="ttdoc">Representa o domínio Projeto no sistema Kanban.</div><div class="ttdef"><b>Definition</b> projeto.h:16</div></div>
 </div><!-- fragment -->
 </div>
@@ -196,9 +198,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classInterfaceApresentacaoProjeto.html#ac32d036e6c92cd43ae083a99a91da6ac">InterfaceApresentacaoProjeto</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>                                                                                {</div>
-<div class="line"><span class="lineno">   21</span>    this-&gt;cntrSProjeto = cntrSProjeto;</div>
-<div class="line"><span class="lineno">   22</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>                                                                                {</div>
+<div class="line"><span class="lineno">   23</span>    this-&gt;cntrSProjeto = cntrSProjeto;</div>
+<div class="line"><span class="lineno">   24</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

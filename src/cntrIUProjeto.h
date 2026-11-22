@@ -11,6 +11,8 @@ private:
     bool criar(Email &gestor);
     bool ler(Projeto*);
     bool atualizar(Projeto);
+    bool excluir (Identificador);
+    bool listar ();
 
 public:
     void executar(Email);

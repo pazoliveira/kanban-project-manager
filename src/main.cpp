@@ -106,7 +106,7 @@ int main() {
 // Menu principal (só se autenticou).
 
     if (autenticado) {
-        cout << "\nBem-vindo, " << email.getEmail() << "!\n";
+        cout << "\n#### Bem-vindo, " << email.getEmail() << "! ####\n";
 
         bool voltar = false;
         while (!voltar) {

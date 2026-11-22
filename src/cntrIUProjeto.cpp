@@ -13,7 +13,8 @@ void CntrIUProjeto::executar(Email email) {
              << "1 - Criar\n"
              << "2 - Consultar\n"
              << "3 - Atualizar\n"
-             << "4 - Excluir\n"
+             << "4 - Listar\n"
+             << "5 - Excluir\n"
              << "0 - Voltar\n"
              << "Opcao: ";
         cin >> opcao;
@@ -22,7 +23,8 @@ void CntrIUProjeto::executar(Email email) {
             case 1: criar(email); break;
             case 2: ler(&projeto); break;
             case 3: atualizar(projeto); break;
-            //case 4: excluir(); break;
+            case 4: listar(); break;
+            //case 5: excluir(); break;
             case 0: break;
             default: cout << "Opcao invalida.\n";
         }
@@ -212,3 +214,35 @@ bool CntrIUProjeto::atualizar(Projeto) {
     cout << "Projeto atualizado com sucesso.\n";
     return true;
 }
+
+
+bool CntrIUProjeto::listar() {
+    vector<Projeto> lista;
+
+    cout << "\n=== Listar projetos ===\n";
+
+
+    if (!cntrSProjeto->listar(&lista)) {
+        cout << "Nao foi possivel listar os projetos.\n";
+        return false;
+    }
+
+    if (lista.empty()) {
+        cout << "Nenhum projeto cadastrado.\n";
+        return true;
+    }
+
+    for (Projeto &projeto : lista) {
+        cout << "ID: "              << projeto.getIdentificador().getIdentificador() << "\n"
+             << "Nome:  "           << projeto.getNome().getNome() << "\n"
+             << "Descricao: "       << projeto.getDescricao().getTexto() << "\n"
+             << "Inicio: "          << projeto.getInicio().getDataHora() << "\n"
+             << "Termino: "         << projeto.getTermino().getDataHora() << "\n"
+             << "Gestor: "          << projeto.getEmailGestor().getEmail() << "\n"
+             << "---------------------------\n";
+    }
+
+    return true;
+
+}
+

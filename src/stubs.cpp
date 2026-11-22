@@ -88,6 +88,15 @@ bool StubCntrSPessoa::atualizar(Pessoa pessoa) {
 }
 
 
+bool StubCntrSPessoa::listar(vector<Pessoa> *lista) {
+    lista->clear();
+    for (auto& pessoa : pessoas) {
+        lista->push_back(pessoa.second);
+       }
+
+    return true;
+}
+
 // -------------------------------------------------------------------------
 // Projeto
 
@@ -134,6 +143,17 @@ bool StubCntrSProjeto::atualizar(Projeto projeto) {
     return true;
 }
 
+
+bool StubCntrSProjeto::listar(vector<Projeto> *lista) {
+    lista->clear();
+    for (auto& projeto : projetos) {
+        lista->push_back(projeto.second);
+       }
+
+    return true;
+}
+
+
 bool StubCntrSProjeto::excluir(Identificador identificador) {
     const std::string chave = identificador.getIdentificador();
 
@@ -142,3 +162,6 @@ bool StubCntrSProjeto::excluir(Identificador identificador) {
 
     return projetos.erase(chave) > 0;       // true se removeu algo
 }
+
+
+

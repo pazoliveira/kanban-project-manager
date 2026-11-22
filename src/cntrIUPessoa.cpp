@@ -74,8 +74,7 @@ bool CntrIUPessoa::cadastrar() {
 }
 
 bool CntrIUPessoa::executar(Email email) {
-    // TODO: menu de operações sobre a pessoa autenticada
-    // (visualizar, editar, excluir conta).
+
     int opcao;
     Pessoa pessoa;
 
@@ -84,7 +83,8 @@ bool CntrIUPessoa::executar(Email email) {
              << "1 - Cadastrar\n"
              << "2 - Consultar\n"
              << "3 - Atualizar\n"
-             << "4 - Excluir\n"
+             << "4 - Listar\n"
+             << "5 - Excluir\n"
              << "0 - Voltar\n"
              << "Opcao: ";
         cin >> opcao;
@@ -93,7 +93,8 @@ bool CntrIUPessoa::executar(Email email) {
             case 1: cadastrar(); break;
             case 2: ler(); break;
             case 3: atualizar(); break;
-            //case 4: excluir(); break;
+            case 4: listar(); break;
+            //case 5: excluir(); break;
             case 0: break;
             default: cout << "Opcao invalida.\n";
         }
@@ -210,3 +211,35 @@ bool CntrIUPessoa::atualizar() {
     cout << "Dados Pessoais atualizados com sucesso.\n";
     return true;
 }
+
+
+bool CntrIUPessoa::listar() {
+    vector<Pessoa> lista;
+
+    cout << "\n=== Listar pessoas ===\n";
+
+
+    if (!cntrSPessoa->listar(&lista)) {
+        cout << "Nao foi possivel listar as pessoas.\n";
+        return false;
+    }
+
+    if (lista.empty()) {
+        cout << "Nenhuma pessoa cadastrada.\n";
+        return true;
+    }
+
+    for (Pessoa &pessoa : lista) {
+        cout << "Email: " << pessoa.getEmail().getEmail() << "\n"
+             << "Nome:  " << pessoa.getNome().getNome() << "\n"
+             << "Papel: " << pessoa.getPapel().getPapel() << "\n"
+             << "---------------------------\n";
+    }
+
+    return true;
+
+}
+
+
+
+

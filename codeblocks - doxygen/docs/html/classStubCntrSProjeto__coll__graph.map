@@ -1,5 +1,5 @@
 <map id="StubCntrSProjeto" name="StubCntrSProjeto">
-<area shape="rect" id="Node000001" title="Stub do serviço de Projeto, com armazenamento em memória." alt="" coords="9,199,203,324"/>
-<area shape="rect" id="Node000002" href="$classInterfaceServicoProjeto.html" title=" " alt="" coords="5,5,207,151"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,164,109,198,103,198,103,164"/>
+<area shape="rect" id="Node000001" title="Stub do serviço de Projeto, com armazenamento em memória." alt="" coords="9,219,203,364"/>
+<area shape="rect" id="Node000002" href="$classInterfaceServicoProjeto.html" title=" " alt="" coords="5,5,207,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,185,109,218,103,218,103,185"/>
 </map>

@@ -8,6 +8,7 @@
 #include "identificador.h"
 
 #include <stdexcept>
+#include <vector>
 
 using namespace std;
 
@@ -55,6 +56,7 @@ public:
     virtual bool cadastrar(Pessoa&) = 0;
     virtual bool ler(Pessoa*) = 0;
     virtual bool atualizar (Pessoa) = 0;
+    virtual bool listar(vector<Pessoa>*) = 0;
     virtual ~InterfaceServicoPessoa() {}
 };
 
@@ -72,8 +74,9 @@ public:
     virtual bool ler(Projeto*) = 0;
     virtual bool atualizar(Projeto) = 0;
     virtual bool excluir(Identificador) = 0;
+    virtual bool listar(vector<Projeto>*) = 0;
     virtual ~InterfaceServicoProjeto() {}
-    //listar()
+
 };
 
 #endif // INTERFACES_H_INCLUDED

@@ -8,6 +8,8 @@
 #include "pessoa.h"
 #include "projeto.h"
 
+using namespace std;
+
 /**
  * @brief Stub do serviço de Pessoa (autenticação e cadastro).
  * @details Armazena as pessoas em memória, usando o valor do Email
@@ -16,12 +18,12 @@
  */
 class StubCntrSPessoa: public InterfaceServicoAutenticacao, public InterfaceServicoPessoa {
 private:
-    std::map<std::string, Pessoa> pessoas;   // conteiner para armazenar os obejtos pessoas
+    map<string, Pessoa> pessoas;   // conteiner para armazenar os obejtos pessoas
 
 public:
     // Emails-gatilho para testes.
-    static const std::string TRIGGER_FALHA;
-    static const std::string TRIGGER_ERRO_SISTEMA;
+    static const string TRIGGER_FALHA;
+    static const string TRIGGER_ERRO_SISTEMA;
 
     StubCntrSPessoa();
 
@@ -29,6 +31,7 @@ public:
     bool cadastrar(Pessoa &pessoa);
     bool ler(Pessoa *pessoa) override;
     bool atualizar(Pessoa pessoa) override;
+    bool listar(vector<Pessoa> *lista) override;
 };
 
 
@@ -38,15 +41,16 @@ public:
  */
 class StubCntrSProjeto : public InterfaceServicoProjeto {
 private:
-    std::map<std::string, Projeto> projetos;   // identificador -> Projeto
+    map<string, Projeto> projetos;   // identificador -> Projeto
 
 public:
     // Identificadores-gatilho para testes.
-    static const std::string TRIGGER_ERRO_SISTEMA;
+    static const string TRIGGER_ERRO_SISTEMA;
 
     bool criar(Projeto projeto) override;
     bool ler(Projeto *projeto) override;
     bool atualizar(Projeto projeto) override;
+    bool listar(vector<Projeto> *lista) override;
     bool excluir(Identificador identificador) override;
 };
 
