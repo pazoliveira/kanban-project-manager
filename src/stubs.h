@@ -25,7 +25,7 @@ public:
     static const string TRIGGER_FALHA;
     static const string TRIGGER_ERRO_SISTEMA;
 
-    StubCntrSPessoa();
+    StubCntrSPessoa(); //construtor
 
     bool autenticar(Email email, Senha senha) override;
     bool cadastrar(Pessoa &pessoa);
@@ -53,4 +53,26 @@ public:
     bool listar(vector<Projeto> *lista) override;
     bool excluir(Identificador identificador) override;
 };
+
+/**
+ * @brief Stub do serviço de Quadro, com armazenamento em memória.
+ * @details A chave do mapa é o valor do Identificador (PK de Quadro).
+ */
+class StubCntrSQuadro: public InterfaceServicoQuadro {
+
+private:
+    map<string, Quadro> quadros;   // identificador -> Quadro
+
+public:
+    // Identificadores-gatilho para testes.
+    static const string TRIGGER_ERRO_SISTEMA;
+
+    bool criar(Quadro quadro) override;
+    bool ler(Quadro *quadro) override;
+    bool atualizar(Quadro quadro) override;
+    bool listar(vector<Quadro> *lista) override;
+    bool excluir(Identificador identificador) override;
+
+};
+
 #endif // STUBS_H_INCLUDED

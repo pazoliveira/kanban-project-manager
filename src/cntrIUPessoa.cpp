@@ -133,8 +133,8 @@ bool CntrIUPessoa::ler() {
     cout << "\n--- Dados da pessoa ---\n"
          << "Email:         " << pessoa.getEmail().getEmail() << "\n"
          << "Nome:          " << pessoa.getNome().getNome() << "\n"
-         << "Papel:         " << pessoa.getPapel().getPapel() << "\n";
-
+         << "Papel:         " << pessoa.getPapel().getPapel() << "\n"
+         << "---------------------------\n";
 
     return true;
 }

@@ -1,5 +1,5 @@
 <map id="InterfaceServicoPessoa" name="InterfaceServicoPessoa">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,207,171"/>
+<area shape="rect" id="Node000001" title="Camada de serviço Pessoa." alt="" coords="5,5,207,171"/>
 <area shape="rect" id="Node000002" href="$classStubCntrSPessoa.html" title="Stub do serviço de Pessoa (autenticação e cadastro)." alt="" coords="9,219,203,424"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,185,109,219,103,219,103,185"/>
 </map>

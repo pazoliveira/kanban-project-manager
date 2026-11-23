@@ -5,5 +5,7 @@ var interfaces_8h =
     [ "InterfaceApresentacaoPessoa", "classInterfaceApresentacaoPessoa.html", "classInterfaceApresentacaoPessoa" ],
     [ "InterfaceServicoPessoa", "classInterfaceServicoPessoa.html", "classInterfaceServicoPessoa" ],
     [ "InterfaceApresentacaoProjeto", "classInterfaceApresentacaoProjeto.html", "classInterfaceApresentacaoProjeto" ],
-    [ "InterfaceServicoProjeto", "classInterfaceServicoProjeto.html", "classInterfaceServicoProjeto" ]
+    [ "InterfaceServicoProjeto", "classInterfaceServicoProjeto.html", "classInterfaceServicoProjeto" ],
+    [ "InterfaceApresentacaoQuadro", "classInterfaceApresentacaoQuadro.html", "classInterfaceApresentacaoQuadro" ],
+    [ "InterfaceServicoQuadro", "classInterfaceServicoQuadro.html", "classInterfaceServicoQuadro" ]
 ];

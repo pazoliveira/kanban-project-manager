@@ -34,6 +34,8 @@ void CntrIUProjeto::executar(Email email) {
 bool CntrIUProjeto::criar(Email &gestor) {
         string entrada;
 
+        while (true) {
+
         Projeto projeto;
         Identificador identificador;
         Nome nome;
@@ -83,6 +85,7 @@ bool CntrIUProjeto::criar(Email &gestor) {
             cin >> entrada;
             if (entrada != "s" && entrada != "S")
                 return false;
+            continue;
         }
 
         // Delegação ao serviço: grava a pessoa (falha se o email já existe).
@@ -96,9 +99,7 @@ bool CntrIUProjeto::criar(Email &gestor) {
         cin >> entrada;
         if (entrada != "s" && entrada != "S")
             return false;
-
-    return true;
-
+        }
 }
 
 bool CntrIUProjeto::ler(Projeto*) {
@@ -133,8 +134,8 @@ bool CntrIUProjeto::ler(Projeto*) {
          << "Descricao:     " << projeto.getDescricao().getTexto() << "\n"
          << "Inicio:        " << projeto.getInicio().getDataHora() << "\n"
          << "Termino:       " << projeto.getTermino().getDataHora() << "\n"
-         << "Gestor:        " << projeto.getEmailGestor().getEmail() << "\n";
-
+         << "Gestor:        " << projeto.getEmailGestor().getEmail() << "\n"
+         << "---------------------------\n";
 
     return true;
 }

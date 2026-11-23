@@ -1,7 +1,7 @@
 <map id="StubCntrSPessoa" name="StubCntrSPessoa">
 <area shape="rect" id="Node000001" title="Stub do serviço de Pessoa (autenticação e cadastro)." alt="" coords="152,219,345,424"/>
-<area shape="rect" id="Node000002" href="$classInterfaceServicoAutenticacao.html" title=" " alt="" coords="5,45,247,131"/>
+<area shape="rect" id="Node000002" href="$classInterfaceServicoAutenticacao.html" title="Camada de serviço Autenticação." alt="" coords="5,45,247,131"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,142,197,217,192,220,152,144"/>
-<area shape="rect" id="Node000003" href="$classInterfaceServicoPessoa.html" title=" " alt="" coords="271,5,472,171"/>
+<area shape="rect" id="Node000003" href="$classInterfaceServicoPessoa.html" title="Camada de serviço Pessoa." alt="" coords="271,5,472,171"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,185,305,220,300,217,319,182"/>
 </map>

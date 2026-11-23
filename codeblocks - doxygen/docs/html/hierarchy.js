@@ -13,6 +13,9 @@ var hierarchy =
     [ "InterfaceApresentacaoProjeto", "classInterfaceApresentacaoProjeto.html", [
       [ "CntrIUProjeto", "classCntrIUProjeto.html", null ]
     ] ],
+    [ "InterfaceApresentacaoQuadro", "classInterfaceApresentacaoQuadro.html", [
+      [ "CntrIUQuadro", "classCntrIUQuadro.html", null ]
+    ] ],
     [ "InterfaceServicoAutenticacao", "classInterfaceServicoAutenticacao.html", [
       [ "StubCntrSPessoa", "classStubCntrSPessoa.html", null ]
     ] ],
@@ -21,6 +24,9 @@ var hierarchy =
     ] ],
     [ "InterfaceServicoProjeto", "classInterfaceServicoProjeto.html", [
       [ "StubCntrSProjeto", "classStubCntrSProjeto.html", null ]
+    ] ],
+    [ "InterfaceServicoQuadro", "classInterfaceServicoQuadro.html", [
+      [ "StubCntrSQuadro", "classStubCntrSQuadro.html", null ]
     ] ],
     [ "Limite", "classLimite.html", null ],
     [ "Nome", "classNome.html", null ],

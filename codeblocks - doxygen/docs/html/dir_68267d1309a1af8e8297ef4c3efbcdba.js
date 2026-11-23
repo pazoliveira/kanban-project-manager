@@ -8,6 +8,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "cntrIUPessoa.h", "cntrIUPessoa_8h.html", "cntrIUPessoa_8h" ],
     [ "cntrIUProjeto.cpp", "cntrIUProjeto_8cpp.html", null ],
     [ "cntrIUProjeto.h", "cntrIUProjeto_8h.html", "cntrIUProjeto_8h" ],
+    [ "cntrIUQuadro.cpp", "cntrIUQuadro_8cpp.html", null ],
+    [ "cntrIUQuadro.h", "cntrIUQuadro_8h.html", "cntrIUQuadro_8h" ],
     [ "interfaces.h", "interfaces_8h.html", "interfaces_8h" ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "stubs.cpp", "stubs_8cpp.html", null ],

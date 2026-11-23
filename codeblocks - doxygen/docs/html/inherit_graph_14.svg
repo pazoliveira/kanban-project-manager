@@ -11,9 +11,9 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classProjeto.html" target="_top" xlink:title="Representa o domínio Projeto no sistema Kanban.">
+<g id="a_Node000000"><a xlink:href="classPessoa.html" target="_top" xlink:title="Representa a entidade Pessoa no sistema Kanban.">
 <polygon fill="white" stroke="#666666" points="51,-19 0,-19 0,0 51,0 51,-19"/>
-<text text-anchor="middle" x="25.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Projeto</text>
+<text text-anchor="middle" x="25.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Pessoa</text>
 </a>
 </g>
 </g>

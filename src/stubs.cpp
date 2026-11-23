@@ -8,6 +8,8 @@
 
 const std::string StubCntrSPessoa::TRIGGER_FALHA        = "falha@teste.com";
 const std::string StubCntrSPessoa::TRIGGER_ERRO_SISTEMA = "erro@teste.com";
+const std::string StubCntrSProjeto::TRIGGER_ERRO_SISTEMA = "ERR999";
+const std::string StubCntrSQuadro::TRIGGER_ERRO_SISTEMA = "ERR999";
 
 // -------------------------------------------------------------------------
 // Construtor: cadastra um usuário de teste para facilitar o login.
@@ -107,9 +109,7 @@ bool StubCntrSPessoa::excluir(Email email){
 }
 
 // -------------------------------------------------------------------------
-// Projeto
-
-const std::string StubCntrSProjeto::TRIGGER_ERRO_SISTEMA = "ERR999";
+// Projeto.
 
 bool StubCntrSProjeto::criar(Projeto projeto) {
     const std::string chave = projeto.getIdentificador().getIdentificador();
@@ -168,6 +168,67 @@ bool StubCntrSProjeto::excluir(Identificador identificador) {
         throw std::runtime_error("Erro de sistema");
 
     return projetos.erase(chave) > 0;       // true se removeu algo
+}
+
+// -------------------------------------------------------------------------
+// Quadro.
+
+bool StubCntrSQuadro::criar(Quadro quadro) {
+    const std::string chave = quadro.getIdentificador().getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    if (quadros.count(chave) > 0)
+        return false;                       // PK duplicada
+
+    quadros[chave] = quadro;
+    return true;
+
+}
+
+bool StubCntrSQuadro::ler(Quadro *quadro) {
+    std::string chave = quadro->getIdentificador().getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    auto it = quadros.find(chave);
+    if (it == quadros.end())
+        return false;
+
+    *quadro = it->second;
+    return true;
+}
+
+bool StubCntrSQuadro::atualizar(Quadro quadro) {
+    std::string chave = quadro.getIdentificador().getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    auto it = quadros.find(chave);
+    if (it == quadros.end())
+        return false;
+
+    it->second = quadro;
+    return true;
+}
+
+bool StubCntrSQuadro::listar(std::vector<Quadro> *lista) {
+    lista->clear();
+    for (auto &quadro : quadros)
+        lista->push_back(quadro.second);
+    return true;
+}
+
+bool StubCntrSQuadro::excluir(Identificador identificador) {
+    std::string chave = identificador.getIdentificador();
+
+    if (chave == TRIGGER_ERRO_SISTEMA)
+        throw std::runtime_error("Erro de sistema");
+
+    return quadros.erase(chave) > 0;
 }
 
 

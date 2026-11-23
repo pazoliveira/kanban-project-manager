@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classInterfaceApresentacaoProjeto.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classInterfaceApresentacaoProjeto.html" target="_top" xlink:title="Camada de apresentação Projeto.">
 <polygon fill="white" stroke="transparent" points="182,-179 0,-179 0,-100 182,-100 182,-179"/>
 <text text-anchor="start" x="18.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">InterfaceApresentacaoProjeto</text>
 <text text-anchor="start" x="89" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

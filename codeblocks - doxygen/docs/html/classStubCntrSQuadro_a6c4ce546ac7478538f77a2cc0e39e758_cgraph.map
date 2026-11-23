@@ -1,0 +1,7 @@
+<map id="StubCntrSQuadro::atualizar" name="StubCntrSQuadro::atualizar">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,204,56"/>
+<area shape="rect" id="Node000002" href="$classQuadro.html#a3a31344f94cc6bbf7fdb9c99ea4dbe68" title="Retorna o valor atualmente armazenado." alt="" coords="269,5,448,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,31,255,26,256,31,205,36"/>
+<area shape="rect" id="Node000003" href="$classIdentificador.html#a98ea17bef93c0301fb28da2a6b7228b5" title="Retorna o valor atualmente armazenado." alt="" coords="252,55,465,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,50,239,53,238,59,204,55"/>
+</map>

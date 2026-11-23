@@ -1,5 +1,5 @@
 <map id="InterfaceServicoAutenticacao" name="InterfaceServicoAutenticacao">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,247,91"/>
+<area shape="rect" id="Node000001" title="Camada de serviço Autenticação." alt="" coords="5,5,247,91"/>
 <area shape="rect" id="Node000002" href="$classStubCntrSPessoa.html" title="Stub do serviço de Pessoa (autenticação e cadastro)." alt="" coords="29,139,223,344"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,104,129,138,123,138,123,104"/>
 </map>

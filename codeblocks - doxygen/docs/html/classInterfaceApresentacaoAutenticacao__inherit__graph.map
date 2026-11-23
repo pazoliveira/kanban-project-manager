@@ -1,5 +1,5 @@
 <map id="InterfaceApresentacaoAutenticacao" name="InterfaceApresentacaoAutenticacao">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,287,111"/>
+<area shape="rect" id="Node000001" title="Camada de apresentação Autenticação." alt="" coords="5,5,287,111"/>
 <area shape="rect" id="Node000002" href="$classCntrIUAutenticacao.html" title="Controladora de apresentação de atutenticação de usuário." alt="" coords="56,159,236,244"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,124,149,159,143,159,143,124"/>
 </map>

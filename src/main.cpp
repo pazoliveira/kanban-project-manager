@@ -15,6 +15,7 @@
 #include "cntrIUAutenticacao.h"
 #include "cntrIUPessoa.h"
 #include "cntrIUProjeto.h"
+#include "cntrIUQuadro.h"
 
 #include "stubs.h"
 
@@ -30,14 +31,17 @@ int main() {
     InterfaceApresentacaoAutenticacao   *cntrIUAutenticacao = new CntrIUAutenticacao();
     InterfaceApresentacaoPessoa         *cntrIUPessoa       = new CntrIUPessoa();
     InterfaceApresentacaoProjeto        *cntrIUProjeto      = new CntrIUProjeto();
+    InterfaceApresentacaoQuadro         *cntrIUQuadro       = new CntrIUQuadro();
 
     StubCntrSPessoa                     *stubSPessoa        = new StubCntrSPessoa();
     StubCntrSProjeto                    *stubSProjeto       = new StubCntrSProjeto();
+    StubCntrSQuadro                     *stubSQuadro        = new StubCntrSQuadro();
 
     // Ligar controladoras ao serviço (mesmo stub nas duas).
     cntrIUAutenticacao->setCntrSAutenticacao(stubSPessoa);
     cntrIUPessoa->setCntrSPessoa(stubSPessoa);
     cntrIUProjeto->setCntrSProjeto(stubSProjeto);
+    cntrIUQuadro->setCntrSQuadro(stubSQuadro);
 
     Email email;
     Papel papel;
@@ -113,6 +117,7 @@ int main() {
             cout << "\n=== Menu principal ===\n"
                  << "1 - Projetos\n"
                  << "2 - Pessoas\n"
+                 << "3 - Quadros\n"
                  << "0 - Sair\n"
                  << "Opcao: ";
 
@@ -132,6 +137,9 @@ int main() {
                         break;
                     case 2:
                         cntrIUPessoa->executar(email);
+                        break;
+                    case 3:
+                        cntrIUQuadro->executar(email);
                         break;
                     case 0:
                         voltar = true;
@@ -157,6 +165,8 @@ int main() {
     delete stubSPessoa;
     delete cntrIUProjeto;
     delete stubSProjeto;
+    delete cntrIUQuadro;
+    delete stubSQuadro;
 
     return 0;
 }
