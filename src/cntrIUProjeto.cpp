@@ -219,7 +219,7 @@ bool CntrIUProjeto::atualizar(Projeto) {
 bool CntrIUProjeto::listar() {
     vector<Projeto> lista;
 
-    cout << "\n=== Listar projetos ===\n";
+    cout << "\n=== Projetos cadastrados ===\n" << endl;
 
 
     if (!cntrSProjeto->listar(&lista)) {
@@ -248,7 +248,7 @@ bool CntrIUProjeto::listar() {
 
 bool CntrIUProjeto::excluir(){
 
-    cout << "\n=== Excluir projeto(s) ===\n";
+    cout << "\n=== Excluir projeto ===\n";
 
     string entrada;
     Identificador identificador;
@@ -284,7 +284,8 @@ bool CntrIUProjeto::excluir(){
          << "Descricao:     " << projeto.getDescricao().getTexto() << "\n"
          << "Inicio:        " << projeto.getInicio().getDataHora() << "\n"
          << "Termino:       " << projeto.getTermino().getDataHora() << "\n"
-         << "Gestor:        " << projeto.getEmailGestor().getEmail() << "\n";
+         << "Gestor:        " << projeto.getEmailGestor().getEmail() << "\n"
+         << "---------------------------\n";
 
     return true;
 

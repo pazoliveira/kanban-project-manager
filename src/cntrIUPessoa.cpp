@@ -109,7 +109,7 @@ bool CntrIUPessoa::ler() {
     Email email;
     Pessoa pessoa;
 
-    cout << "\n=== Consultar pessoa ===\n";
+    cout << "\n=== Consultar usuário ===\n";
 
     try {
         // Lê e valida o identificador (a PK do projeto).
@@ -144,7 +144,7 @@ bool CntrIUPessoa::atualizar() {
     Email email;
     Pessoa pessoa;
 
-    cout << "\n=== Atualizar Pessoa ===\n";
+    cout << "\n=== Atualizar cadastro usuário ===\n";
 
     // 1. Identificador e busca do projeto atual.
     try {
@@ -213,7 +213,7 @@ bool CntrIUPessoa::atualizar() {
 bool CntrIUPessoa::listar() {
     vector<Pessoa> lista;
 
-    cout << "\n=== Pessoas cadastradas ===\n" << endl;
+    cout << "\n=== Usuários cadastrados ===\n" << endl;
 
 
     if (!cntrSPessoa->listar(&lista)) {
@@ -238,7 +238,7 @@ bool CntrIUPessoa::listar() {
 
 bool CntrIUPessoa::excluir() {
 
-cout << "\n=== Excluir pessoa(s) ===\n";
+cout << "\n=== Excluir usuário ===\n";
 
     string entrada;
     Email email;
