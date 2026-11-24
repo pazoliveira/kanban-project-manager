@@ -22,9 +22,9 @@ void CntrIUProjeto::executar(Email email) {
         switch (opcao) {
             case 1: criar(email); break;
             case 2: ler(&projeto); break;
-            case 3: atualizar(projeto); break;
+            case 3: atualizar(email); break;
             case 4: listar(); break;
-            case 5: excluir(); break;
+            case 5: excluir(email); break;
             case 0: break;
             default: cout << "Opcao invalida.\n";
         }
@@ -140,7 +140,7 @@ bool CntrIUProjeto::ler(Projeto*) {
     return true;
 }
 
-bool CntrIUProjeto::atualizar(Projeto) {
+bool CntrIUProjeto::atualizar(Email usuario) {
     string entrada;
     Identificador identificador;
     Projeto projeto;
@@ -161,6 +161,12 @@ bool CntrIUProjeto::atualizar(Projeto) {
 
     if (!cntrSProjeto->ler(&projeto)) {
         cout << "Projeto nao encontrado.\n";
+        return false;
+    }
+
+     // Só o gestor do projeto pode atualizar
+    if (projeto.getEmailGestor().getEmail() != usuario.getEmail()) {
+        cout << "Apenas o gestor do projeto pode atualizar.\n";
         return false;
     }
 
@@ -246,7 +252,7 @@ bool CntrIUProjeto::listar() {
 
 }
 
-bool CntrIUProjeto::excluir(){
+bool CntrIUProjeto::excluir(Email usuario){
 
     cout << "\n=== Excluir projeto ===\n";
 
@@ -269,6 +275,12 @@ bool CntrIUProjeto::excluir(){
 
     if (!cntrSProjeto->ler(&projeto)) {
         cout << "Projeto nao encontrado.\n";
+        return false;
+    }
+
+    // Só o gestor do projeto pode atualizar
+    if (projeto.getEmailGestor().getEmail() != usuario.getEmail()) {
+        cout << "Apenas o gestor do projeto pode exclui-lo.\n";
         return false;
     }
 

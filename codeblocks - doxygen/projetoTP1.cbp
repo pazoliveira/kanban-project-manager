@@ -39,6 +39,10 @@
 		<Unit filename="../src/cntrIUAutenticacao.h" />
 		<Unit filename="../src/cntrIUPessoa.cpp" />
 		<Unit filename="../src/cntrIUPessoa.h" />
+		<Unit filename="../src/cntrIUProjeto.cpp" />
+		<Unit filename="../src/cntrIUProjeto.h" />
+		<Unit filename="../src/cntrIUQuadro.cpp" />
+		<Unit filename="../src/cntrIUQuadro.h" />
 		<Unit filename="../src/domain/headers/email.h" />
 		<Unit filename="../src/domain/headers/estado.h" />
 		<Unit filename="../src/domain/headers/identificador.h" />

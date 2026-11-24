@@ -10,8 +10,8 @@ private:
     InterfaceServicoProjeto *cntrSProjeto = nullptr;
     bool criar(Email &gestor);
     bool ler(Projeto*);
-    bool atualizar(Projeto);
-    bool excluir ();
+    bool atualizar(Email);
+    bool excluir (Email);
     bool listar ();
 
 public:
